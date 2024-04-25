@@ -1,5 +1,5 @@
-import html from '../utils/html.js'
-import markdown from '../utils/markdown.js'
+import html from '../../utils/html.js'
+import markdown from '../../utils/markdown.js'
 
 /**
  * @param {import('../schema.d.ts').ResumeSchema['references']} references
@@ -11,21 +11,21 @@ export default function References(references = []) {
     html`
       <section id="references">
         <h3>References</h3>
-        <div class="stack">
+        <dl>
           ${references.map(
             ({ name, reference }) => html`
-              <blockquote>
-                ${reference && markdown(reference)}
+              <blockquote itemprop="subjectOf" itemscope itemtype="https://schema.org/Statement">
+                ${reference && html`<span itemprop="text">${markdown(reference)}</span>`}
                 ${name &&
                 html`
-                  <p>
-                    <cite>${name}</cite>
+                  <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <cite itemprop="name">${name}</cite>
                   </p>
                 `}
               </blockquote>
             `,
           )}
-        </div>
+        </dl>
       </section>
     `
   )

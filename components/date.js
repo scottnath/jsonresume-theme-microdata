@@ -15,6 +15,15 @@ const formatDate = dateString =>
  * @param {string} date
  * @returns {string}
  */
-export default function Duration(date) {
-  return html`<time datetime="${date}">${formatDate(date)}</time>`
+export function ShortDate(date, itemprop) {
+  return html`<time datetime="${date}" ${itemprop && `itemprop="${itemprop}"`}>${formatDate(date)}</time>`
+}
+
+/**
+ * @param {string} date
+ * @returns {string}
+ */
+export function DateTime(date, itemprop) {
+  const datetime = new Date(date).toLocaleString()
+  return html`<time datetime="${date}" ${itemprop && `itemprop="${itemprop}"`}>${datetime}</time>`
 }

@@ -1,5 +1,5 @@
 import html from '../utils/html.js'
-import Date from './date.js'
+import { ShortDate } from './date.js'
 
 /**
  * @param {string} startDate
@@ -7,5 +7,5 @@ import Date from './date.js'
  * @returns {string}
  */
 export default function Duration(startDate, endDate) {
-  return html`${Date(startDate)} – ${endDate ? Date(endDate) : 'Present'}`
+  return html`${ShortDate(startDate, 'startDate')} – ${endDate ? ShortDate(endDate, 'endDate') : 'Present'}`
 }

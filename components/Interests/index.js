@@ -1,4 +1,4 @@
-import html from '../utils/html.js'
+import html from '../../utils/html.js'
 
 /**
  * @param {import('../schema.d.ts').ResumeSchema['interests']} interests
@@ -10,21 +10,16 @@ export default function Interests(interests = []) {
     html`
       <section id="interests">
         <h3>Interests</h3>
-        <div class="grid-list">
+        <dl class="grid-list">
           ${interests.map(
             ({ keywords = [], name }) => html`
-              <div>
-                ${name && html`<h4>${name}</h4>`}
-                ${keywords.length > 0 &&
-                html`
-                  <ul class="tag-list">
-                    ${keywords.map(keyword => html`<li>${keyword}</li>`)}
-                  </ul>
-                `}
+              <div class="tag-list" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Thing">
+                ${name && html`<dt><span itemprop="name">${name}</span></dt>`}
+                ${keywords.length > 0 && keywords.map(keyword => html`<dd itemprop="alternateName">${keyword}</dd>`)}
               </div>
             `,
           )}
-        </div>
+        </dl>
       </section>
     `
   )

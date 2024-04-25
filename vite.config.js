@@ -21,7 +21,7 @@ export default defineConfig(({ mode }) => {
         entry: './index.js',
         fileName: 'index',
         formats: ['es', 'cjs', 'umd'],
-        name: 'jsonresumeThemeEven',
+        name: 'jsonresumeThemeMicrodata',
       },
       rollupOptions: {
         external: [...Object.keys(pkg.dependencies), /^node:.*/],

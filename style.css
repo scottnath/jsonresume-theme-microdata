@@ -26,6 +26,16 @@
   --scale3: calc(var(--scale2) * var(--scale-ratio));
   --scale4: calc(var(--scale3) * var(--scale-ratio));
   --scale5: calc(var(--scale4) * var(--scale-ratio));
+
+  --icon-size: 16px;
+
+  --svg-map-pin: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>');
+  --svg-mail: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>');
+  --svg-phone: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>');
+  --svg-link: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>');
+  --svg-user: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>');
+
+  --svg-network: var(--svg-user);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -51,11 +61,27 @@ html {
 body {
   background: var(--color-background);
   color: var(--color-primary);
-  display: grid;
   font:
     1em/1.5 Lato,
     sans-serif;
+}
+/* screen-reader-only content */
+.sr-only {
+  clip: rect(0px, 0px, 0px, 0px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0px;
+  position: absolute;
+  white-space: nowrap;
+}
+
+#resume {
+  display: grid;
   gap: 2em;
+  margin-bottom: 4em;
   grid-template-columns:
     [full-start]
     1fr
@@ -67,13 +93,12 @@ body {
     1fr
     [full-end];
   grid-template-rows: auto [content] 0;
-  margin-bottom: 4em;
-}
 
-body::before {
-  content: '';
-  grid-column: full;
-  grid-row: content;
+  &::before {
+    content: '';
+    grid-column: full;
+    grid-row: content;
+  }
 }
 
 ol,
@@ -141,6 +166,10 @@ h6 {
   font-size: var(--scale0);
 }
 
+address {
+  font-style: normal;
+}
+
 blockquote {
   border-left: 0.2em solid var(--color-dimmed);
   padding-left: 1em;
@@ -168,6 +197,10 @@ svg {
   grid-template-columns: inherit;
   padding: 4em 0;
   text-align: center;
+
+  p {
+    text-wrap: balance;
+  }
 }
 
 .masthead > *,
@@ -182,9 +215,9 @@ section {
   max-width: 12em;
 }
 
-article > * + *,
+article:not(#resume) > * + *,
 blockquote > * + *,
-.timeline > div > * + * {
+.timeline > div:not(.meta) > * + * {
   margin-top: 0.6em;
 }
 
@@ -197,6 +230,14 @@ blockquote > * + *,
   gap: 1.5em;
 }
 
+.stack dt {
+  font-size: var(--scale2);
+  font-weight: bold;
+}
+.stack dd:not(.meta) {
+  margin-top: 0.6em;
+}
+
 .icon-list {
   display: flex;
   flex-wrap: wrap;
@@ -204,6 +245,70 @@ blockquote > * + *,
   justify-content: center;
   list-style: none;
   padding: 0;
+
+  div,
+  li {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+
+  dt,
+  dd {
+    display: inline-block;
+  }
+
+  dt {
+    &::before {
+      display: block;
+      width: var(--icon-size);
+      height: var(--icon-size);
+      background-color: var(--color-primary);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      mask-position: center;
+      content: ' ';
+    }
+  }
+  .location dt::before {
+    -webkit-mask-image: var(--svg-map-pin);
+    mask-image: var(--svg-map-pin);
+  }
+  .email dt::before {
+    -webkit-mask-image: var(--svg-mail);
+    mask-image: var(--svg-mail);
+  }
+  .phone dt::before {
+    -webkit-mask-image: var(--svg-phone);
+    mask-image: var(--svg-phone);
+  }
+  .url dt::before {
+    -webkit-mask-image: var(--svg-link);
+    mask-image: var(--svg-link);
+  }
+
+  div[itemprop='ContactPoint'] {
+    position: relative;
+    width: fit-content;
+    dt {
+      &::before {
+        -webkit-mask-image: var(--svg-network);
+        mask-image: var(--svg-network);
+      }
+      /* span {
+        position: absolute;
+        right: 0;
+        top: 0;
+      } */
+    }
+    dd {
+      &::after {
+        content: ' (' attr(data-network) ') ';
+        font-size: 0.9em;
+      }
+    }
+  }
 }
 
 .grid-list {
@@ -217,9 +322,17 @@ blockquote > * + *,
   gap: 0.4em;
   list-style: none;
   padding: 0;
+  align-content: flex-start;
+}
+.grid-list dt,
+.tag-list dt {
+  font-size: var(--scale2);
+  font-weight: bold;
+  flex: 1 1 100%;
 }
 
-.tag-list > li {
+.tag-list > li,
+.tag-list > dd {
   background: var(--color-dimmed);
   border-radius: 0.2em;
   padding: 0.2em 0.6em;
@@ -233,26 +346,12 @@ blockquote > * + *,
   padding-bottom: 1rem;
 }
 
-.timeline > div:not(:last-child)::before {
-  content: '';
-  position: absolute;
-  top: 1rem;
-  left: -15px;
-  width: 2px;
-  height: 100%;
-  background: var(--color-secondary);
-}
-
-.timeline > div:not(:only-child)::after {
-  content: '';
-  position: absolute;
-  top: 0.6rem;
-  left: -20px;
-  width: 8px;
-  height: 8px;
-  background: var(--color-secondary);
-  border: 2px solid var(--color-background);
-  border-radius: 50%;
+footer {
+  grid-column: main;
+  display: flex;
+  gap: 1em;
+  margin-top: 2em;
+  font-size: 0.8em;
 }
 
 @media print, (min-width: 48em) {
@@ -286,5 +385,9 @@ blockquote > * + *,
 
   .grid-list {
     grid-template-columns: repeat(auto-fit, minmax(calc((100% - 1em) / 2), 1fr));
+  }
+
+  footer {
+    grid-column: content;
   }
 }

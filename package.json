@@ -1,5 +1,5 @@
 {
-  "name": "jsonresume-theme-even",
+  "name": "jsonresume-theme-microdata",
   "version": "0.22.0",
   "description": "A flat JSON Resume theme, compatible with the latest resume schema",
   "keywords": [
@@ -8,15 +8,17 @@
     "theme",
     "flat",
     "curriculum-vitae",
-    "cv"
+    "cv",
+    "microdata",
+    "schema.org"
   ],
   "homepage": "https://jsonresume-theme-even.rbrd.in/",
   "bugs": {
-    "url": "https://github.com/rbardini/jsonresume-theme-even/issues"
+    "url": "https://github.com/rbardini/jsonresume-theme-microdata/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rbardini/jsonresume-theme-even"
+    "url": "https://github.com/rbardini/jsonresume-theme-microdata"
   },
   "license": "MIT",
   "author": "Rafael Bardini",
@@ -31,7 +33,7 @@
   "source": "index.js",
   "typings": "./dist/index.d.ts",
   "bin": {
-    "jsonresume-theme-even": "bin/cli.js"
+    "jsonresume-theme-microdata": "bin/cli.js"
   },
   "files": [
     "bin",
