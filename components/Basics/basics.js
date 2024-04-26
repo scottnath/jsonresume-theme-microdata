@@ -32,14 +32,14 @@ export default function Header(basics = {}) {
           html`
             <div class="email">
               <dt><span class="sr-only">email</span></dt>
-              <dd><a href="mailto:${email}" itemprop="email">${email}</a></dd>
+              <dd itemprop="email"><a href="mailto:${email}">${email}</a></dd>
             </div>
           `}
           ${phone &&
           html`
             <div class="phone">
               <dt><span class="sr-only">phone</span></dt>
-              <dd><a href="tel:${phone.replace(/\s/g, '')}" itemprop="phone">${phone}</a></dd>
+              <dd itemprop="telephone"><a href="tel:${phone.replace(/\s/g, '')}">${phone}</a></dd>
             </div>
           `}
           ${url &&
@@ -50,7 +50,7 @@ export default function Header(basics = {}) {
             </div>
           `}
         </dl>
-        <aside>${Profiles(profiles)}</aside>
+        ${Profiles(profiles)}
       </address>
     </header>
   `

@@ -11,14 +11,13 @@ export default function Skills(skills = []) {
       <section id="skills">
         <h3>Skills</h3>
         <dl class="grid-list">
-          ${skills.map(
-            ({ keywords = [], name }) => html`
-              <div class="tag-list" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Occupation">
-                ${name && html`<dt><span itemprop="name">${name}</span></dt>`}
-                ${keywords.length > 0 && keywords.map(keyword => html`<dd itemprop="skills">${keyword}</dd>`)}
-              </div>
-            `,
-          )}
+          ${skills.map(({ keywords = [], name, itemtype }) => {
+            const itype = `itemtype="https://schema.org/${itemtype || 'Thing'}"`
+            return html` <div class="tag-list" itemprop="knowsAbout" itemscope ${itype}>
+              ${name && html`<dt><span itemprop="description">${name}</span></dt>`}
+              ${keywords.length > 0 && keywords.map(keyword => html`<dd itemprop="name">${keyword}</dd>`)}
+            </div>`
+          })}
         </dl>
       </section>
     `

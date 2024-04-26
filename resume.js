@@ -11,6 +11,7 @@ import References from './components/References/index.js'
 import Skills from './components/Skills/index.js'
 import Volunteer from './components/Volunteer/index.js'
 import Work from './components/Work/index.js'
+import HeadMeta from './components/html-meta.js'
 
 import colors from './utils/colors.js'
 import html from './utils/html.js'
@@ -40,7 +41,7 @@ export default function Resume(resume, css) {
     <html lang="en" style="${colors(resume.meta)}">
       <head>
         <meta charset="utf-8" />
-        ${Meta(resume.basics)}
+        ${HeadMeta(resume.basics)}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" />
         <style>

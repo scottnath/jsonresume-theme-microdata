@@ -11,11 +11,11 @@ export default function References(references = []) {
     html`
       <section id="references">
         <h3>References</h3>
-        <dl>
+        <div class="stack">
           ${references.map(
             ({ name, reference }) => html`
               <blockquote itemprop="subjectOf" itemscope itemtype="https://schema.org/Statement">
-                ${reference && html`<span itemprop="text">${markdown(reference)}</span>`}
+                ${reference && html`<div itemprop="text">${markdown(reference)}</div>`}
                 ${name &&
                 html`
                   <p itemprop="author" itemscope itemtype="https://schema.org/Person">
@@ -25,7 +25,7 @@ export default function References(references = []) {
               </blockquote>
             `,
           )}
-        </dl>
+        </div>
       </section>
     `
   )

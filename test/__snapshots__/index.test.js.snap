@@ -17,256 +17,256 @@ exports[`renders a resume 1`] = `
       </head>
       <body>
         
+    <article id=\\"resume\\" itemscope itemtype=\\"https://schema.org/Person\\">
+      
     <header class=\\"masthead\\">
-      <img src=\\"image.jpg\\" alt=\\"\\" />
-      <div><h1>Richard Hendriks</h1> <h2>Programmer</h2></div>
-      <article><p>Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!</p></article>
-      <ul class=\\"icon-list\\">
-        
-          <li>
-            <svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"16\\" height=\\"16\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" class=\\"feather feather-map-pin\\"><path d=\\"M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z\\"></path><circle cx=\\"12\\" cy=\\"10\\" r=\\"3\\"></circle></svg> San Francisco, United States
-          </li>
-        
-        
-          <li>
-            <svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"16\\" height=\\"16\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" class=\\"feather feather-mail\\"><path d=\\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\\"></path><polyline points=\\"22,6 12,13 2,6\\"></polyline></svg>
-            <a href=\\"mailto:richard.hendriks@mail.com\\">richard.hendriks@mail.com</a>
-          </li>
-        
-        
-          <li>
-            <svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"16\\" height=\\"16\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" class=\\"feather feather-phone\\"><path d=\\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\\"></path></svg>
-            <a href=\\"tel:(912)555-4321\\">(912) 555-4321</a>
-          </li>
-        
-        <li><svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"16\\" height=\\"16\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" class=\\"feather feather-link\\"><path d=\\"M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71\\"></path><path d=\\"M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71\\"></path></svg> <a href=\\"http://richardhendricks.example.com\\">richardhendricks.example.com</a></li>
-        
-            <li>
-              <svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"16\\" height=\\"16\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" class=\\"feather feather-twitter\\"><path d=\\"M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z\\"></path></svg> neutralthoughts
-              <span class=\\"network\\">(Twitter)</span>
-            </li>
+      <img src=\\"image.jpg\\" alt=\\"Richard Hendriks's picture\\" itemprop=\\"image\\" />
+      <div>
+        <h1 itemprop=\\"name\\">Richard Hendriks</h1>
+        <h2 itemprop=\\"jobTitle\\">Programmer</h2>
+      </div>
+      <div itemprop=\\"description\\"><p>Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!</p></div>
+      <address>
+        <dl class=\\"icon-list\\">
           
-            <li>
-              <svg xmlns=\\"http://www.w3.org/2000/svg\\" width=\\"16\\" height=\\"16\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-width=\\"2\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" class=\\"feather feather-user\\"><path d=\\"M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\\"></path><circle cx=\\"12\\" cy=\\"7\\" r=\\"4\\"></circle></svg> <a href=\\"https://soundcloud.example.com/dandymusicnl\\">dandymusicnl</a>
-              <span class=\\"network\\">(SoundCloud)</span>
-            </li>
+            <div class=\\"location\\">
+              <dt><span class=\\"sr-only\\">location</span></dt>
+              <dd>
+      <div itemprop=\\"address\\" itemscope itemtype=\\"https://schema.org/PostalAddress\\">
+        <span itemprop=\\"addressRegion\\">California</span>
+        <span itemprop=\\"addressLocality\\">San Francisco</span>
+        <span itemprop=\\"addressCountry\\">US</span>
+      </div>
+    </dd>
+            </div>
           
-      </ul>
+          
+            <div class=\\"email\\">
+              <dt><span class=\\"sr-only\\">email</span></dt>
+              <dd><a href=\\"mailto:richard.hendriks@mail.com\\" itemprop=\\"email\\">richard.hendriks@mail.com</a></dd>
+            </div>
+          
+          
+            <div class=\\"phone\\">
+              <dt><span class=\\"sr-only\\">phone</span></dt>
+              <dd><a href=\\"tel:(912)555-4321\\" itemprop=\\"phone\\">(912) 555-4321</a></dd>
+            </div>
+          
+          
+            <div class=\\"url\\">
+              <dt><span class=\\"sr-only\\">url</span></dt>
+              <dd><a href=\\"http://richardhendricks.example.com\\" itemprop=\\"url\\">richardhendricks.example.com</a></dd>
+            </div>
+          
+        </dl>
+        
+      <dl  class=\\"icon-list\\">
+         <div itemprop=\\"ContactPoint\\" itemscope itemtype=\\"https://schema.org/ContactPoint\\">
+            <dt style=\\"--svg-network:url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22feather%20feather-twitter%22%3E%3Cpath%20d%3D%22M23%203a10.9%2010.9%200%200%201-3.14%201.53%204.48%204.48%200%200%200-7.86%203v1A10.66%2010.66%200%200%201%203%204s-4%209%205%2013a11.64%2011.64%200%200%201-7%202c9%205%2020%200%2020-11.5a4.5%204.5%200%200%200-.08-.83A7.72%207.72%200%200%200%2023%203z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E')\\" itemprop=\\"contactType\\"><span class=\\"sr-only\\">Twitter</span></dt>
+            <dd data-network=\\"Twitter\\"><a href=\\"\\" itemprop=\\"url\\"><span itemprop=\\"identifier\\">neutralthoughts</span></a></dd>
+          </div> <div itemprop=\\"ContactPoint\\" itemscope itemtype=\\"https://schema.org/ContactPoint\\">
+            <dt style=\\"--svg-network:url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22feather%20feather-user%22%3E%3Cpath%20d%3D%22M20%2021v-2a4%204%200%200%200-4-4H8a4%204%200%200%200-4%204v2%22%3E%3C%2Fpath%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%227%22%20r%3D%224%22%3E%3C%2Fcircle%3E%3C%2Fsvg%3E')\\" itemprop=\\"contactType\\"><span class=\\"sr-only\\">SoundCloud</span></dt>
+            <dd data-network=\\"SoundCloud\\"><a href=\\"https://soundcloud.example.com/dandymusicnl\\" itemprop=\\"url\\"><span itemprop=\\"identifier\\">dandymusicnl</span></a></dd>
+          </div>
+      </dl>
+    
+      </address>
     </header>
    
       <section id=\\"work\\">
         <h3>Work</h3>
-        <div class=\\"stack\\">
-          
-              <article>
-                <header>
-                  <h4><a href=\\"http://piedpiper.example.com\\">Pied Piper</a></h4>
-                  <div class=\\"meta\\"><div>Awesome compression company</div></div>
-                </header>
-                <div class=\\"timeline\\">
-                  
-                      <div>
-                        <div>
-                          <h5>CEO/President</h5>
-                          <div class=\\"meta\\">
-                            <div><time datetime=\\"2013-12-01\\">Dec 2013</time> – <time datetime=\\"2014-12-01\\">Dec 2014</time></div>
-                            <div>Palo Alto, CA</div>
-                          </div>
-                        </div>
-                        <p>Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.</p>
-                        
-                          <ul>
-                            <li><p>Build an algorithm for artist to detect if their music was violating copy right infringement laws</p></li><li><p>Successfully won Techcrunch Disrupt</p></li><li><p>Optimized an algorithm that holds the current world record for Weisman Scores</p></li>
-                          </ul>
-                        
-                      </div>
-                    
-                </div>
-              </article>
-            
-        </div>
+        <div class=\\"stack\\"> <article itemprop=\\"alumniOf\\" itemscope itemtype=\\"https://schema.org/Organization\\">
+    <header>
+      <h4><a href=\\"http://piedpiper.example.com\\" itemprop=\\"url\\"><span itemprop=\\"name\\">Pied Piper</span></a></h4>
+      <meta itemprop=\\"location\\" content=\\"Palo Alto, CA\\" />
+      <div class=\\"meta\\" itemprop=\\"description\\">Awesome compression company</div>
+    </header>
+    <section class=\\"timeline\\" itemprop=\\"employee\\" itemscope itemtype=\\"https://schema.org/EmployeeRole\\">
+      <h5 itemprop=\\"roleName\\">CEO/President</h5>
+      <div class=\\"meta\\">
+        <p><time datetime=\\"2013-12-01\\" itemprop=\\"startDate\\">Dec 2013</time> – <time datetime=\\"2014-12-01\\" itemprop=\\"endDate\\">Dec 2014</time></p> <p>Palo Alto, CA</p>
+      </div>
+      <div itemprop=\\"description\\"><p>Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.</p></div>
+      
+        <ul>
+          <li itemprop=\\"disambiguatingDescription\\"><p>Build an algorithm for artist to detect if their music was violating copy right infringement laws</p></li><li itemprop=\\"disambiguatingDescription\\"><p>Successfully won Techcrunch Disrupt</p></li><li itemprop=\\"disambiguatingDescription\\"><p>Optimized an algorithm that holds the current world record for Weisman Scores</p></li>
+        </ul>
+      
+    </section>
+  </article></div>
       </section>
      
       <section id=\\"volunteer\\">
         <h3>Volunteer</h3>
-        <div class=\\"stack\\">
-          
-              <article>
-                <header>
-                  <h4><a href=\\"http://coderdojo.example.com/\\">CoderDojo</a></h4>
-                  <div class=\\"meta\\">
-                    <strong>Teacher</strong>
-                    <div><time datetime=\\"2012-01-01\\">Jan 2012</time> – <time datetime=\\"2013-01-01\\">Jan 2013</time></div>
-                  </div>
-                </header>
-                <p>Global movement of free coding clubs for young people.</p>
-                
-                  <ul>
-                    <li><p>Awarded 'Teacher of the Month'</p></li>
-                  </ul>
-                
-              </article>
-            
-        </div>
+        <div class=\\"stack\\"> <article itemprop=\\"alumniOf\\" itemscope itemtype=\\"https://schema.org/Organization\\">
+    <header>
+      <h4><a href=\\"http://coderdojo.example.com/\\" itemprop=\\"url\\"><span itemprop=\\"name\\">CoderDojo</span></a></h4>
+    </header>
+    <section itemprop=\\"employee\\" itemscope itemtype=\\"https://schema.org/OrganizationRole\\">
+      <h5 itemprop=\\"roleName\\">Teacher</h5>
+      <p><time datetime=\\"2012-01-01\\" itemprop=\\"startDate\\">Jan 2012</time> – <time datetime=\\"2013-01-01\\" itemprop=\\"endDate\\">Jan 2013</time></p>
+      <div itemprop=\\"description\\"><p>Global movement of free coding clubs for young people.</p></div>
+      
+        <ul>
+          <li itemprop=\\"description\\"><p>Awarded 'Teacher of the Month'</p></li>
+        </ul>
+      
+    </section>
+  </article></div>
       </section>
      
       <section id=\\"education\\">
         <h3>Education</h3>
-        <div class=\\"stack\\">
-          
-              <article>
-                <header>
-                  <h4><a href=\\"https://www.ou.edu/\\">University of Oklahoma</a></h4>
-                  <div class=\\"meta\\">
-                    <strong>Information Technology</strong>
-                    <div><time datetime=\\"2011-06-01\\">Jun 2011</time> – <time datetime=\\"2014-01-01\\">Jan 2014</time></div>
-                  </div>
-                </header>
-                <p>Bachelor</p>
-                
-                  <h5>Courses</h5>
-                  <ul>
-                    <li><p>DB1101 - Basic SQL</p></li><li><p>CS2011 - Java Introduction</p></li>
-                  </ul>
-                
-              </article>
-            
-        </div>
+        <div class=\\"stack\\"> <article
+    itemprop=\\"alumniOf\\"
+    itemscope
+    itemtype=\\"https://schema.org/EducationalOrganization\\"
+  >
+    <header>
+      <h4><a href=\\"https://www.ou.edu/\\" itemprop=\\"url\\"><span itemprop=\\"name\\">University of Oklahoma</span></a></h4>
+      <div class=\\"meta\\"><strong itemprop=\\"department\\">Information Technology</strong></div>
+    </header>
+    <section itemprop=\\"alumni\\" itemscope itemtype=\\"https://schema.org/OrganizationRole\\">
+      <div class=\\"meta\\"><p><time datetime=\\"2011-06-01\\" itemprop=\\"startDate\\">Jun 2011</time> – <time datetime=\\"2014-01-01\\" itemprop=\\"endDate\\">Jan 2014</time></p></div>
+      <div itemprop=\\"description\\"><p>Bachelor</p></div>
+      
+        <ul>
+          <li itemscope itemtype=\\"https://schema.org/Course\\"><p>DB1101 - Basic SQL</p></li><li itemscope itemtype=\\"https://schema.org/Course\\"><p>CS2011 - Java Introduction</p></li>
+        </ul>
+      
+    </section>
+  </article></div>
       </section>
     
-        
-      <section id=\\"projects\\">
-        <h3>Projects</h3>
-        <div class=\\"stack\\">
-          
-              <article>
-                <header>
-                  <h4><a href=\\"missdirection.example.com\\">Miss Direction</a></h4>
-                  <div class=\\"meta\\">
-                    <div>
-                      <strong>Team lead and Designer</strong>
-                      at <strong>Smoogle</strong>
-                    </div>
-                    <div><time datetime=\\"2016-08-24\\">Aug 2016</time> – <time datetime=\\"2016-08-24\\">Aug 2016</time></div> <div>application</div>
-                  </div>
-                </header>
-                <p>A mapping engine that misguides you</p>
-                
-                  <ul>
-                    <li><p>Won award at AIHacks 2016</p></li><li><p>Built by all women team of newbie programmers</p></li><li><p>Using modern technologies such as GoogleMaps, Chrome Extension and Javascript</p></li>
-                  </ul>
-                
-                
-                  <ul class=\\"tag-list\\">
-                    <li>GoogleMaps</li><li>Chrome Extension</li><li>Javascript</li>
-                  </ul>
-                
-              </article>
-            
-        </div>
-      </section>
-     
+      
       <section id=\\"awards\\">
         <h3>Awards</h3>
-        <div class=\\"stack\\">
+        <dl class=\\"stack\\">
           
-              <article>
-                <header>
-                  <h4>Digital Compression Pioneer Award</h4>
-                  <div class=\\"meta\\">
-                    <div>Awarded by <strong>Techcrunch</strong></div> <time datetime=\\"2014-11-01\\">Nov 2014</time>
-                  </div>
-                </header>
-                <p>There is no spoon.</p>
-              </article>
+              <div itemprop=\\"award\\">
+                <dt>Digital Compression Pioneer Award</dt>
+                <dd class=\\"meta\\">
+                  <div>Awarded by <strong>Techcrunch</strong></div> <time datetime=\\"2014-11-01\\" >Nov 2014</time>
+                </dd>
+                <dd><p>There is no spoon.</p></dd>
+              </div>
             
-        </div>
+        </dl>
       </section>
-     
-        
+      
       <section id=\\"publications\\">
         <h3>Publications</h3>
-        <div class=\\"stack\\">
+        <dl class=\\"stack\\">
           
-              <article>
-                <header>
-                  <h4><a href=\\"http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)\\">Video compression for 3d media</a></h4>
-                  <div class=\\"meta\\">
-                    <div>Published by <strong>Hooli</strong></div>
-                    <time datetime=\\"2014-10-01\\">Oct 2014</time>
-                  </div>
-                </header>
-                <p>Innovative middle-out compression algorithm that changes the way we store data.</p>
-              </article>
+              <div itemprop=\\"owns\\" itemscope itemtype=\\"https://schema.org/CreativeWork\\">
+                <dt><a href=\\"http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)\\" itemprop=\\"url\\"><span itemprop=\\"name\\">Video compression for 3d media</span></a></dt>
+                <dd class=\\"meta\\" itemprop=\\"publisher\\" itemscope itemtype=\\"https://schema.org/Organization\\">
+                  Published by <strong itemprop=\\"name\\">Hooli</strong>
+                </dd>
+                <dd class=\\"meta\\" itemprop=\\"dateCreated\\"><time datetime=\\"2014-10-01\\" >Oct 2014</time></dd>
+                <dd itemprop=\\"abstract\\"><p>Innovative middle-out compression algorithm that changes the way we store data.</p></dd>
+              </div>
             
-        </div>
+        </dl>
       </section>
-     
+    
+      
       <section id=\\"skills\\">
         <h3>Skills</h3>
-        <div class=\\"grid-list\\">
+        <dl class=\\"grid-list\\">
           
-              <div>
-                <h4>Web Development</h4>
-                
-                  <ul class=\\"tag-list\\">
-                    <li>HTML</li><li>CSS</li><li>Javascript</li>
-                  </ul>
-                
+              <div class=\\"tag-list\\" itemprop=\\"knowsAbout\\" itemscope itemtype=\\"https://schema.org/Occupation\\">
+                <dt><span itemprop=\\"name\\">Web Development</span></dt>
+                <dd itemprop=\\"skills\\">HTML</dd><dd itemprop=\\"skills\\">CSS</dd><dd itemprop=\\"skills\\">Javascript</dd>
               </div>
             
-              <div>
-                <h4>Compression</h4>
-                
-                  <ul class=\\"tag-list\\">
-                    <li>Mpeg</li><li>MP4</li><li>GIF</li>
-                  </ul>
-                
+              <div class=\\"tag-list\\" itemprop=\\"knowsAbout\\" itemscope itemtype=\\"https://schema.org/Occupation\\">
+                <dt><span itemprop=\\"name\\">Compression</span></dt>
+                <dd itemprop=\\"skills\\">Mpeg</dd><dd itemprop=\\"skills\\">MP4</dd><dd itemprop=\\"skills\\">GIF</dd>
               </div>
             
-        </div>
+        </dl>
       </section>
      
       <section id=\\"languages\\">
         <h3>Languages</h3>
-        <div class=\\"grid-list\\">
-          <div><h4>English</h4> Native speaker</div>
-        </div>
-      </section>
-    
-        
-      <section id=\\"interests\\">
-        <h3>Interests</h3>
-        <div class=\\"grid-list\\">
+        <dl class=\\"grid-list\\">
           
-              <div>
-                <h4>Wildlife</h4>
-                
-                  <ul class=\\"tag-list\\">
-                    <li>Ferrets</li><li>Unicorns</li>
-                  </ul>
-                
+              <div itemprop=\\"knowsLanguage\\" itemscope itemtype=\\"https://schema.org/Language\\">
+                <dt itemprop=\\"name\\">English</dt>
+                <dd itemprop=\\"description\\">Native speaker</dd>
               </div>
             
-        </div>
+        </dl>
       </section>
      
+      <section id=\\"interests\\">
+        <h3>Interests</h3>
+        <dl class=\\"grid-list\\">
+          
+              <div class=\\"tag-list\\" itemprop=\\"knowsAbout\\" itemscope itemtype=\\"https://schema.org/Thing\\">
+                <dt><span itemprop=\\"name\\">Wildlife</span></dt>
+                <dd itemprop=\\"alternateName\\">Ferrets</dd><dd itemprop=\\"alternateName\\">Unicorns</dd>
+              </div>
+            
+        </dl>
+      </section>
+    
+      
       <section id=\\"references\\">
         <h3>References</h3>
         <div class=\\"stack\\">
           
-              <blockquote>
-                <p>It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.</p>
+              <blockquote itemprop=\\"subjectOf\\" itemscope itemtype=\\"https://schema.org/Statement\\">
+                <div itemprop=\\"text\\"><p>It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.</p></div>
                 
-                  <p>
-                    <cite>Erlich Bachman</cite>
+                  <p itemprop=\\"author\\" itemscope itemtype=\\"https://schema.org/Person\\">
+                    <cite itemprop=\\"name\\">Erlich Bachman</cite>
                   </p>
                 
               </blockquote>
             
         </div>
       </section>
+     
+      <section id=\\"projects\\">
+        <h3>Projects</h3>
+        <div class=\\"stack\\"> <article itemprop=\\"alumniOf\\" itemscope itemtype=\\"https://schema.org/Project\\">
+    <h4><a href=\\"missdirection.example.com\\" itemprop=\\"url\\"><span itemprop=\\"name\\">Miss Direction</span></a></h4>
+    <span itemprop=\\"parentOrganization\\" itemscope itemtype=\\"https://schema.org/Organization\\"
+      ><meta itemprop=\\"name\\" content=\\"Smoogle\\"
+    /></span>
     
+      <section itemprop=\\"alumni\\" itemscope itemtype=\\"https://schema.org/Role\\">
+        <p>
+          <span itemprop=\\"roleName\\">Team lead and Designer</span>  at <strong>Smoogle</strong>
+        </p>
+        <p><time datetime=\\"2016-08-24\\" itemprop=\\"startDate\\">Aug 2016</time> – <time datetime=\\"2016-08-24\\" itemprop=\\"endDate\\">Aug 2016</time></p>
+        <p itemprop=\\"additionalType\\">application</p>
+      </section>
+    
+    <div itemprop=\\"description\\"><p>A mapping engine that misguides you</p></div>
+    
+      <ul>
+        <li itemprop=\\"description\\"><p>Won award at AIHacks 2016</p></li><li itemprop=\\"description\\"><p>Built by all women team of newbie programmers</p></li><li itemprop=\\"description\\"><p>Using modern technologies such as GoogleMaps, Chrome Extension and Javascript</p></li>
+      </ul>
+    
+    
+      <ul itemprop=\\"keywords\\" class=\\"tag-list\\">
+        <li>GoogleMaps</li><li>Chrome Extension</li><li>Javascript</li>
+      </ul>
+    
+  </article></div>
+      </section>
+     
+      <footer id=\\"meta\\" itemprop=\\"owns\\" itemscope itemtype=\\"https://schema.org/TextDigitalDocument\\">
+         <p><a href=\\"https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json\\" itemprop=\\"sameAs\\"><span itemprop=\\"\\">canonical resume.json file</span></a></p> 
+         <p>version v1.0.0</p> 
+         <p>last modified <time datetime=\\"2017-12-24T15:53:00\\" itemprop=\\"dateModified\\">12/24/2017, 3:53:00 PM</time></p> 
+      </footer>
+    
+    </article>
+  
       </body>
     </html>"
 `;
