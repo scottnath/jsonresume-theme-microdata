@@ -1,0 +1,308 @@
+{
+  "certificates": [
+    {
+      "url": "https://www.linkedin.com/learning/python-essential-training-18764650/getting-started-with-python",
+      "name": "Python Essential Training",
+      "date": "2023-12-14",
+      "issuer": "LinkedIn Learning"
+    }
+  ],
+  "basics": {
+    "profiles": [
+      {
+        "url": "https://mastodon.social/@scottnath",
+        "username": "scottnath@mastodon.social",
+        "network": "Mastodon"
+      },
+      {
+        "url": "https://dev.to/scottnath",
+        "username": "scottnath",
+        "network": "DEV"
+      },
+      {
+        "url": "https://github.com/scottnath",
+        "username": "scottnath",
+        "network": "GitHub"
+      },
+      {
+        "url": "https://linkedin.com/in/scottnath",
+        "username": "scottnath",
+        "network": "LinkedIn"
+      }
+    ],
+    "summary": "Scott Nath is a senior web developer and actor living in New York State with extensive experience creating full-stack apps and design systems.",
+    "phone": "(212) 555-1212",
+    "location": {
+      "postalCode": "10001",
+      "city": "New York",
+      "countryCode": "US",
+      "region": "NYC"
+    },
+    "name": "Scott Nath",
+    "label": "Open Source Developer",
+    "url": "https://scottnath.com",
+    "email": "jsonresume@scottnath.com",
+    "pronouns": "he/him",
+    "image": "https://scottnath.com/scott-nath-profile-photo.avif"
+  },
+  "education": [
+    {
+      "studyType": "Bachelor",
+      "area": "Theatre major",
+      "startDate": "1990-09-01",
+      "endDate": "1994-12-15",
+      "url": "https://www.music.iastate.edu/theatre",
+      "institution": "Iowa State University"
+    }
+  ],
+  "publications": [
+    {
+      "summary": "Step-by-step guide to create sturdy, portable stand-up controllers for video games using an X-Arcade Dual Joystick Controller and an adult-sized aluminum walker.",
+      "name": "Stand Up Arcade Controllers Using Adult Walkers",
+      "releaseDate": "2015-01-25",
+      "url": "https://www.instructables.com/Stand-Up-Arcade-Controllers-using-Adult-Walkers/",
+      "publisher": "Instrucables"
+    },
+    {
+      "summary": "Step-by-step guide with linked source code to create a wi-fi streaming camera using a Raspberry Pi",
+      "name": "Runnerpi: a Wifi-streaming POV Camera",
+      "releaseDate": "2015-06-06",
+      "url": "https://www.instructables.com/Runnerpi-a-wifi-streaming-POV-camera/",
+      "publisher": "Instrucables"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Gardening",
+      "keywords": ["kale", "flowers", "compost"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "The Meowiest of Meowville",
+      "summary": "For the one who is definitely the meowiest in all of Meowville - otherwise known as Purrtown ACK!",
+      "date": "2024-04-29",
+      "awarder": "Meowville"
+    }
+  ],
+  "skills": [
+    {
+      "level": "Senior",
+      "name": "Languages",
+      "itemtype": "ComputerLanguage",
+      "keywords": ["Javascript", "Typescript", "CSS", "HTML", "Bash/Shell", "Gherkin", "Python", "PHP"]
+    },
+    {
+      "level": "Senior",
+      "name": "Testing & QA",
+      "itemtype": "SoftwareSourceCode",
+      "keywords": [
+        "accessibility",
+        "UI Unit Testing",
+        "Testing-Library",
+        "Jest",
+        "Playwright",
+        "Vitest",
+        "Chromatic",
+        "Test driven development (TDD)",
+        "Screen reader testing"
+      ]
+    },
+    {
+      "level": "Senior",
+      "name": "DevOps",
+      "itemtype": "SoftwareSourceCode",
+      "keywords": ["GitHub Actions", "CI/CD", "Automated Testing", "Travis", "GitHub", "Kubernetes"]
+    },
+    {
+      "level": "Senior",
+      "name": "UI Components",
+      "itemtype": "SoftwareSourceCode",
+      "keywords": ["Web Components", "VueJS", "Lit", "Sass", "HandlebarsJS", "ReactJS", "AngularJS"]
+    },
+    {
+      "level": "Senior",
+      "name": "Soft Skills",
+      "keywords": [
+        "Agile",
+        "honest and clear communicator",
+        "Design Thinking",
+        "developer advocacy",
+        "developer translation"
+      ]
+    },
+    {
+      "level": "Senior",
+      "name": "Libraries & Tools",
+      "itemtype": "SoftwareSourceCode",
+      "keywords": [
+        "NodeJS ",
+        "Vite",
+        "Storybook",
+        "LangChain AI",
+        "Docker",
+        "GraphQL",
+        "ExpressJS",
+        "Octokit",
+        "Wordpress",
+        "i18n",
+        "Microdata"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "startDate": "2000-01-01",
+      "endDate": "2001-01-01",
+      "position": "Volunteer Person",
+      "summary": "This is an entry for volunteer so I have data to test with.",
+      "url": "https://theatrepugetsound.org/",
+      "organization": "Theatre Puget Sound",
+      "highlights": ["A very important and helpful thing", "Much help, so volunting"]
+    }
+  ],
+  "projects": [
+    {
+      "startDate": "2023-04-01",
+      "name": "StoryDocker",
+      "url": "https://github.com/storydocker",
+      "description": "Storybook, but as a microservice",
+      "Type": "open source",
+      "roles": ["Architect", "Owner"],
+      "highlights": [
+        "Implemented Storybook as a microservice using Docker Containers released as an open-source tool (StockDocker) able to be installed with zero dependencies and which features a full testing suite enabling prototyping and testing UI and user experience via Storybook’s testing-library integrations.",
+        "Eliminated the need for multiple implementations of Storybook (previously one for each application development environment) by introducing the ability for Storybook to run multiple JS frameworks out-of-the-box."
+      ]
+    },
+    {
+      "startDate": "2012-01-01",
+      "entity": "videogame.camp",
+      "name": "The Chase",
+      "endDate": "2014-01-01",
+      "keywords": ["raspberry pi", "linux"],
+      "url": "https://videogame.camp/the-chase/about/",
+      "description": "A high-tech game of hide and seek",
+      "Type": "meatspace",
+      "roles": ["Inventor", "Developer"],
+      "highlights": [
+        "Created a raspberry pi-based remote camera live projection system",
+        "Hosted multiple in-person events where the public had to look for the ghost in the crowd"
+      ]
+    },
+    {
+      "startDate": "2023-08-01",
+      "name": "Profile Components",
+      "keywords": ["web components", "native browser APIs", "evergreen"],
+      "url": "https://github.com/scottnath/profile-components",
+      "description": "zero dependency native web components to present user profiles",
+      "Type": "open source",
+      "roles": ["Architect", "Developer"],
+      "highlights": [
+        "Created native web components to learn web components",
+        "Created a set of zero dependency native web components to present user profiles from various social networks by querying the site APIs for the latest user profile",
+        "Styling to web standards and cross-browser compatibility using the newest browser-supported CSS functionality like nesting and container-queries",
+        "Architected fullstack DevOps solutions to ensure overall quality of the project including a Storybook implementation with user interface design testing and VRT (visual regression testing), CI/CD for automated deployment, releases, and testing, and auto-generated PRs for dependency updates",
+        "Test driven development using the native Node test runner, node:test, Guidepup for screen reader and web accessibility assurance."
+      ]
+    },
+    {
+      "startDate": "2014-01-01",
+      "name": "Pattern Library",
+      "endDate": "2016-01-01",
+      "url": "https://github.com/pattern-library",
+      "description": "A system-agnostic HTML pattern library",
+      "Type": "open source",
+      "roles": ["Architect", "Developer"],
+      "highlights": [
+        "A Node.js storage-and-sharing solution for functioning UX patterns.",
+        "My first component library development system",
+        "Already into cross-framework in 2015!",
+        "Allowed usage of html/css/javascript across multiple systems and includes tools for *design-in-browser* methodologies."
+      ]
+    },
+    {
+      "startDate": "2016-01-01",
+      "name": "Punchcard CMS",
+      "endDate": "2018-12-31",
+      "url": "https://github.com/punchcard-cms",
+      "description": "Headless Content Management System designed with content strategy at its heart. Built with Node.",
+      "Type": "open source",
+      "roles": ["Architect", "Developer"],
+      "highlights": [
+        "Designed and developed a server-side headless, open-source content management system built with a focus on quality through content-strategy reflecting real-world use cases and a lean Postgresql/postgres backend.",
+        "Architected full stack system architecture for auto-generated forms, localization, role-based administration, content approval workflows with revisioning, scheduled releases, caching, and subscriptions via webhooks."
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "native speaker"
+    }
+  ],
+  "work": [
+    {
+      "endDate": "2017-01-01",
+      "position": "Senior Frontend Developer",
+      "summary": "Streamlined access to Watson developer documentation by creating a new open-source content management system.",
+      "startDate": "2016-01-01",
+      "url": "https://www.ibm.com/watson",
+      "description": "Watson sparked curiosity around “machines that could think” and opened up the possibilities around how AI could be applied to business.",
+      "location": "New York, NY",
+      "name": "IBM Watson",
+      "highlights": [
+        "Partnered with the design team tasked with creating a developer-centric and accessible documentation site adhering to IBM Watson AI development teams’s technical specs, reducing 8 distributed systems to 1",
+        "Lead architect the end-to-end completion of a full-stack open-source project, Punchcard CMS, which required backend functionality for immutable data, content versioning, and subscribe-able publishing gateways."
+      ]
+    },
+    {
+      "endDate": "2020-04-01",
+      "position": "System Architect",
+      "summary": "Demonstrated continued success as the creator of architecture for the Watson Health Pattern & Asset Library (PAL).",
+      "startDate": "2017-01-01",
+      "url": "https://newsroom.ibm.com/2019-05-31-IBM-Watson-Health-Presents-New-Data-Demonstrating-Real-World-Progress-of-AI-in-Oncology-at-2019-ASCO-Annual-Meeting",
+      "description": "IBM Watson Health, working closely with startups and key partners, systematically gathers large amounts of health data, which can provide tailored insights to hospitals, physicians, insurers, researchers and even patients. (out of business)",
+      "location": "New York, NY",
+      "name": "IBM Watson Health",
+      "highlights": [
+        "Leadership role in the creation of Watson Health’s client-side design system for native and web applications.",
+        "Consolidated 3 disparate UI component libraries into 1 and standardized collaborative processes by architecting one design system which integrated UI design and inclusive user experiences for multiple teams."
+      ]
+    },
+    {
+      "endDate": "2023-05-15",
+      "position": "Senior Software Engineer",
+      "summary": "Directed all aspects of DevOps architecture for a multi-framework design system with Storybook while increasing performance and efficiency through the development and launch of automated tools and cross-org systems.",
+      "startDate": "2020-04-01",
+      "url": "https://www.ibm.com/case-studies/cio-office-turbonomic",
+      "description": "The Chief Information Officer (CIO) Organization leads IBM’s internal IT strategy and is responsible for delivering, securing, modernizing and supporting the IT solutions that IBMers use to do their jobs every day.",
+      "location": "New York, NY",
+      "name": "IBM CIO",
+      "highlights": [
+        "Leader in implementing the Figma designs, a/b testing, i18n internationalization and developer processes on a\ncomplete rebuild of the employee portal, which combined 5 teams into 1 cross-functional collaborating team",
+        "Leadership role as the architect of an Innersource multi-framework design system and front end software engineering environment and tooling for the simultaneous creation of Vanilla and Vue.js components.",
+        "Inherited an existing, hand-released component library project and integrated version control, automated semver releases, extensive testing, and CI/CD with consistent and trustable release naming and scheduling."
+      ]
+    },
+    {
+      "endDate": "2015-12-01",
+      "position": "Software Architect",
+      "summary": "Developed pixel-perfect HTML and CSS for customer-facing streaming applications.",
+      "startDate": "2006-11-01",
+      "url": "https://www.nbcuniversal.com/",
+      "description": "NBCUniversal is on of the world's leading media and entertainment companies.",
+      "location": "Times Square, NY",
+      "name": "NBC Universal",
+      "highlights": [
+        "Delivered reusable HTML/SaaS product while translating capabilities and features into in-depth documentation.",
+        "Created NBC’s WordPress system (NBCUPress) which included a focus on a reusable deployment system in PHP."
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Dave Thomas",
+      "reference": "Sir, this is a Wendy's."
+    }
+  ]
+}
