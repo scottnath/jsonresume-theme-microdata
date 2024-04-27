@@ -43,13 +43,13 @@ exports[`renders a resume 1`] = `
           
             <div class=\\"email\\">
               <dt><span class=\\"sr-only\\">email</span></dt>
-              <dd><a href=\\"mailto:richard.hendriks@mail.com\\" itemprop=\\"email\\">richard.hendriks@mail.com</a></dd>
+              <dd itemprop=\\"email\\"><a href=\\"mailto:richard.hendriks@mail.com\\">richard.hendriks@mail.com</a></dd>
             </div>
           
           
             <div class=\\"phone\\">
               <dt><span class=\\"sr-only\\">phone</span></dt>
-              <dd><a href=\\"tel:(912)555-4321\\" itemprop=\\"phone\\">(912) 555-4321</a></dd>
+              <dd itemprop=\\"telephone\\"><a href=\\"tel:(912)555-4321\\">(912) 555-4321</a></dd>
             </div>
           
           
@@ -174,17 +174,13 @@ exports[`renders a resume 1`] = `
       <section id=\\"skills\\">
         <h3>Skills</h3>
         <dl class=\\"grid-list\\">
-          
-              <div class=\\"tag-list\\" itemprop=\\"knowsAbout\\" itemscope itemtype=\\"https://schema.org/Occupation\\">
-                <dt><span itemprop=\\"name\\">Web Development</span></dt>
-                <dd itemprop=\\"skills\\">HTML</dd><dd itemprop=\\"skills\\">CSS</dd><dd itemprop=\\"skills\\">Javascript</dd>
-              </div>
-            
-              <div class=\\"tag-list\\" itemprop=\\"knowsAbout\\" itemscope itemtype=\\"https://schema.org/Occupation\\">
-                <dt><span itemprop=\\"name\\">Compression</span></dt>
-                <dd itemprop=\\"skills\\">Mpeg</dd><dd itemprop=\\"skills\\">MP4</dd><dd itemprop=\\"skills\\">GIF</dd>
-              </div>
-            
+           <div class=\\"tag-list\\" itemprop=\\"knowsAbout\\" itemscope itemtype=\\"https://schema.org/Thing\\">
+              <dt><span itemprop=\\"description\\">Web Development</span></dt>
+              <dd itemprop=\\"name\\">HTML</dd><dd itemprop=\\"name\\">CSS</dd><dd itemprop=\\"name\\">Javascript</dd>
+            </div> <div class=\\"tag-list\\" itemprop=\\"knowsAbout\\" itemscope itemtype=\\"https://schema.org/Thing\\">
+              <dt><span itemprop=\\"description\\">Compression</span></dt>
+              <dd itemprop=\\"name\\">Mpeg</dd><dd itemprop=\\"name\\">MP4</dd><dd itemprop=\\"name\\">GIF</dd>
+            </div>
         </dl>
       </section>
      
