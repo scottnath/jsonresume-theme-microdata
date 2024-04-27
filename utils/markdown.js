@@ -1,4 +1,4 @@
-import micromark from 'micromark'
+import { micromark } from 'micromark'
 import striptags from 'striptags'
 
 /**

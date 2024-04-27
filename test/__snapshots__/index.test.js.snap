@@ -2,136 +2,136 @@
 
 exports[`renders a resume 1`] = `
 "<!doctype html>
-    <html lang=\\"en\\" style=\\"--color-background-light:lightgray; --color-background-dark:darkgray;\\">
+    <html lang="en" style="--color-background-light:lightgray; --color-background-dark:darkgray;">
       <head>
-        <meta charset=\\"utf-8\\" />
+        <meta charset="utf-8" />
         
     <title>Richard Hendriks</title>
-    <meta name=\\"description\\" content=\\"Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!\\" />
+    <meta name="description" content="Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!" />
   
-        <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1\\" />
-        <link rel=\\"stylesheet\\" href=\\"https://fonts.googleapis.com/css?family=Lato:400,700&display=swap\\" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" />
         <style>
           
         </style>
       </head>
       <body>
         
-    <article id=\\"resume\\" itemscope itemtype=\\"https://schema.org/Person\\">
+    <article id="resume" itemscope itemtype="https://schema.org/Person">
       
-    <header class=\\"masthead\\">
-      <img src=\\"image.jpg\\" alt=\\"Richard Hendriks's picture\\" itemprop=\\"image\\" />
+    <header class="masthead">
+      <img src="image.jpg" alt="Richard Hendriks's picture" itemprop="image" />
       <div>
-        <h1 itemprop=\\"name\\">Richard Hendriks</h1>
-        <h2 itemprop=\\"jobTitle\\">Programmer</h2>
+        <h1 itemprop="name">Richard Hendriks</h1>
+        <h2 itemprop="jobTitle">Programmer</h2>
       </div>
-      <div itemprop=\\"description\\"><p>Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!</p></div>
+      <div itemprop="description"><p>Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!</p></div>
       <address>
-        <dl class=\\"icon-list\\">
+        <dl class="icon-list">
           
-            <div class=\\"location\\">
-              <dt><span class=\\"sr-only\\">location</span></dt>
+            <div class="location">
+              <dt><span class="sr-only">location</span></dt>
               <dd>
-      <div itemprop=\\"address\\" itemscope itemtype=\\"https://schema.org/PostalAddress\\">
-        <span itemprop=\\"addressRegion\\">California</span>
-        <span itemprop=\\"addressLocality\\">San Francisco</span>
-        <span itemprop=\\"addressCountry\\">US</span>
+      <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+        <span itemprop="addressRegion">California</span>
+        <span itemprop="addressLocality">San Francisco</span>
+        <span itemprop="addressCountry">US</span>
       </div>
     </dd>
             </div>
           
           
-            <div class=\\"email\\">
-              <dt><span class=\\"sr-only\\">email</span></dt>
-              <dd itemprop=\\"email\\"><a href=\\"mailto:richard.hendriks@mail.com\\">richard.hendriks@mail.com</a></dd>
+            <div class="email">
+              <dt><span class="sr-only">email</span></dt>
+              <dd itemprop="email"><a href="mailto:richard.hendriks@mail.com">richard.hendriks@mail.com</a></dd>
             </div>
           
           
-            <div class=\\"phone\\">
-              <dt><span class=\\"sr-only\\">phone</span></dt>
-              <dd itemprop=\\"telephone\\"><a href=\\"tel:(912)555-4321\\">(912) 555-4321</a></dd>
+            <div class="phone">
+              <dt><span class="sr-only">phone</span></dt>
+              <dd itemprop="telephone"><a href="tel:(912)555-4321">(912) 555-4321</a></dd>
             </div>
           
           
-            <div class=\\"url\\">
-              <dt><span class=\\"sr-only\\">url</span></dt>
-              <dd><a href=\\"http://richardhendricks.example.com\\" itemprop=\\"url\\">richardhendricks.example.com</a></dd>
+            <div class="url">
+              <dt><span class="sr-only">url</span></dt>
+              <dd><a href="http://richardhendricks.example.com" itemprop="url">richardhendricks.example.com</a></dd>
             </div>
           
         </dl>
         
-      <dl  class=\\"icon-list\\">
-         <div itemprop=\\"ContactPoint\\" itemscope itemtype=\\"https://schema.org/ContactPoint\\">
-            <dt style=\\"--svg-network:url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22feather%20feather-twitter%22%3E%3Cpath%20d%3D%22M23%203a10.9%2010.9%200%200%201-3.14%201.53%204.48%204.48%200%200%200-7.86%203v1A10.66%2010.66%200%200%201%203%204s-4%209%205%2013a11.64%2011.64%200%200%201-7%202c9%205%2020%200%2020-11.5a4.5%204.5%200%200%200-.08-.83A7.72%207.72%200%200%200%2023%203z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E')\\" itemprop=\\"contactType\\"><span class=\\"sr-only\\">Twitter</span></dt>
-            <dd data-network=\\"Twitter\\"><a href=\\"\\" itemprop=\\"url\\"><span itemprop=\\"identifier\\">neutralthoughts</span></a></dd>
-          </div> <div itemprop=\\"ContactPoint\\" itemscope itemtype=\\"https://schema.org/ContactPoint\\">
-            <dt style=\\"--svg-network:url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22feather%20feather-user%22%3E%3Cpath%20d%3D%22M20%2021v-2a4%204%200%200%200-4-4H8a4%204%200%200%200-4%204v2%22%3E%3C%2Fpath%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%227%22%20r%3D%224%22%3E%3C%2Fcircle%3E%3C%2Fsvg%3E')\\" itemprop=\\"contactType\\"><span class=\\"sr-only\\">SoundCloud</span></dt>
-            <dd data-network=\\"SoundCloud\\"><a href=\\"https://soundcloud.example.com/dandymusicnl\\" itemprop=\\"url\\"><span itemprop=\\"identifier\\">dandymusicnl</span></a></dd>
+      <dl  class="icon-list">
+         <div itemprop="ContactPoint" itemscope itemtype="https://schema.org/ContactPoint">
+            <dt style="--svg-network:url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22feather%20feather-twitter%22%3E%3Cpath%20d%3D%22M23%203a10.9%2010.9%200%200%201-3.14%201.53%204.48%204.48%200%200%200-7.86%203v1A10.66%2010.66%200%200%201%203%204s-4%209%205%2013a11.64%2011.64%200%200%201-7%202c9%205%2020%200%2020-11.5a4.5%204.5%200%200%200-.08-.83A7.72%207.72%200%200%200%2023%203z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E')" itemprop="contactType"><span class="sr-only">Twitter</span></dt>
+            <dd data-network="Twitter"><a href="" itemprop="url"><span itemprop="identifier">neutralthoughts</span></a></dd>
+          </div> <div itemprop="ContactPoint" itemscope itemtype="https://schema.org/ContactPoint">
+            <dt style="--svg-network:url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22feather%20feather-user%22%3E%3Cpath%20d%3D%22M20%2021v-2a4%204%200%200%200-4-4H8a4%204%200%200%200-4%204v2%22%3E%3C%2Fpath%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%227%22%20r%3D%224%22%3E%3C%2Fcircle%3E%3C%2Fsvg%3E')" itemprop="contactType"><span class="sr-only">SoundCloud</span></dt>
+            <dd data-network="SoundCloud"><a href="https://soundcloud.example.com/dandymusicnl" itemprop="url"><span itemprop="identifier">dandymusicnl</span></a></dd>
           </div>
       </dl>
     
       </address>
     </header>
    
-      <section id=\\"work\\">
+      <section id="work">
         <h3>Work</h3>
-        <div class=\\"stack\\"> <article itemprop=\\"alumniOf\\" itemscope itemtype=\\"https://schema.org/Organization\\">
+        <div class="stack"> <article itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
     <header>
-      <h4><a href=\\"http://piedpiper.example.com\\" itemprop=\\"url\\"><span itemprop=\\"name\\">Pied Piper</span></a></h4>
-      <meta itemprop=\\"location\\" content=\\"Palo Alto, CA\\" />
-      <div class=\\"meta\\" itemprop=\\"description\\">Awesome compression company</div>
+      <h4><a href="http://piedpiper.example.com" itemprop="url"><span itemprop="name">Pied Piper</span></a></h4>
+      <meta itemprop="location" content="Palo Alto, CA" />
+      <div class="meta" itemprop="description">Awesome compression company</div>
     </header>
-    <section class=\\"timeline\\" itemprop=\\"employee\\" itemscope itemtype=\\"https://schema.org/EmployeeRole\\">
-      <h5 itemprop=\\"roleName\\">CEO/President</h5>
-      <div class=\\"meta\\">
-        <p><time datetime=\\"2013-12-01\\" itemprop=\\"startDate\\">Dec 2013</time> – <time datetime=\\"2014-12-01\\" itemprop=\\"endDate\\">Dec 2014</time></p> <p>Palo Alto, CA</p>
+    <section class="timeline" itemprop="employee" itemscope itemtype="https://schema.org/EmployeeRole">
+      <h5 itemprop="roleName">CEO/President</h5>
+      <div class="meta">
+        <p><time datetime="2013-12-01" itemprop="startDate">Dec 2013</time> – <time datetime="2014-12-01" itemprop="endDate">Dec 2014</time></p> <p>Palo Alto, CA</p>
       </div>
-      <div itemprop=\\"description\\"><p>Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.</p></div>
+      <div itemprop="description"><p>Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.</p></div>
       
         <ul>
-          <li itemprop=\\"disambiguatingDescription\\"><p>Build an algorithm for artist to detect if their music was violating copy right infringement laws</p></li><li itemprop=\\"disambiguatingDescription\\"><p>Successfully won Techcrunch Disrupt</p></li><li itemprop=\\"disambiguatingDescription\\"><p>Optimized an algorithm that holds the current world record for Weisman Scores</p></li>
+          <li itemprop="disambiguatingDescription"><p>Build an algorithm for artist to detect if their music was violating copy right infringement laws</p></li><li itemprop="disambiguatingDescription"><p>Successfully won Techcrunch Disrupt</p></li><li itemprop="disambiguatingDescription"><p>Optimized an algorithm that holds the current world record for Weisman Scores</p></li>
         </ul>
       
     </section>
   </article></div>
       </section>
      
-      <section id=\\"volunteer\\">
+      <section id="volunteer">
         <h3>Volunteer</h3>
-        <div class=\\"stack\\"> <article itemprop=\\"alumniOf\\" itemscope itemtype=\\"https://schema.org/Organization\\">
+        <div class="stack"> <article itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
     <header>
-      <h4><a href=\\"http://coderdojo.example.com/\\" itemprop=\\"url\\"><span itemprop=\\"name\\">CoderDojo</span></a></h4>
+      <h4><a href="http://coderdojo.example.com/" itemprop="url"><span itemprop="name">CoderDojo</span></a></h4>
     </header>
-    <section itemprop=\\"employee\\" itemscope itemtype=\\"https://schema.org/OrganizationRole\\">
-      <h5 itemprop=\\"roleName\\">Teacher</h5>
-      <p><time datetime=\\"2012-01-01\\" itemprop=\\"startDate\\">Jan 2012</time> – <time datetime=\\"2013-01-01\\" itemprop=\\"endDate\\">Jan 2013</time></p>
-      <div itemprop=\\"description\\"><p>Global movement of free coding clubs for young people.</p></div>
+    <section itemprop="employee" itemscope itemtype="https://schema.org/OrganizationRole">
+      <h5 itemprop="roleName">Teacher</h5>
+      <p><time datetime="2012-01-01" itemprop="startDate">Jan 2012</time> – <time datetime="2013-01-01" itemprop="endDate">Jan 2013</time></p>
+      <div itemprop="description"><p>Global movement of free coding clubs for young people.</p></div>
       
         <ul>
-          <li itemprop=\\"description\\"><p>Awarded 'Teacher of the Month'</p></li>
+          <li itemprop="description"><p>Awarded 'Teacher of the Month'</p></li>
         </ul>
       
     </section>
   </article></div>
       </section>
      
-      <section id=\\"education\\">
+      <section id="education">
         <h3>Education</h3>
-        <div class=\\"stack\\"> <article
-    itemprop=\\"alumniOf\\"
+        <div class="stack"> <article
+    itemprop="alumniOf"
     itemscope
-    itemtype=\\"https://schema.org/EducationalOrganization\\"
+    itemtype="https://schema.org/EducationalOrganization"
   >
     <header>
-      <h4><a href=\\"https://www.ou.edu/\\" itemprop=\\"url\\"><span itemprop=\\"name\\">University of Oklahoma</span></a></h4>
-      <div class=\\"meta\\"><strong itemprop=\\"department\\">Information Technology</strong></div>
+      <h4><a href="https://www.ou.edu/" itemprop="url"><span itemprop="name">University of Oklahoma</span></a></h4>
+      <div class="meta"><strong itemprop="department">Information Technology</strong></div>
     </header>
-    <section itemprop=\\"alumni\\" itemscope itemtype=\\"https://schema.org/OrganizationRole\\">
-      <div class=\\"meta\\"><p><time datetime=\\"2011-06-01\\" itemprop=\\"startDate\\">Jun 2011</time> – <time datetime=\\"2014-01-01\\" itemprop=\\"endDate\\">Jan 2014</time></p></div>
-      <div itemprop=\\"description\\"><p>Bachelor</p></div>
+    <section itemprop="alumni" itemscope itemtype="https://schema.org/OrganizationRole">
+      <div class="meta"><p><time datetime="2011-06-01" itemprop="startDate">Jun 2011</time> – <time datetime="2014-01-01" itemprop="endDate">Jan 2014</time></p></div>
+      <div itemprop="description"><p>Bachelor</p></div>
       
         <ul>
-          <li itemscope itemtype=\\"https://schema.org/Course\\"><p>DB1101 - Basic SQL</p></li><li itemscope itemtype=\\"https://schema.org/Course\\"><p>CS2011 - Java Introduction</p></li>
+          <li itemscope itemtype="https://schema.org/Course"><p>DB1101 - Basic SQL</p></li><li itemscope itemtype="https://schema.org/Course"><p>CS2011 - Java Introduction</p></li>
         </ul>
       
     </section>
@@ -139,14 +139,14 @@ exports[`renders a resume 1`] = `
       </section>
     
       
-      <section id=\\"awards\\">
+      <section id="awards">
         <h3>Awards</h3>
-        <dl class=\\"stack\\">
+        <dl class="stack">
           
-              <div itemprop=\\"award\\">
+              <div itemprop="award">
                 <dt>Digital Compression Pioneer Award</dt>
-                <dd class=\\"meta\\">
-                  <div>Awarded by <strong>Techcrunch</strong></div> <time datetime=\\"2014-11-01\\" >Nov 2014</time>
+                <dd class="meta">
+                  <div>Awarded by <strong>Techcrunch</strong></div> <time datetime="2014-11-01" >Nov 2014</time>
                 </dd>
                 <dd><p>There is no spoon.</p></dd>
               </div>
@@ -154,70 +154,70 @@ exports[`renders a resume 1`] = `
         </dl>
       </section>
       
-      <section id=\\"publications\\">
+      <section id="publications">
         <h3>Publications</h3>
-        <dl class=\\"stack\\">
+        <dl class="stack">
           
-              <div itemprop=\\"owns\\" itemscope itemtype=\\"https://schema.org/CreativeWork\\">
-                <dt><a href=\\"http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)\\" itemprop=\\"url\\"><span itemprop=\\"name\\">Video compression for 3d media</span></a></dt>
-                <dd class=\\"meta\\" itemprop=\\"publisher\\" itemscope itemtype=\\"https://schema.org/Organization\\">
-                  Published by <strong itemprop=\\"name\\">Hooli</strong>
+              <div itemprop="owns" itemscope itemtype="https://schema.org/CreativeWork">
+                <dt><a href="http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)" itemprop="url"><span itemprop="name">Video compression for 3d media</span></a></dt>
+                <dd class="meta" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                  Published by <strong itemprop="name">Hooli</strong>
                 </dd>
-                <dd class=\\"meta\\" itemprop=\\"dateCreated\\"><time datetime=\\"2014-10-01\\" >Oct 2014</time></dd>
-                <dd itemprop=\\"abstract\\"><p>Innovative middle-out compression algorithm that changes the way we store data.</p></dd>
+                <dd class="meta" itemprop="dateCreated"><time datetime="2014-10-01" >Oct 2014</time></dd>
+                <dd itemprop="abstract"><p>Innovative middle-out compression algorithm that changes the way we store data.</p></dd>
               </div>
             
         </dl>
       </section>
     
       
-      <section id=\\"skills\\">
+      <section id="skills">
         <h3>Skills</h3>
-        <dl class=\\"grid-list\\">
-           <div class=\\"tag-list\\" itemprop=\\"knowsAbout\\" itemscope itemtype=\\"https://schema.org/Thing\\">
-              <dt><span itemprop=\\"description\\">Web Development</span></dt>
-              <dd itemprop=\\"name\\">HTML</dd><dd itemprop=\\"name\\">CSS</dd><dd itemprop=\\"name\\">Javascript</dd>
-            </div> <div class=\\"tag-list\\" itemprop=\\"knowsAbout\\" itemscope itemtype=\\"https://schema.org/Thing\\">
-              <dt><span itemprop=\\"description\\">Compression</span></dt>
-              <dd itemprop=\\"name\\">Mpeg</dd><dd itemprop=\\"name\\">MP4</dd><dd itemprop=\\"name\\">GIF</dd>
+        <dl class="grid-list">
+           <div class="tag-list" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Thing">
+              <dt><span itemprop="description">Web Development</span></dt>
+              <dd itemprop="name">HTML</dd><dd itemprop="name">CSS</dd><dd itemprop="name">Javascript</dd>
+            </div> <div class="tag-list" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Thing">
+              <dt><span itemprop="description">Compression</span></dt>
+              <dd itemprop="name">Mpeg</dd><dd itemprop="name">MP4</dd><dd itemprop="name">GIF</dd>
             </div>
         </dl>
       </section>
      
-      <section id=\\"languages\\">
+      <section id="languages">
         <h3>Languages</h3>
-        <dl class=\\"grid-list\\">
+        <dl class="grid-list">
           
-              <div itemprop=\\"knowsLanguage\\" itemscope itemtype=\\"https://schema.org/Language\\">
-                <dt itemprop=\\"name\\">English</dt>
-                <dd itemprop=\\"description\\">Native speaker</dd>
+              <div itemprop="knowsLanguage" itemscope itemtype="https://schema.org/Language">
+                <dt itemprop="name">English</dt>
+                <dd itemprop="description">Native speaker</dd>
               </div>
             
         </dl>
       </section>
      
-      <section id=\\"interests\\">
+      <section id="interests">
         <h3>Interests</h3>
-        <dl class=\\"grid-list\\">
+        <dl class="grid-list">
           
-              <div class=\\"tag-list\\" itemprop=\\"knowsAbout\\" itemscope itemtype=\\"https://schema.org/Thing\\">
-                <dt><span itemprop=\\"name\\">Wildlife</span></dt>
-                <dd itemprop=\\"alternateName\\">Ferrets</dd><dd itemprop=\\"alternateName\\">Unicorns</dd>
+              <div class="tag-list" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Thing">
+                <dt><span itemprop="name">Wildlife</span></dt>
+                <dd itemprop="alternateName">Ferrets</dd><dd itemprop="alternateName">Unicorns</dd>
               </div>
             
         </dl>
       </section>
     
       
-      <section id=\\"references\\">
+      <section id="references">
         <h3>References</h3>
-        <div class=\\"stack\\">
+        <div class="stack">
           
-              <blockquote itemprop=\\"subjectOf\\" itemscope itemtype=\\"https://schema.org/Statement\\">
-                <div itemprop=\\"text\\"><p>It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.</p></div>
+              <blockquote itemprop="subjectOf" itemscope itemtype="https://schema.org/Statement">
+                <div itemprop="text"><p>It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.</p></div>
                 
-                  <p itemprop=\\"author\\" itemscope itemtype=\\"https://schema.org/Person\\">
-                    <cite itemprop=\\"name\\">Erlich Bachman</cite>
+                  <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <cite itemprop="name">Erlich Bachman</cite>
                   </p>
                 
               </blockquote>
@@ -225,40 +225,40 @@ exports[`renders a resume 1`] = `
         </div>
       </section>
      
-      <section id=\\"projects\\">
+      <section id="projects">
         <h3>Projects</h3>
-        <div class=\\"stack\\"> <article itemprop=\\"alumniOf\\" itemscope itemtype=\\"https://schema.org/Project\\">
-    <h4><a href=\\"missdirection.example.com\\" itemprop=\\"url\\"><span itemprop=\\"name\\">Miss Direction</span></a></h4>
-    <span itemprop=\\"parentOrganization\\" itemscope itemtype=\\"https://schema.org/Organization\\"
-      ><meta itemprop=\\"name\\" content=\\"Smoogle\\"
+        <div class="stack"> <article itemprop="alumniOf" itemscope itemtype="https://schema.org/Project">
+    <h4><a href="missdirection.example.com" itemprop="url"><span itemprop="name">Miss Direction</span></a></h4>
+    <span itemprop="parentOrganization" itemscope itemtype="https://schema.org/Organization"
+      ><meta itemprop="name" content="Smoogle"
     /></span>
     
-      <section itemprop=\\"alumni\\" itemscope itemtype=\\"https://schema.org/Role\\">
+      <section itemprop="alumni" itemscope itemtype="https://schema.org/Role">
         <p>
-          <span itemprop=\\"roleName\\">Team lead and Designer</span>  at <strong>Smoogle</strong>
+          <span itemprop="roleName">Team lead and Designer</span>  at <strong>Smoogle</strong>
         </p>
-        <p><time datetime=\\"2016-08-24\\" itemprop=\\"startDate\\">Aug 2016</time> – <time datetime=\\"2016-08-24\\" itemprop=\\"endDate\\">Aug 2016</time></p>
-        <p itemprop=\\"additionalType\\">application</p>
+        <p><time datetime="2016-08-24" itemprop="startDate">Aug 2016</time> – <time datetime="2016-08-24" itemprop="endDate">Aug 2016</time></p>
+        <p itemprop="additionalType">application</p>
       </section>
     
-    <div itemprop=\\"description\\"><p>A mapping engine that misguides you</p></div>
+    <div itemprop="description"><p>A mapping engine that misguides you</p></div>
     
       <ul>
-        <li itemprop=\\"description\\"><p>Won award at AIHacks 2016</p></li><li itemprop=\\"description\\"><p>Built by all women team of newbie programmers</p></li><li itemprop=\\"description\\"><p>Using modern technologies such as GoogleMaps, Chrome Extension and Javascript</p></li>
+        <li itemprop="description"><p>Won award at AIHacks 2016</p></li><li itemprop="description"><p>Built by all women team of newbie programmers</p></li><li itemprop="description"><p>Using modern technologies such as GoogleMaps, Chrome Extension and Javascript</p></li>
       </ul>
     
     
-      <ul itemprop=\\"keywords\\" class=\\"tag-list\\">
+      <ul itemprop="keywords" class="tag-list">
         <li>GoogleMaps</li><li>Chrome Extension</li><li>Javascript</li>
       </ul>
     
   </article></div>
       </section>
      
-      <footer id=\\"meta\\" itemprop=\\"owns\\" itemscope itemtype=\\"https://schema.org/TextDigitalDocument\\">
-         <p><a href=\\"https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json\\" itemprop=\\"sameAs\\"><span itemprop=\\"\\">canonical resume.json file</span></a></p> 
+      <footer id="meta" itemprop="owns" itemscope itemtype="https://schema.org/TextDigitalDocument">
+         <p><a href="https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json" itemprop="sameAs"><span itemprop="">canonical resume.json file</span></a></p> 
          <p>version v1.0.0</p> 
-         <p>last modified <time datetime=\\"2017-12-24T15:53:00\\" itemprop=\\"dateModified\\">12/24/2017, 3:53:00 PM</time></p> 
+         <p>last modified <time datetime="2017-12-24T15:53:00" itemprop="dateModified">12/24/2017, 3:53:00 PM</time></p> 
       </footer>
     
     </article>

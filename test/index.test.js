@@ -1,7 +1,7 @@
 import { HtmlValidate } from 'html-validate'
 import { expect, it } from 'vitest'
 
-import sampleResume from 'resume-schema/sample.resume.json' assert { type: 'json' }
+import sampleResume from 'resume-schema/sample.resume.json'
 import { render } from '../index.js'
 
 const resume = {
