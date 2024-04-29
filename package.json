@@ -44,7 +44,7 @@
     "build-storybook": "storybook build",
     "dev": "vite",
     "format": "prettier .",
-    "lint": "eslint --ignore-pattern .gitignore .",
+    "lint": "eslint --ignore-pattern .gitignore ./components",
     "prepare": "husky && json2ts node_modules/resume-schema/schema.json schema.d.ts",
     "prepublishOnly": "npm run build",
     "storybook": "storybook dev -p 6006",

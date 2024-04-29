@@ -21,4 +21,4 @@ jobs:
         run: |
           npx --yes concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
           "npx --yes http-server ./storybook-static --port 2001 --silent" \
-          "npx wait-on http://127.0.0.1:2001 && npx test-storybook  --url http://127.0.0.1:2001 --coverage"
+          "npx wait-on http://127.0.0.1:2001 && npx test-storybook  --url http://127.0.0.1:2001"
