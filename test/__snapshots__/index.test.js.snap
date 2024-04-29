@@ -19,6 +19,7 @@ exports[`renders a resume 1`] = `
         
     <article id="resume" itemscope itemtype="https://schema.org/Person">
       
+  
     <header class="masthead">
       <img src="image.jpg" alt="Richard Hendriks's picture" itemprop="image" />
       <div>
@@ -60,7 +61,7 @@ exports[`renders a resume 1`] = `
           
         </dl>
         
-      <dl  class="icon-list">
+      <dl class="icon-list">
          <div itemprop="ContactPoint" itemscope itemtype="https://schema.org/ContactPoint">
             <dt style="--svg-network:url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22feather%20feather-twitter%22%3E%3Cpath%20d%3D%22M23%203a10.9%2010.9%200%200%201-3.14%201.53%204.48%204.48%200%200%200-7.86%203v1A10.66%2010.66%200%200%201%203%204s-4%209%205%2013a11.64%2011.64%200%200%201-7%202c9%205%2020%200%2020-11.5a4.5%204.5%200%200%200-.08-.83A7.72%207.72%200%200%200%2023%203z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E')" itemprop="contactType"><span class="sr-only">Twitter</span></dt>
             <dd data-network="Twitter"><a href="" itemprop="url"><span itemprop="identifier">neutralthoughts</span></a></dd>
@@ -72,7 +73,8 @@ exports[`renders a resume 1`] = `
     
       </address>
     </header>
-   
+  
+  
       <section id="work">
         <h3>Work</h3>
         <div class="stack"> <article itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
@@ -95,7 +97,8 @@ exports[`renders a resume 1`] = `
     </section>
   </article></div>
       </section>
-     
+    
+  
       <section id="volunteer">
         <h3>Volunteer</h3>
         <div class="stack"> <article itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
@@ -114,7 +117,8 @@ exports[`renders a resume 1`] = `
     </section>
   </article></div>
       </section>
-     
+    
+  
       <section id="education">
         <h3>Education</h3>
         <div class="stack"> <article
@@ -138,7 +142,7 @@ exports[`renders a resume 1`] = `
   </article></div>
       </section>
     
-      
+  
       <section id="awards">
         <h3>Awards</h3>
         <dl class="stack">
@@ -153,7 +157,9 @@ exports[`renders a resume 1`] = `
             
         </dl>
       </section>
-      
+    
+  
+  
       <section id="publications">
         <h3>Publications</h3>
         <dl class="stack">
@@ -170,7 +176,7 @@ exports[`renders a resume 1`] = `
         </dl>
       </section>
     
-      
+  
       <section id="skills">
         <h3>Skills</h3>
         <dl class="grid-list">
@@ -183,7 +189,8 @@ exports[`renders a resume 1`] = `
             </div>
         </dl>
       </section>
-     
+    
+  
       <section id="languages">
         <h3>Languages</h3>
         <dl class="grid-list">
@@ -195,7 +202,8 @@ exports[`renders a resume 1`] = `
             
         </dl>
       </section>
-     
+    
+  
       <section id="interests">
         <h3>Interests</h3>
         <dl class="grid-list">
@@ -208,7 +216,7 @@ exports[`renders a resume 1`] = `
         </dl>
       </section>
     
-      
+  
       <section id="references">
         <h3>References</h3>
         <div class="stack">
@@ -224,7 +232,8 @@ exports[`renders a resume 1`] = `
             
         </div>
       </section>
-     
+    
+  
       <section id="projects">
         <h3>Projects</h3>
         <div class="stack"> <article itemprop="alumniOf" itemscope itemtype="https://schema.org/Project">
@@ -254,13 +263,15 @@ exports[`renders a resume 1`] = `
     
   </article></div>
       </section>
-     
+    
+  
       <footer id="meta" itemprop="owns" itemscope itemtype="https://schema.org/TextDigitalDocument">
          <p><a href="https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json" itemprop="sameAs"><span itemprop="">canonical resume.json file</span></a></p> 
-         <p>version v1.0.0</p> 
+         <p>version <span itemprop="version">v1.0.0</span></p> 
          <p>last modified <time datetime="2017-12-24T15:53:00" itemprop="dateModified">12/24/2017, 3:53:00 PM</time></p> 
       </footer>
     
+
     </article>
   
       </body>

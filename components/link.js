@@ -17,6 +17,6 @@ export default function Link(url, name, urlprop = 'url', nameprop = 'name') {
   return name
     ? url
       ? html`<a href="${url}" ${urlprop && `itemprop="${urlprop}"`}><span itemprop="${nameprop}">${name}</span></a>`
-      : name
+      : `<span itemprop="${nameprop}">${name}</span>`
     : url && html`<a href="${url}" ${urlprop && `itemprop="${urlprop}"`}>${formatURL(url)}</a>`
 }

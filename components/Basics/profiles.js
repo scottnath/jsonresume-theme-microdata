@@ -3,16 +3,15 @@ import Icon from '../icon.js'
 import Link from '../link.js'
 
 /**
- * @param {import('../../schema.d.ts').ResumeSchema['profiles']} profiles
- * @param {string} [itemprop]
+ * @param {import('../../schema.d.ts').ResumeSchema['basics']} profiles
  * @returns {string | false}
  */
-export default function profiles(profiles = [], itemprop) {
+export default function profiles(profiles = []) {
   return (
     Array.isArray(profiles) &&
     profiles.length > 0 &&
     html`
-      <dl ${itemprop && `itemprop="${itemprop}"`} class="icon-list">
+      <dl class="icon-list">
         ${profiles.map(({ network, url, username }) => {
           let style = ''
           if (network) {
@@ -20,7 +19,6 @@ export default function profiles(profiles = [], itemprop) {
             if (icon) {
               style = `style="--svg-network:url('data:image/svg+xml, ${encodeURIComponent(icon)}')"`
             }
-            console.log('style', icon, style)
           }
           const content = username ? html`<span itemprop="identifier">${username}</span>` : Link(url)
           return html` <div itemprop="ContactPoint" itemscope itemtype="https://schema.org/ContactPoint">
