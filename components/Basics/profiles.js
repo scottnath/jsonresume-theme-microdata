@@ -2,8 +2,10 @@ import html from '../../utils/html.js'
 import Icon from '../icon.js'
 import Link from '../link.js'
 
+/** @typedef {NonNullable<import('../../schema.d.ts').ResumeSchema['basics']>['profiles']} Profiles */
+
 /**
- * @param {import('../../schema.d.ts').ResumeSchema['basics']} profiles
+ * @param {Profiles} profiles
  * @returns {string | false}
  */
 export default function profiles(profiles = []) {

@@ -255,7 +255,7 @@ exports[`renders a resume 1`] = `
       </section>
      
       <footer id="meta" itemprop="owns" itemscope itemtype="https://schema.org/TextDigitalDocument">
-         <p><a href="https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json" itemprop="sameAs"><span itemprop="">canonical resume.json file</span></a></p> 
+         <p><a href="https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json" itemprop="sameAs"><span >canonical resume.json file</span></a></p> 
          <p>version <span itemprop="version">v1.0.0</span></p> 
          <p>last modified <time datetime="2017-12-24T15:53:00" itemprop="dateModified">12/24/2017, 3:53:00 PM</time></p> 
       </footer>
