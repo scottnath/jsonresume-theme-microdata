@@ -95,6 +95,7 @@
     "prettier-plugin-packagejson": "2.5.0",
     "resume-schema": "1.0.0",
     "storybook": "^8.0.9",
+    "storydocker-utilities": "^0.0.20",
     "typescript": "5.4.5",
     "vite": "5.2.10",
     "vite-plugin-dts": "3.9.0",
