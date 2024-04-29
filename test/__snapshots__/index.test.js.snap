@@ -16,9 +16,7 @@ exports[`renders a resume 1`] = `
         </style>
       </head>
       <body>
-        
-    <article id="resume" itemscope itemtype="https://schema.org/Person">
-      
+         <article id="resume" itemscope itemtype="https://schema.org/Person">
   
     <header class="masthead">
       <img src="image.jpg" alt="Richard Hendriks's picture" itemprop="image" />
@@ -73,8 +71,7 @@ exports[`renders a resume 1`] = `
     
       </address>
     </header>
-  
-  
+   
       <section id="work">
         <h3>Work</h3>
         <div class="stack"> <article itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
@@ -97,8 +94,7 @@ exports[`renders a resume 1`] = `
     </section>
   </article></div>
       </section>
-    
-  
+     
       <section id="volunteer">
         <h3>Volunteer</h3>
         <div class="stack"> <article itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
@@ -117,8 +113,7 @@ exports[`renders a resume 1`] = `
     </section>
   </article></div>
       </section>
-    
-  
+     
       <section id="education">
         <h3>Education</h3>
         <div class="stack"> <article
@@ -157,9 +152,7 @@ exports[`renders a resume 1`] = `
             
         </dl>
       </section>
-    
-  
-  
+      
       <section id="publications">
         <h3>Publications</h3>
         <dl class="stack">
@@ -189,8 +182,7 @@ exports[`renders a resume 1`] = `
             </div>
         </dl>
       </section>
-    
-  
+     
       <section id="languages">
         <h3>Languages</h3>
         <dl class="grid-list">
@@ -202,8 +194,7 @@ exports[`renders a resume 1`] = `
             
         </dl>
       </section>
-    
-  
+     
       <section id="interests">
         <h3>Interests</h3>
         <dl class="grid-list">
@@ -232,8 +223,7 @@ exports[`renders a resume 1`] = `
             
         </div>
       </section>
-    
-  
+     
       <section id="projects">
         <h3>Projects</h3>
         <div class="stack"> <article itemprop="alumniOf" itemscope itemtype="https://schema.org/Project">
@@ -263,17 +253,14 @@ exports[`renders a resume 1`] = `
     
   </article></div>
       </section>
-    
-  
+     
       <footer id="meta" itemprop="owns" itemscope itemtype="https://schema.org/TextDigitalDocument">
          <p><a href="https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json" itemprop="sameAs"><span itemprop="">canonical resume.json file</span></a></p> 
          <p>version <span itemprop="version">v1.0.0</span></p> 
          <p>last modified <time datetime="2017-12-24T15:53:00" itemprop="dateModified">12/24/2017, 3:53:00 PM</time></p> 
       </footer>
     
-
-    </article>
-  
+</article> 
       </body>
     </html>"
 `;
