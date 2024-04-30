@@ -1,14 +1,3 @@
-@todo
-
-- add resume, as-is, to scottnath.com?
-  --- ARTICLE: added microdata, how, not sure what next
-- make dummy resume.json
-  --- can publish
-  --- go npm
-  --- ARTICLE
-- make LitElement with `resume="https://myresume.json"`
-- how to add to schema.d.ts?
-
 # jsonresume-theme-microdata
 
 **WIP: fork of [rbardini/jsonresume-theme-even](https://github.com/rbardini/jsonresume-theme-even) with added microdata and HTML changes**

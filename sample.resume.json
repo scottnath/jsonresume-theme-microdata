@@ -5,6 +5,12 @@
       "name": "Python Essential Training",
       "date": "2023-12-14",
       "issuer": "LinkedIn Learning"
+    },
+    {
+      "url": "https://www.linkedin.com/learning/python-essential-training-18764650/getting-started-with-python",
+      "name": "Python Essential Training II",
+      "date": "2023-12-31",
+      "issuer": "LinkedIn Learning"
     }
   ],
   "basics": {
@@ -53,6 +59,13 @@
       "endDate": "1994-12-15",
       "url": "https://www.music.iastate.edu/theatre",
       "institution": "Iowa State University"
+    },
+    {
+      "studyType": "Life",
+      "area": "Knocks",
+      "startDate": "2019-12-31",
+      "endDate": "2021-01-01",
+      "institution": "School of Hard Things"
     }
   ],
   "publications": [
@@ -75,6 +88,10 @@
     {
       "name": "Gardening",
       "keywords": ["kale", "flowers", "compost"]
+    },
+    {
+      "name": "Meows",
+      "keywords": ["Cats", "prrr", "tiny little angels"]
     }
   ],
   "awards": [
@@ -83,6 +100,12 @@
       "summary": "For the one who is definitely the meowiest in all of Meowville - otherwise known as Purrtown ACK!",
       "date": "2024-04-29",
       "awarder": "Meowville"
+    },
+    {
+      "title": "Coolest Meow",
+      "summary": "Cool meows are common, but the coolest? THIS ONE",
+      "date": "2024-04-30",
+      "awarder": "Coolville"
     }
   ],
   "skills": [
@@ -156,9 +179,18 @@
       "endDate": "2001-01-01",
       "position": "Volunteer Person",
       "summary": "This is an entry for volunteer so I have data to test with.",
-      "url": "https://theatrepugetsound.org/",
-      "organization": "Theatre Puget Sound",
+      "url": "https://www.eff.org/",
+      "organization": "The helping place",
       "highlights": ["A very important and helpful thing", "Much help, so volunting"]
+    },
+    {
+      "startDate": "2021-01-01",
+      "endDate": "2022-01-01",
+      "position": "Volunteer Person",
+      "summary": "This is a 2nd entry for volunteer so I have data to test with.",
+      "url": "https://runforsomething.net/",
+      "organization": "The giving place",
+      "highlights": ["A very important thing given", "Much give, so volunting"]
     }
   ],
   "projects": [
@@ -238,6 +270,10 @@
     {
       "language": "English",
       "fluency": "native speaker"
+    },
+    {
+      "language": "Indistinct mumbling",
+      "fluency": "hard to tell"
     }
   ],
   "work": [
@@ -303,6 +339,15 @@
     {
       "name": "Dave Thomas",
       "reference": "Sir, this is a Wendy's."
+    },
+    {
+      "name": "Scott Nath",
+      "reference": "This whole thing sounds like a ploy to get my resume to you...yes YOU"
     }
-  ]
+  ],
+  "meta": {
+    "canonical": "https://gist.githubusercontent.com/scottnath/9e7a7ceb9425336c6aa08d58afb63b8d/raw",
+    "version": "0.1.0",
+    "lastModified": "2024-04-29T21:02:47.876Z"
+  }
 }

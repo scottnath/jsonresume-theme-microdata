@@ -3,10 +3,9 @@ import markdown from '../../utils/markdown.js'
 import Duration from '../duration.js'
 import Link from '../link.js'
 
-/** @typedef {NonNullable<import('../../schema.d.ts').ResumeSchema['work']>[number]} Work */
-
+/** @typedef {NonNullable<import('../../schema.d.ts').ResumeSchema['volunteer']>[number]} Volunteer */
 /**
- * @param {import('../../schema.d.ts').ResumeSchema['volunteer']} item
+ * @param {Volunteer} item
  * @param {string} [itemprop] - schema.org attribute
  * @returns {string | false}
  */

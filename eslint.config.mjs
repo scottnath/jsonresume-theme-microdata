@@ -1,7 +1,7 @@
 export default {
   // ...other config
   rules: {
-      semi: ["warn", "always"]
+    semi: ['warn', 'always'],
   },
   // ...other config
-};
+}

@@ -14,9 +14,10 @@ const formatURL = url => url.replace(/^(https?:|)\/\//, '').replace(/\/$/, '')
  * @returns {string | undefined}
  */
 export default function Link(url, name, urlprop = 'url', nameprop = 'name') {
-  return name
+  const nameElm = name && name !== '' ? html`<span ${nameprop && `itemprop="${nameprop}"`}>${name}</span>` : ''
+  return nameElm
     ? url
-      ? html`<a href="${url}" ${urlprop && `itemprop="${urlprop}"`}><span itemprop="${nameprop}">${name}</span></a>`
-      : name
+      ? html`<a href="${url}" ${urlprop && `itemprop="${urlprop}"`}>${nameElm}</a>`
+      : nameElm
     : url && html`<a href="${url}" ${urlprop && `itemprop="${urlprop}"`}>${formatURL(url)}</a>`
 }

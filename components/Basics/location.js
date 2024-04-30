@@ -1,7 +1,9 @@
 import html from '../../utils/html.js'
 
+/** @typedef {NonNullable<import('../../schema.d.ts').ResumeSchema['basics']>['location']} Location */
+
 /**
- * @param {import('../../schema.d.ts').ResumeSchema['basics']} location
+ * @param {Location} location
  * @param {string} [itemprop]
  * @returns {string | false}
  */
