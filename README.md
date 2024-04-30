@@ -6,8 +6,8 @@
   --- can publish
   --- go npm
   --- ARTICLE
-- turn on storybook?
 - make LitElement with `resume="https://myresume.json"`
+- how to add to schema.d.ts?
 
 # jsonresume-theme-microdata
 
