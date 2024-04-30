@@ -1,7 +1,7 @@
 {
   "name": "jsonresume-theme-microdata",
   "version": "0.22.0",
-  "description": "A flat JSON Resume theme, compatible with the latest resume schema",
+  "description": "A flat JSON Resume theme, infused with microdata using the schema.org vocabulary",
   "keywords": [
     "resume",
     "json",
@@ -12,16 +12,16 @@
     "microdata",
     "schema.org"
   ],
-  "homepage": "https://jsonresume-theme-even.rbrd.in/",
+  "homepage": "https://github.com/scottnath/jsonresume-theme-microdata",
   "bugs": {
-    "url": "https://github.com/rbardini/jsonresume-theme-microdata/issues"
+    "url": "https://github.com/scottnath/jsonresume-theme-microdata/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rbardini/jsonresume-theme-microdata"
+    "url": "https://github.com/scottnath/jsonresume-theme-microdata"
   },
   "license": "MIT",
-  "author": "Rafael Bardini",
+  "author": "scottnath",
   "type": "module",
   "exports": {
     "require": "./dist/index.cjs",
