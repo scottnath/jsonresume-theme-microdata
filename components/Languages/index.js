@@ -1,7 +1,7 @@
 import html from '../../utils/html.js'
 
 /**
- * @param {import('../schema.d.ts').ResumeSchema['languages']} languages
+ * @param {import('../../schema.d.ts').ResumeSchema['languages']} languages
  * @returns {string | false}
  */
 export default function Languages(languages = []) {

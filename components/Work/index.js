@@ -1,10 +1,10 @@
 import html from '../../utils/html.js'
 import WorkRole from './work-role.js'
 
-/** @typedef {NonNullable<import('../schema.d.ts').ResumeSchema['work']>} Work */
+/** @typedef {NonNullable<import('../../schema.d.ts').ResumeSchema['work']>} Work */
 
 /**
- * @param {import('../schema.d.ts').ResumeSchema['work']} work
+ * @param {import('../../schema.d.ts').ResumeSchema['work']} work
  * @returns {string | false}
  */
 export default function Work(work = []) {

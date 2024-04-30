@@ -9,11 +9,11 @@ import Link from '../link.js'
 export default function Meta(meta = {}) {
   const { canonical, version, lastModified } = meta
   return (
-    (canonical || version || lastModified) &&
+    Object.values(meta).length > 0 &&
     html`
       <footer id="meta" itemprop="owns" itemscope itemtype="https://schema.org/TextDigitalDocument">
-        ${canonical && html` <p>${Link(canonical, 'canonical resume.json file', 'sameAs', null)}</p> `}
-        ${version && html` <p>version ${version}</p> `}
+        ${canonical && html` <p>${Link(canonical, 'canonical resume.json file', 'sameAs', '')}</p> `}
+        ${version && html` <p>version <span itemprop="version">${version}</span></p> `}
         ${lastModified && html` <p>last modified ${DateTime(lastModified, 'dateModified')}</p> `}
       </footer>
     `

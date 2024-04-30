@@ -4,7 +4,7 @@ import Duration from '../duration.js'
 import Link from '../link.js'
 
 /**
- * @param {import('../schema.d.ts').ResumeSchema['education']} item
+ * @param {NonNullable<import('../../schema.d.ts').ResumeSchema['education']>[number]} item
  * @param {string} [itemprop] - schema.org attribute
  * @returns {string | false}
  */
