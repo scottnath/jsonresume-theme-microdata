@@ -4,11 +4,13 @@
   "scripts": {
     "preexample": "npm run init",
     "example": "resumed render --theme jsonresume-theme-microdata --output example.html",
+    "generate": "resumed --theme jsonresume-theme-microdata",
     "get-remote": "node get-remote-resume.js",
     "init": "resumed init",
     "remote": "node get-remote-resume.js",
-    "postremote": "npm run start",
-    "start": "resumed --theme jsonresume-theme-microdata"
+    "postremote": "npm run generate",
+    "prestart": "echo \"Downloading a resume.json from a gist and generating a resume\"",
+    "start": "npm run remote -- --gist_id=9e7a7ceb9425336c6aa08d58afb63b8d"
   },
   "dependencies": {
     "jsonresume-theme-microdata": "latest",
