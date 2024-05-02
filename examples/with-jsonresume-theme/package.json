@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "preexample": "npm run init",
+    "example": "resumed render --theme jsonresume-theme-microdata --output example.html",
+    "get-remote": "node get-remote-resume.js",
+    "init": "resumed init",
+    "remote": "node get-remote-resume.js",
+    "postremote": "npm run start",
+    "start": "resumed --theme jsonresume-theme-microdata"
+  },
+  "dependencies": {
+    "jsonresume-theme-microdata": "latest",
+    "resumed": "^3.0.0"
+  }
+}
