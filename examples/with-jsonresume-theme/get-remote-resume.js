@@ -69,14 +69,12 @@ const getResumeJson = async () => {
   const json_url = urlArg ? urlArg.split('=')[1] : ''
   if (json_url) {
     resumejson = await getResumeJsonUrl(json_url)
-    console.log('url', resumejson)
   } else {
     const idArg = args.find(arg => arg.startsWith('--gist_id='))
     const gist_id = idArg ? idArg.split('=')[1] : ''
     if (!gist_id) throw new Error('`gist_id` or `json_url` required')
 
     resumejson = await getResumeJsonGist(gist_id)
-    console.log('gist_id', resumejson)
   }
   writeFileSync('./resume.json', JSON.stringify(resumejson, null, 2))
   return

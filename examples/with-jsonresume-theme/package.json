@@ -9,11 +9,16 @@
     "init": "resumed init",
     "remote": "node get-remote-resume.js",
     "postremote": "npm run generate",
+    "server": "live-server --entry-file=resume.html",
     "prestart": "echo \"Downloading a resume.json from a gist and generating a resume\"",
-    "start": "npm run remote -- --gist_id=9e7a7ceb9425336c6aa08d58afb63b8d"
+    "start": "npm run remote -- --gist_id=9e7a7ceb9425336c6aa08d58afb63b8d",
+    "poststart": "npm run server"
   },
   "dependencies": {
     "jsonresume-theme-microdata": "latest",
     "resumed": "^3.0.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
   }
 }
