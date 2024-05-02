@@ -18,10 +18,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/scottnath/jsonresume-theme-microdata"
+    "url": "git+https://github.com/scottnath/jsonresume-theme-microdata.git"
   },
   "license": "MIT",
-  "author": "scottnath",
+  "author": {
+    "name": "scottnath"
+  },
   "type": "module",
   "exports": {
     "require": "./dist/index.cjs",
@@ -41,7 +43,9 @@
   ],
   "scripts": {
     "build": "vite build",
+    "postbuild": "cp ./sample.resume.json ./dist",
     "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_0f59236527eec54",
     "dev": "vite",
     "format": "prettier .",
     "lint": "eslint --ignore-pattern .gitignore ./components",
@@ -62,7 +66,6 @@
   "dependencies": {
     "@cucumber/microdata": "^2.1.0",
     "feather-icons": "^4.29.1",
-    "lit": "^3.1.3",
     "micromark": "^4.0.0",
     "micromark-extension-gfm": "^3.0.0",
     "resumed": "^3.0.1",
@@ -84,6 +87,7 @@
     "@storybook/web-components-vite": "^8.0.9",
     "@types/feather-icons": "4.29.4",
     "@vitest/coverage-v8": "1.5.2",
+    "chromatic": "^11.3.0",
     "codemirror": "6.0.1",
     "debounce": "2.0.0",
     "eslint": "9.1.1",
