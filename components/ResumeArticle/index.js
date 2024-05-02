@@ -33,7 +33,11 @@ const internals = resume => html`
  * @returns
  */
 const ResumeArticle = resume => {
-  return html` <article id="resume" itemscope itemtype="https://schema.org/Person">${internals(resume)}</article> `
+  return html`
+    <article id="resume" itemprop="mainEntity" itemscope itemtype="https://schema.org/Person">
+      ${internals(resume)}
+    </article>
+  `
 }
 
 export default ResumeArticle

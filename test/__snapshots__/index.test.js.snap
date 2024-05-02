@@ -15,8 +15,10 @@ exports[`renders a resume 1`] = `
           
         </style>
       </head>
-      <body>
-         <article id="resume" itemscope itemtype="https://schema.org/Person">
+      <body itemscope itemtype="https://schema.org/ProfilePage">
+        
+    <article id="resume" itemprop="mainEntity" itemscope itemtype="https://schema.org/Person">
+      
   
     <header class="masthead">
       <img src="image.jpg" alt="Richard Hendriks's picture" itemprop="image" />
@@ -260,7 +262,9 @@ exports[`renders a resume 1`] = `
          <p>last modified <time datetime="2017-12-24T15:53:00" itemprop="dateModified">12/24/2017, 3:53:00 PM</time></p> 
       </footer>
     
-</article> 
+
+    </article>
+  
       </body>
     </html>"
 `;
