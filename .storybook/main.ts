@@ -1,5 +1,15 @@
 import type { StorybookConfig } from '@storybook/web-components-vite'
 import path from 'path'
+import { mergeConfig } from 'vite';
+import istanbul from 'vite-plugin-istanbul';
+
+const coverageConfig = {
+  include: ['../src/**/*.jsx'],
+  exclude: ['src/main.jsx'],
+  extension: ['.jsx'],
+  excludeNodeModules: true,
+  all: true,
+};
 
 const config: StorybookConfig = {
   stories: ['../**/*.mdx', '../**/*.stories.@(js|jsx|mjs|ts|tsx)'],
@@ -8,6 +18,7 @@ const config: StorybookConfig = {
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     '@chromatic-com/storybook',
+    '@storybook/addon-coverage'
   ],
   framework: {
     name: '@storybook/web-components-vite',
@@ -17,19 +28,23 @@ const config: StorybookConfig = {
     autodocs: 'tag',
   },
   async viteFinal(config, options) {
-    // Ensures that the cache directory is inside the project directory
-    config.cacheDir = path.join(__dirname, '../node_modules/.vite-storybook')
-    config.resolve = {
-      ...config.resolve,
-      alias: {
-        '@': path.resolve(__dirname, '../'),
+    return mergeConfig(config, {
+      // customize the Vite config here
+      cacheDir: path.join(__dirname, '../node_modules/.vite-storybook'),
+      plugins: [
+        istanbul({
+          ...coverageConfig
+        }),
+      ],
+      resolve: {
+        alias: {
+          '@': path.resolve(__dirname, '../'),
+        },
       },
-    }
-    config.define = {
-      ...config.define,
-      'process.env': process.env,
-    }
-    return config
+      define: {
+        'process.env': process.env,
+      }
+    });
   },
 }
 export default config

@@ -19,7 +19,8 @@ export const AllContent = {
     item: resume.projects[0],
   },
   play: async ({ args, canvasElement, step }) => {
-    const projectData = microdata('https://schema.org/Project', canvasElement)
+    const itemtype = args.item.itemtype || 'Project'
+    const projectData = microdata(`https://schema.org/${itemtype}`, canvasElement)
     const expectedObject = {}
     Object.entries(args.item).forEach((key, value) => {
       if (typeof value === 'string') {
@@ -36,8 +37,8 @@ export const AllContent = {
     expect.objectContaining({
       '@type': 'Project',
       ...expectedObject,
-    }),
-      expect(projectData.name).toBe(args.item.name)
+    })
+    expect(projectData.name).toBe(args.item.name)
     expect(projectData.url).toBe(args.item.url)
   },
 }

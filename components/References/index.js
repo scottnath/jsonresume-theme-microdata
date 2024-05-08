@@ -9,7 +9,7 @@ export default function References(references = []) {
   return (
     references.length > 0 &&
     html`
-      <section id="references">
+      <section part="references">
         <h3>References</h3>
         <div class="stack">
           ${references.map(

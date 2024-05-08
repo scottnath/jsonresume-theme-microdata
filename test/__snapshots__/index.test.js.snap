@@ -20,7 +20,7 @@ exports[`renders a resume 1`] = `
     <article id="resume" itemprop="mainEntity" itemscope itemtype="https://schema.org/Person">
       
   
-    <header class="masthead">
+    <header class="masthead" part="basic">
       <img src="image.jpg" alt="Richard Hendriks's picture" itemprop="image" />
       <div>
         <h1 itemprop="name">Richard Hendriks</h1>
@@ -74,9 +74,9 @@ exports[`renders a resume 1`] = `
       </address>
     </header>
    
-      <section id="work">
+      <section part="work">
         <h3>Work</h3>
-        <div class="stack"> <article itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
+        <div class="stack"><article itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
     <header>
       <h4><a href="http://piedpiper.example.com" itemprop="url"><span itemprop="name">Pied Piper</span></a></h4>
       <meta itemprop="location" content="Palo Alto, CA" />
@@ -97,7 +97,7 @@ exports[`renders a resume 1`] = `
   </article></div>
       </section>
      
-      <section id="volunteer">
+      <section part="volunteer">
         <h3>Volunteer</h3>
         <div class="stack"> <article itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
     <header>
@@ -116,23 +116,21 @@ exports[`renders a resume 1`] = `
   </article></div>
       </section>
      
-      <section id="education">
+      <section part="education">
         <h3>Education</h3>
         <div class="stack"> <article
     itemprop="alumniOf"
     itemscope
     itemtype="https://schema.org/EducationalOrganization"
   >
-    <header>
-      <h4><a href="https://www.ou.edu/" itemprop="url"><span itemprop="name">University of Oklahoma</span></a></h4>
-      <div class="meta"><strong itemprop="department">Information Technology</strong></div>
-    </header>
-    <section itemprop="alumni" itemscope itemtype="https://schema.org/OrganizationRole">
-      <div class="meta"><p><time datetime="2011-06-01" itemprop="startDate">Jun 2011</time> – <time datetime="2014-01-01" itemprop="endDate">Jan 2014</time></p></div>
-      <div itemprop="description"><p>Bachelor</p></div>
+    <h4><a href="https://www.ou.edu/" itemprop="url"><span itemprop="name">University of Oklahoma</span></a></h4>
+    <section itemprop="owns" itemscope itemtype="https://schema.org/EducationalOccupationalProgram">
+      <h5 itemprop="occupationalCategory">Information Technology</h5>
+      <div itemprop="educationalProgramMode"><p>Bachelor</p></div>
+      <p><time datetime="2011-06-01" itemprop="startDate">Jun 2011</time> – <time datetime="2014-01-01" itemprop="endDate">Jan 2014</time></p>
       
         <ul>
-          <li itemscope itemtype="https://schema.org/Course"><p>DB1101 - Basic SQL</p></li><li itemscope itemtype="https://schema.org/Course"><p>CS2011 - Java Introduction</p></li>
+          <li itemprop="hasCourse" itemscope itemtype="https://schema.org/Course"><p itemprop="teaches">DB1101 - Basic SQL</p></li><li itemprop="hasCourse" itemscope itemtype="https://schema.org/Course"><p itemprop="teaches">CS2011 - Java Introduction</p></li>
         </ul>
       
     </section>
@@ -140,7 +138,7 @@ exports[`renders a resume 1`] = `
       </section>
     
   
-      <section id="awards">
+      <section part="awards">
         <h3>Awards</h3>
         <dl class="stack">
           
@@ -155,7 +153,7 @@ exports[`renders a resume 1`] = `
         </dl>
       </section>
       
-      <section id="publications">
+      <section part="publications">
         <h3>Publications</h3>
         <dl class="stack">
           
@@ -172,7 +170,7 @@ exports[`renders a resume 1`] = `
       </section>
     
   
-      <section id="skills">
+      <section part="skills">
         <h3>Skills</h3>
         <dl class="grid-list">
            <div class="tag-list" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Thing">
@@ -185,7 +183,7 @@ exports[`renders a resume 1`] = `
         </dl>
       </section>
      
-      <section id="languages">
+      <section part="languages">
         <h3>Languages</h3>
         <dl class="grid-list">
           
@@ -197,7 +195,7 @@ exports[`renders a resume 1`] = `
         </dl>
       </section>
      
-      <section id="interests">
+      <section part="interests">
         <h3>Interests</h3>
         <dl class="grid-list">
           
@@ -210,7 +208,7 @@ exports[`renders a resume 1`] = `
       </section>
     
   
-      <section id="references">
+      <section part="references">
         <h3>References</h3>
         <div class="stack">
           
@@ -226,7 +224,7 @@ exports[`renders a resume 1`] = `
         </div>
       </section>
      
-      <section id="projects">
+      <section part="projects">
         <h3>Projects</h3>
         <div class="stack"> <article itemprop="alumniOf" itemscope itemtype="https://schema.org/Project">
     <h4><a href="missdirection.example.com" itemprop="url"><span itemprop="name">Miss Direction</span></a></h4>
@@ -256,7 +254,7 @@ exports[`renders a resume 1`] = `
   </article></div>
       </section>
      
-      <footer id="meta" itemprop="owns" itemscope itemtype="https://schema.org/TextDigitalDocument">
+      <footer part="meta" itemprop="owns" itemscope itemtype="https://schema.org/TextDigitalDocument">
          <p><a href="https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json" itemprop="sameAs"><span >canonical resume.json file</span></a></p> 
          <p>version <span itemprop="version">v1.0.0</span></p> 
          <p>last modified <time datetime="2017-12-24T15:53:00" itemprop="dateModified">12/24/2017, 3:53:00 PM</time></p> 

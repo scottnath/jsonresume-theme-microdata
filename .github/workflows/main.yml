@@ -12,22 +12,22 @@ jobs:
           node-version: '20.x'
 
       - name: Install
-        run: npm ci
+        run: pnpm install
 
       - name: Type-check
-        run: npm run type-check
+        run: pnpm run type-check
 
       - name: Lint
-        run: npm run lint
+        run: pnpm run lint
 
       - name: Test
-        run: npm test -- --coverage
+        run: pnpm test -- --coverage
 
       - name: Format-check
-        run: npm run format -- --check
+        run: pnpm run format -- --check
 
       - name: Build
-        run: npm run build
+        run: pnpm run build
 
       - name: Codecov
         uses: codecov/codecov-action@v4.3.0

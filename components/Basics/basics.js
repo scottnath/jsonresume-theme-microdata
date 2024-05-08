@@ -12,7 +12,7 @@ export default function Header(basics = {}) {
   const { email, image, location, name, phone, url, profiles, label, summary } = basics
 
   return html`
-    <header class="masthead">
+    <header class="masthead" part="basic">
       ${image && html`<img src="${image}" alt="${name}'s picture" itemprop="image" />`}
       <div>
         <h1 itemprop="name">${name}</h1>

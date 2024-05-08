@@ -10,7 +10,7 @@ export default function Awards(awards = []) {
   return (
     awards.length > 0 &&
     html`
-      <section id="awards">
+      <section part="awards">
         <h3>Awards</h3>
         <dl class="stack">
           ${awards.map(

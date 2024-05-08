@@ -8,11 +8,11 @@ export default function Skills(skills = []) {
   return (
     skills.length > 0 &&
     html`
-      <section id="skills">
+      <section part="skills">
         <h3>Skills</h3>
         <dl class="grid-list">
-          ${skills.map(({ keywords = [], name, itemtype }) => {
-            const itype = `itemtype="https://schema.org/${itemtype || 'Thing'}"`
+          ${skills.map(({ keywords = [], name, itemtype = 'Thing' }) => {
+            const itype = `itemtype="https://schema.org/${itemtype}"`
             return html` <div class="tag-list" itemprop="knowsAbout" itemscope ${itype}>
               ${name && html`<dt><span itemprop="description">${name}</span></dt>`}
               ${keywords.length > 0 && keywords.map(keyword => html`<dd itemprop="name">${keyword}</dd>`)}

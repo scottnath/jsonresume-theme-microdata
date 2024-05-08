@@ -9,7 +9,7 @@ export default function Projects(projects = []) {
   return (
     projects.length > 0 &&
     html`
-      <section id="projects">
+      <section part="projects">
         <h3>Projects</h3>
         <div class="stack">${projects.map(role => Project(role, 'alumniOf'))}</div>
       </section>

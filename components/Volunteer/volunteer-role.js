@@ -10,8 +10,8 @@ import Link from '../link.js'
  * @returns {string | false}
  */
 export default function VolunteerRole(item, itemprop) {
-  const { highlights = [], organization, position, startDate, endDate, summary, url } = item
-  return html` <article ${itemprop && `itemprop="${itemprop}"`} itemscope itemtype="https://schema.org/Organization">
+  const { highlights = [], organization, position, startDate, endDate, summary, url, itemtype = 'Organization' } = item
+  return html` <article ${itemprop && `itemprop="${itemprop}"`} itemscope itemtype="https://schema.org/${itemtype}">
     <header>
       <h4>${Link(url, organization)}</h4>
     </header>

@@ -17,12 +17,25 @@ const formatRoles = roles => (Intl.ListFormat ? new Intl.ListFormat('en').format
  * @returns {string | false}
  */
 export default function Project(item, itemprop) {
-  const { description, entity, highlights = [], keywords = [], name, startDate, endDate, roles = [], type, url } = item
+  const {
+    itemtype = 'Project',
+    description,
+    entity,
+    entityItemtype = 'Organization',
+    highlights = [],
+    keywords = [],
+    name,
+    startDate,
+    endDate,
+    roles = [],
+    type,
+    url,
+  } = item
 
-  return html` <article ${itemprop && `itemprop="${itemprop}"`} itemscope itemtype="https://schema.org/Project">
+  return html` <article ${itemprop && `itemprop="${itemprop}"`} itemscope itemtype="https://schema.org/${itemtype}">
     <h4>${Link(url, name)}</h4>
     ${entity &&
-    html`<span itemprop="parentOrganization" itemscope itemtype="https://schema.org/Organization"
+    html`<span itemprop="parentOrganization" itemscope itemtype="https://schema.org/${entityItemtype}"
       ><meta itemprop="name" content="${entity}"
     /></span>`}
     ${(roles.length || startDate) &&

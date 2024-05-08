@@ -11,15 +11,23 @@ export default function Publications(publications = []) {
   return (
     publications.length > 0 &&
     html`
-      <section id="publications">
+      <section part="publications">
         <h3>Publications</h3>
         <dl class="stack">
           ${publications.map(
-            ({ name, publisher, releaseDate, summary, url }) => html`
-              <div itemprop="owns" itemscope itemtype="https://schema.org/CreativeWork">
+            ({
+              name,
+              itemtype = 'CreativeWork',
+              publisher,
+              publisherItemtype = 'Organization',
+              releaseDate,
+              summary,
+              url,
+            }) => html`
+              <div itemprop="owns" itemscope itemtype="https://schema.org/${itemtype}">
                 <dt>${Link(url, name)}</dt>
                 ${publisher &&
-                html`<dd class="meta" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                html`<dd class="meta" itemprop="publisher" itemscope itemtype="https://schema.org/${publisherItemtype}">
                   Published by <strong itemprop="name">${publisher}</strong>
                 </dd>`}
                 ${releaseDate && html`<dd class="meta" itemprop="dateCreated">${ShortDate(releaseDate)}</dd>`}

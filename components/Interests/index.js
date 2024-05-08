@@ -8,12 +8,12 @@ export default function Interests(interests = []) {
   return (
     interests.length > 0 &&
     html`
-      <section id="interests">
+      <section part="interests">
         <h3>Interests</h3>
         <dl class="grid-list">
           ${interests.map(
-            ({ keywords = [], name }) => html`
-              <div class="tag-list" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Thing">
+            ({ keywords = [], name, itemtype = 'Thing' }) => html`
+              <div class="tag-list" itemprop="knowsAbout" itemscope itemtype="https://schema.org/${itemtype}">
                 ${name && html`<dt><span itemprop="name">${name}</span></dt>`}
                 ${keywords.length > 0 && keywords.map(keyword => html`<dd itemprop="alternateName">${keyword}</dd>`)}
               </div>

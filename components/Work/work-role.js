@@ -11,8 +11,19 @@ import Link from '../link.js'
  * @returns {string | false}
  */
 export default function WorkRole(item, itemprop) {
-  const { summary, name, url, highlights = [], location, position, startDate, endDate, description } = item
-  return html` <article ${itemprop && `itemprop="${itemprop}"`} itemscope itemtype="https://schema.org/Organization">
+  const {
+    summary,
+    name,
+    url,
+    highlights = [],
+    location,
+    position,
+    startDate,
+    endDate,
+    description,
+    itemtype = 'Organization',
+  } = item
+  return html`<article ${itemprop && `itemprop="${itemprop}"`} itemscope itemtype="https://schema.org/${itemtype}">
     <header>
       <h4>${Link(url, name)}</h4>
       <meta itemprop="location" content="${location}" />

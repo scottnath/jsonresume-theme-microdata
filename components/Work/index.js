@@ -11,7 +11,7 @@ export default function Work(work = []) {
   return (
     work.length > 0 &&
     html`
-      <section id="work">
+      <section part="work">
         <h3>Work</h3>
         <div class="stack">${work.map(role => WorkRole(role, 'alumniOf'))}</div>
       </section>
