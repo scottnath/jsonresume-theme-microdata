@@ -15,7 +15,7 @@ jobs:
         with:
           version: 8
       - name: Install
-        run: pnpm install
+        run: pnpm install --shamefully-hoist
 
       - name: Type-check
         run: pnpm run type-check
