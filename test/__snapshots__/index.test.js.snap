@@ -116,13 +116,9 @@ exports[`renders a resume 1`] = `
   </article></div>
       </section>
      
-      <section part="education">
-        <h3>Education</h3>
-        <div class="stack"> <article
-    itemprop="alumniOf"
-    itemscope
-    itemtype="https://schema.org/EducationalOrganization"
-  >
+        <section part="education">
+          <h3>Education</h3>
+          <div class="stack"> <article itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
     <h4><a href="https://www.ou.edu/" itemprop="url"><span itemprop="name">University of Oklahoma</span></a></h4>
     <section itemprop="owns" itemscope itemtype="https://schema.org/EducationalOccupationalProgram">
       <h5 itemprop="occupationalCategory">Information Technology</h5>
@@ -130,13 +126,17 @@ exports[`renders a resume 1`] = `
       <p><time datetime="2011-06-01" itemprop="startDate">Jun 2011</time> – <time datetime="2014-01-01" itemprop="endDate">Jan 2014</time></p>
       
         <ul>
-          <li itemprop="hasCourse" itemscope itemtype="https://schema.org/Course"><p itemprop="teaches">DB1101 - Basic SQL</p></li><li itemprop="hasCourse" itemscope itemtype="https://schema.org/Course"><p itemprop="teaches">CS2011 - Java Introduction</p></li>
+          <li itemprop="hasCourse" itemscope itemtype="https://schema.org/Course">
+                <p itemprop="teaches">DB1101 - Basic SQL</p>
+              </li><li itemprop="hasCourse" itemscope itemtype="https://schema.org/Course">
+                <p itemprop="teaches">CS2011 - Java Introduction</p>
+              </li>
         </ul>
       
     </section>
   </article></div>
-      </section>
-    
+        </section>
+      
   
       <section part="awards">
         <h3>Awards</h3>
