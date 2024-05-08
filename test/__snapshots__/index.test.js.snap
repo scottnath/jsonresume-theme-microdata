@@ -20,7 +20,7 @@ exports[`renders a resume 1`] = `
     <article id="resume" itemprop="mainEntity" itemscope itemtype="https://schema.org/Person">
       
   
-    <header class="masthead" part="basic">
+    <header class="masthead" part="basics">
       <img src="image.jpg" alt="Richard Hendriks's picture" itemprop="image" />
       <div>
         <h1 itemprop="name">Richard Hendriks</h1>
@@ -42,6 +42,7 @@ exports[`renders a resume 1`] = `
             </div>
           
           
+          
             <div class="email">
               <dt><span class="sr-only">email</span></dt>
               <dd itemprop="email"><a href="mailto:richard.hendriks@mail.com">richard.hendriks@mail.com</a></dd>
@@ -59,18 +60,16 @@ exports[`renders a resume 1`] = `
               <dd><a href="http://richardhendricks.example.com" itemprop="url">richardhendricks.example.com</a></dd>
             </div>
           
-        </dl>
-        
-      <dl class="icon-list">
-         <div itemprop="ContactPoint" itemscope itemtype="https://schema.org/ContactPoint">
-            <dt style="--svg-network:url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22feather%20feather-twitter%22%3E%3Cpath%20d%3D%22M23%203a10.9%2010.9%200%200%201-3.14%201.53%204.48%204.48%200%200%200-7.86%203v1A10.66%2010.66%200%200%201%203%204s-4%209%205%2013a11.64%2011.64%200%200%201-7%202c9%205%2020%200%2020-11.5a4.5%204.5%200%200%200-.08-.83A7.72%207.72%200%200%200%2023%203z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E')" itemprop="contactType"><span class="sr-only">Twitter</span></dt>
-            <dd data-network="Twitter"><a href="" itemprop="url"><span itemprop="identifier">neutralthoughts</span></a></dd>
-          </div> <div itemprop="ContactPoint" itemscope itemtype="https://schema.org/ContactPoint">
-            <dt style="--svg-network:url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22feather%20feather-user%22%3E%3Cpath%20d%3D%22M20%2021v-2a4%204%200%200%200-4-4H8a4%204%200%200%200-4%204v2%22%3E%3C%2Fpath%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%227%22%20r%3D%224%22%3E%3C%2Fcircle%3E%3C%2Fsvg%3E')" itemprop="contactType"><span class="sr-only">SoundCloud</span></dt>
-            <dd data-network="SoundCloud"><a href="https://soundcloud.example.com/dandymusicnl" itemprop="url"><span itemprop="identifier">dandymusicnl</span></a></dd>
-          </div>
-      </dl>
+          
+       <div itemprop="ContactPoint" itemscope itemtype="https://schema.org/ContactPoint">
+          <dt style="--svg-network:url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22feather%20feather-twitter%22%3E%3Cpath%20d%3D%22M23%203a10.9%2010.9%200%200%201-3.14%201.53%204.48%204.48%200%200%200-7.86%203v1A10.66%2010.66%200%200%201%203%204s-4%209%205%2013a11.64%2011.64%200%200%201-7%202c9%205%2020%200%2020-11.5a4.5%204.5%200%200%200-.08-.83A7.72%207.72%200%200%200%2023%203z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E')" itemprop="contactType"><span class="sr-only">Twitter</span></dt>
+          <dd data-network="Twitter"><a href="" itemprop="url"><span itemprop="identifier">neutralthoughts</span></a></dd>
+        </div> <div itemprop="ContactPoint" itemscope itemtype="https://schema.org/ContactPoint">
+          <dt  itemprop="contactType"><span class="sr-only">SoundCloud</span></dt>
+          <dd data-network="SoundCloud"><a href="https://soundcloud.example.com/dandymusicnl" itemprop="url"><span itemprop="identifier">dandymusicnl</span></a></dd>
+        </div>
     
+        </dl>
       </address>
     </header>
    
@@ -99,7 +98,7 @@ exports[`renders a resume 1`] = `
      
       <section part="volunteer">
         <h3>Volunteer</h3>
-        <div class="stack"> <article itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
+        <div class="stack"><article itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
     <header>
       <h4><a href="http://coderdojo.example.com/" itemprop="url"><span itemprop="name">CoderDojo</span></a></h4>
     </header>
@@ -118,7 +117,7 @@ exports[`renders a resume 1`] = `
      
         <section part="education">
           <h3>Education</h3>
-          <div class="stack"> <article itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+          <div class="stack"><article itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
     <h4><a href="https://www.ou.edu/" itemprop="url"><span itemprop="name">University of Oklahoma</span></a></h4>
     <section itemprop="owns" itemscope itemtype="https://schema.org/EducationalOccupationalProgram">
       <h5 itemprop="occupationalCategory">Information Technology</h5>
@@ -226,7 +225,7 @@ exports[`renders a resume 1`] = `
      
       <section part="projects">
         <h3>Projects</h3>
-        <div class="stack"> <article itemprop="alumniOf" itemscope itemtype="https://schema.org/Project">
+        <div class="stack"><article itemprop="alumniOf" itemscope itemtype="https://schema.org/Project">
     <h4><a href="missdirection.example.com" itemprop="url"><span itemprop="name">Miss Direction</span></a></h4>
     <span itemprop="parentOrganization" itemscope itemtype="https://schema.org/Organization"
       ><meta itemprop="name" content="Smoogle"
