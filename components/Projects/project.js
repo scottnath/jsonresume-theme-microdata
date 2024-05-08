@@ -32,7 +32,7 @@ export default function Project(item, itemprop) {
     url,
   } = item
 
-  return html` <article ${itemprop && `itemprop="${itemprop}"`} itemscope itemtype="https://schema.org/${itemtype}">
+  return html`<article ${itemprop && `itemprop="${itemprop}"`} itemscope itemtype="https://schema.org/${itemtype}">
     <h4>${Link(url, name)}</h4>
     ${entity &&
     html`<span itemprop="parentOrganization" itemscope itemtype="https://schema.org/${entityItemtype}"

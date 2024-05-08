@@ -9,10 +9,10 @@ import Profiles from './profiles.js'
  * @returns {string}
  */
 export default function Header(basics = {}) {
-  const { email, image, location, name, phone, url, profiles, label, summary } = basics
+  const { email, image, location, name, phone, url, profiles, label, summary, pronouns } = basics
 
   return html`
-    <header class="masthead" part="basic">
+    <header class="masthead" part="basics">
       ${image && html`<img src="${image}" alt="${name}'s picture" itemprop="image" />`}
       <div>
         <h1 itemprop="name">${name}</h1>
@@ -26,6 +26,13 @@ export default function Header(basics = {}) {
             <div class="location">
               <dt><span class="sr-only">location</span></dt>
               <dd>${Location(location, 'address')}</dd>
+            </div>
+          `}
+          ${pronouns &&
+          html`
+            <div class="pronouns">
+              <dt><span class="sr-only">pronouns</span></dt>
+              <dd>${pronouns}</dd>
             </div>
           `}
           ${email &&
@@ -49,8 +56,8 @@ export default function Header(basics = {}) {
               <dd>${Link(url)}</dd>
             </div>
           `}
+          ${Profiles(profiles)}
         </dl>
-        ${Profiles(profiles)}
       </address>
     </header>
   `

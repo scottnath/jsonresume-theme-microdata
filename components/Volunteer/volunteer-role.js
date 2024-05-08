@@ -11,7 +11,7 @@ import Link from '../link.js'
  */
 export default function VolunteerRole(item, itemprop) {
   const { highlights = [], organization, position, startDate, endDate, summary, url, itemtype = 'Organization' } = item
-  return html` <article ${itemprop && `itemprop="${itemprop}"`} itemscope itemtype="https://schema.org/${itemtype}">
+  return html`<article ${itemprop && `itemprop="${itemprop}"`} itemscope itemtype="https://schema.org/${itemtype}">
     <header>
       <h4>${Link(url, organization)}</h4>
     </header>

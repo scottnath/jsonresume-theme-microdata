@@ -21,7 +21,7 @@ export default function Institution(item, itemprop) {
     url,
     itemtype = 'EducationalOrganization',
   } = item
-  return html` <article ${itemprop && `itemprop="${itemprop}"`} itemscope itemtype="https://schema.org/${itemtype}">
+  return html`<article ${itemprop && `itemprop="${itemprop}"`} itemscope itemtype="https://schema.org/${itemtype}">
     <h4>${Link(url, institution)}</h4>
     <section itemprop="owns" itemscope itemtype="https://schema.org/EducationalOccupationalProgram">
       ${area && html`<h5 itemprop="occupationalCategory">${area}</h5>`}
