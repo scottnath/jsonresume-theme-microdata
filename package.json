@@ -34,9 +34,7 @@
   "module": "./dist/index.js",
   "source": "index.js",
   "typings": "./dist/index.d.ts",
-  "bin": {
-    "jsonresume-theme-microdata": "bin/cli.js"
-  },
+  "bin": "bin/cli.js",
   "files": [
     "bin",
     "dist"
@@ -50,8 +48,8 @@
     "format": "prettier .",
     "lint": "eslint --ignore-pattern .gitignore ./components",
     "prepare": "husky && json2ts ./schema.json schema.d.ts",
-    "prepublishOnly": "pnpm run build",
-    "prerelease": "pnpm run build",
+    "prepublishOnly": "npm run build",
+    "prerelease": "npm run build",
     "release": "semantic-release --debug=true",
     "storybook": "storybook dev -p 6006",
     "test": "vitest",

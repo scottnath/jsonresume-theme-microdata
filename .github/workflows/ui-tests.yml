@@ -11,15 +11,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-      - uses: pnpm/action-setup@v4
-        with:
-          version: 8
       - name: Install dependencies
-        run: pnpm install --shamefully-hoist
+        run: yarn install
       - name: Install Playwright
         run: npx playwright install --with-deps
       - name: Build Storybook
-        run: pnpm run build-storybook
+        run: npm run build-storybook
       - name: Serve Storybook and run tests
         run: |
           npx --yes concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
