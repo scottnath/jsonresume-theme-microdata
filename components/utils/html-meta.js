@@ -1,8 +1,8 @@
-import html from '../utils/html.js'
-import markdown from '../utils/markdown.js'
+import html from './html.js'
+import markdown from './markdown.js'
 
 /**
- * @param {import('../schema.d.ts').ResumeSchema['basics']} basics
+ * @param {import('../../schema').ResumeSchema['basics']} basics
  * @returns {string}
  */
 export default function HeadMeta(basics = {}) {

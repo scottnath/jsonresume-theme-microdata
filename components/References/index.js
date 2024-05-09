@@ -1,5 +1,5 @@
-import html from '../../utils/html.js'
-import markdown from '../../utils/markdown.js'
+import html from '../utils/html.js'
+import markdown from '../utils/markdown.js'
 
 /**
  * @param {import('../../schema.d.ts').ResumeSchema['references']} references

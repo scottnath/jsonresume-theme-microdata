@@ -1,7 +1,7 @@
-import html from '../../utils/html.js'
-import markdown from '../../utils/markdown.js'
-import { ShortDate } from '../date.js'
-import Link from '../link.js'
+import { ShortDate } from '../utils/date.js'
+import html from '../utils/html.js'
+import Link from '../utils/link.js'
+import markdown from '../utils/markdown.js'
 
 /**
  * @param {import('../../schema.js').ResumeSchema['publications']} publications

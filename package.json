@@ -26,8 +26,9 @@
   },
   "type": "module",
   "exports": {
-    "require": "./dist/index.cjs",
-    "default": "./dist/index.js"
+    ".": "./dist/index.js",
+    "./components": "./components/index.js",
+    "./components/**/*": "./components/**/*.js"
   },
   "main": "./dist/index.cjs",
   "unpkg": "./dist/index.umd.cjs",
@@ -37,7 +38,8 @@
   "bin": "bin/cli.js",
   "files": [
     "bin",
-    "dist"
+    "dist",
+    "components"
   ],
   "scripts": {
     "build": "vite build",
@@ -103,7 +105,7 @@
     "typescript": "5.4.5",
     "vite": "5.2.11",
     "vite-plugin-dts": "3.9.1",
-    "vite-plugin-static-copy": "1.0.4",
+    "vite-plugin-static-copy": "^1.0.4",
     "vitest": "1.6.0"
   }
 }

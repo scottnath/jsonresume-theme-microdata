@@ -1,6 +1,6 @@
-import html from '../../utils/html.js'
-import markdown from '../../utils/markdown.js'
-import Link from '../link.js'
+import html from '../utils/html.js'
+import Link from '../utils/link.js'
+import markdown from '../utils/markdown.js'
 import Location from './location.js'
 import Profiles from './profiles.js'
 
@@ -19,7 +19,7 @@ export default function Header(basics = {}) {
         ${label && html`<h2 itemprop="jobTitle">${label}</h2>`}
       </div>
       ${summary && html`<div itemprop="description">${markdown(summary)}</div>`}
-      <address>
+      <address part="contact">
         <dl class="icon-list">
           ${location &&
           html`
@@ -56,9 +56,9 @@ export default function Header(basics = {}) {
               <dd>${Link(url)}</dd>
             </div>
           `}
-          ${Profiles(profiles)}
         </dl>
       </address>
+      ${Profiles(profiles)}
     </header>
   `
 }

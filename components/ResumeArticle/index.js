@@ -1,6 +1,4 @@
-import html from '../../utils/html.js'
-import { components } from '../index.js'
-const {
+import {
   Awards,
   Basics,
   Certificates,
@@ -14,8 +12,10 @@ const {
   Skills,
   Volunteer,
   Work,
-} = components
+} from '../index.js'
+import html from '../utils/html.js'
 
+console.log(Basics)
 /**
  * Generate resume internal content
  * @todo order-of-items _from_ resume.json

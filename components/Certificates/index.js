@@ -1,6 +1,6 @@
-import html from '../../utils/html.js'
-import { ShortDate } from '../date.js'
-import Link from '../link.js'
+import { ShortDate } from '../utils/date.js'
+import html from '../utils/html.js'
+import Link from '../utils/link.js'
 
 /**
  * @param {import('../../schema.d.ts').ResumeSchema['certificates']} certificates

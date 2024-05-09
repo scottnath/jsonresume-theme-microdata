@@ -1,6 +1,6 @@
-import html from '../../utils/html.js'
-import { DateTime } from '../date.js'
-import Link from '../link.js'
+import { DateTime } from '../utils/date.js'
+import html from '../utils/html.js'
+import Link from '../utils/link.js'
 
 /**
  * @param {import('../../schema.d.ts').ResumeSchema['meta']} meta

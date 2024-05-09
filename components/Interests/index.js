@@ -1,4 +1,4 @@
-import html from '../../utils/html.js'
+import html from '../utils/html.js'
 
 /**
  * @param {import('../../schema.d.ts').ResumeSchema['interests']} interests

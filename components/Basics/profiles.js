@@ -1,6 +1,6 @@
-import html from '../../utils/html.js'
-import Icon from '../icon.js'
-import Link from '../link.js'
+import html from '../utils/html.js'
+import Icon from '../utils/icon.js'
+import Link from '../utils/link.js'
 
 /** @typedef {NonNullable<import('../../schema.d.ts').ResumeSchema['basics']>['profiles']} Profiles */
 
@@ -13,20 +13,24 @@ export default function profiles(profiles = []) {
     Array.isArray(profiles) &&
     profiles.length > 0 &&
     html`
-      ${profiles.map(({ network, url, username }) => {
-        let style = ''
-        if (network) {
-          const icon = Icon(network)
-          if (icon) {
-            style = `style="--svg-network:url('data:image/svg+xml, ${encodeURIComponent(icon)}')"`
-          }
-        }
-        const content = username ? html`<span itemprop="identifier">${username}</span>` : Link(url)
-        return html` <div itemprop="ContactPoint" itemscope itemtype="https://schema.org/ContactPoint">
-          <dt ${style} itemprop="contactType"><span class="sr-only">${network}</span></dt>
-          <dd data-network="${network}"><a href="${url}" itemprop="url">${content}</a></dd>
-        </div>`
-      })}
+      <address part="profiles">
+        <dl class="icon-list">
+          ${profiles.map(({ network, url, username }) => {
+            let style = ''
+            if (network) {
+              const icon = Icon(network)
+              if (icon) {
+                style = `style="--svg-network:url('data:image/svg+xml, ${encodeURIComponent(icon)}')"`
+              }
+            }
+            const content = username ? html`<span itemprop="identifier">${username}</span>` : Link(url)
+            return html` <div itemprop="ContactPoint" itemscope itemtype="https://schema.org/ContactPoint">
+              <dt ${style} itemprop="contactType"><span class="sr-only">${network}</span></dt>
+              <dd data-network="${network}"><a href="${url}" itemprop="url">${content}</a></dd>
+            </div>`
+          })}
+        </dl>
+      </address>
     `
   )
 }

@@ -1,6 +1,6 @@
-import html from '../../utils/html.js'
-import markdown from '../../utils/markdown.js'
-import { ShortDate } from '../date.js'
+import { ShortDate } from '../utils/date.js'
+import html from '../utils/html.js'
+import markdown from '../utils/markdown.js'
 
 /**
  * @param {import('../../schema.js').ResumeSchema['awards']} awards

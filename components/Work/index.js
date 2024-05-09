@@ -1,4 +1,4 @@
-import html from '../../utils/html.js'
+import html from '../utils/html.js'
 import WorkRole from './work-role.js'
 
 /** @typedef {NonNullable<import('../../schema.d.ts').ResumeSchema['work']>} Work */

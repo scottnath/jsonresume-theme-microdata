@@ -1,4 +1,4 @@
-import html from '../../utils/html.js'
+import html from '../utils/html.js'
 import Institution from './institution.js'
 
 /** @typedef {import('../../schema.d.ts').ResumeSchema['education']} Education */
