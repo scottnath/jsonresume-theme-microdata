@@ -1,15 +1,18 @@
 import html from '../utils/html.js'
 
+/** @typedef {NonNullable<import('../../schema.d.ts').ResumeSchema['interests']>} Interests */
+
 /**
- * @param {import('../../schema.d.ts').ResumeSchema['interests']} interests
+ * @param {Interests} interests
+ * @param {string} [title] - section title text
  * @returns {string | false}
  */
-export default function Interests(interests = []) {
+export default function Interests(interests = [], title = 'Interests') {
   return (
     interests.length > 0 &&
     html`
       <section part="interests">
-        <h3>Interests</h3>
+        <h3>${title}</h3>
         <dl class="grid-list">
           ${interests.map(
             ({ keywords = [], name, itemtype = 'Thing' }) => html`

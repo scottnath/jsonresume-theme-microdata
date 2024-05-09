@@ -528,6 +528,25 @@
         "lastModified": {
           "type": "string",
           "description": "Using ISO 8601 with YYYY-MM-DDThh:mm:ss"
+        },
+        "sectionTitles": {
+          "type": "object",
+          "description": "The title text used in each section's heading",
+          "default": {
+            "basics": "Basics",
+            "work": "Work",
+            "volunteer": "Volunteer",
+            "education": "Education",
+            "awards": "Awards",
+            "certificates": "Certificates",
+            "publications": "Publications",
+            "skills": "Skills",
+            "languages": "Languages",
+            "interests": "Interests",
+            "references": "References",
+            "projects": "Projects",
+            "meta": "meta"
+          }
         }
       }
     }

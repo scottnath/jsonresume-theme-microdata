@@ -1,15 +1,18 @@
 import html from '../utils/html.js'
 
+/** @typedef {NonNullable<import('../../schema.d.ts').ResumeSchema['skills']>} Skills */
+
 /**
- * @param {import('../../schema.d.ts').ResumeSchema['skills']} skills
+ * @param {Skills} skills
+ * @param {string} [title] - section title text
  * @returns {string | false}
  */
-export default function Skills(skills = []) {
+export default function Skills(skills = [], title = 'Skills') {
   return (
     skills.length > 0 &&
     html`
       <section part="skills">
-        <h3>Skills</h3>
+        <h3>${title}</h3>
         <dl class="grid-list">
           ${skills.map(({ keywords = [], name, itemtype = 'Thing' }) => {
             const itype = `itemtype="https://schema.org/${itemtype}"`

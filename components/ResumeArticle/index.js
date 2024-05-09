@@ -15,7 +15,6 @@ import {
 } from '../index.js'
 import html from '../utils/html.js'
 
-console.log(Basics)
 /**
  * Generate resume internal content
  * @todo order-of-items _from_ resume.json

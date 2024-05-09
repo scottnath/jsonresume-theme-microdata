@@ -2,7 +2,7 @@
 /** @typedef {{ colors?: ThemeColorOptions }} ThemeOptions */
 
 /**
- * @param {import('../../schema').ResumeSchema['meta'] & { themeOptions?: ThemeOptions }} meta
+ * @param {import('../../schema.d.ts').ResumeSchema['meta'] & { themeOptions?: ThemeOptions }} meta
  * @returns {string | undefined}
  */
 export default function colors(meta = {}) {

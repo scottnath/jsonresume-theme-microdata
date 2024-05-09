@@ -2,16 +2,19 @@ import { ShortDate } from '../utils/date.js'
 import html from '../utils/html.js'
 import Link from '../utils/link.js'
 
+/** @typedef {NonNullable<import('../../schema.d.ts').ResumeSchema['certificates']>} Certificates */
+
 /**
- * @param {import('../../schema.d.ts').ResumeSchema['certificates']} certificates
+ * @param {Certificates} certificates
+ * @param {string} [title] - section title text
  * @returns {string | false}
  */
-export default function Certificates(certificates = []) {
+export default function Certificates(certificates = [], title = 'Certificates') {
   return (
     certificates.length > 0 &&
     html`
       <section part="certificates">
-        <h3>Certificates</h3>
+        <h3>${title}</h3>
         <dl class="stack">
           ${certificates.map(
             ({ date, issuer, name, url, itemtype = 'Organization' }) => html`

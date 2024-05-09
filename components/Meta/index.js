@@ -2,8 +2,10 @@ import { DateTime } from '../utils/date.js'
 import html from '../utils/html.js'
 import Link from '../utils/link.js'
 
+/** @typedef {import('../../schema.d.ts').ResumeSchema['meta']} Meta */
+
 /**
- * @param {import('../../schema.d.ts').ResumeSchema['meta']} meta
+ * @param {Meta} meta
  * @returns {string | false}
  */
 export default function Meta(meta = {}) {

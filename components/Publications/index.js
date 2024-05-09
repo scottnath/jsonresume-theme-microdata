@@ -3,16 +3,19 @@ import html from '../utils/html.js'
 import Link from '../utils/link.js'
 import markdown from '../utils/markdown.js'
 
+/** @typedef {NonNullable<import('../../schema.d.ts').ResumeSchema['publications']>} Publications */
+
 /**
- * @param {import('../../schema.js').ResumeSchema['publications']} publications
+ * @param {Publications} publications
+ * @param {string} [title] - section title text
  * @returns {string | false}
  */
-export default function Publications(publications = []) {
+export default function Publications(publications = [], title = 'Publications') {
   return (
     publications.length > 0 &&
     html`
       <section part="publications">
-        <h3>Publications</h3>
+        <h3>${title}</h3>
         <dl class="stack">
           ${publications.map(
             ({
