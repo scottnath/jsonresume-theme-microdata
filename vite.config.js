@@ -36,6 +36,7 @@ export default defineConfig(({ mode }) => {
           { src: './README.md', dest: '.' },
           { src: './schema.json', dest: '.' },
           { src: './style.css', dest: '.' },
+          { src: './sample.resume.json', dest: '.' },
         ],
       }),
     ],

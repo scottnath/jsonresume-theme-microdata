@@ -44,9 +44,10 @@
   ],
   "scripts": {
     "build": "vite build",
-    "postbuild": "cp ./sample.resume.json ./dist",
+    "postbuild": "npm run components",
     "build-storybook": "storybook build",
     "chromatic": "npx chromatic --project-token=chpt_0f59236527eec54",
+    "components": "vite build -c vite.components.config.js --emptyOutDir false",
     "dev": "vite",
     "format": "prettier .",
     "lint": "eslint --ignore-pattern .gitignore ./components",
