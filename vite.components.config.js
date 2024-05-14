@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite'
-import pkg from './package.json'
 
 export default defineConfig(({ mode }) => {
   return {
@@ -10,9 +9,6 @@ export default defineConfig(({ mode }) => {
         fileName: 'components',
         formats: ['es'],
         name: 'jsonresumeMicrodataComponents',
-      },
-      rollupOptions: {
-        external: [...Object.keys(pkg.dependencies), /^node:.*/],
       },
       target: 'esnext',
     },

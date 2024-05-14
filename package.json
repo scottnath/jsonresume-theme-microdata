@@ -28,8 +28,8 @@
   "exports": {
     ".": "./dist/index.js",
     "./*": "./dist/*",
-    "./components": "./components/index.js",
-    "./components/**/*": "./components/**/*.js"
+    "./componentsrc": "./components/index.js",
+    "./componentsrc/**/*": "./components/**/*"
   },
   "main": "./dist/index.cjs",
   "unpkg": "./dist/index.umd.cjs",
