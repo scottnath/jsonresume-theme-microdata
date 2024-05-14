@@ -15,54 +15,55 @@ exports[`renders a resume 1`] = `
           
         </style>
       </head>
-      <body itemscope itemtype="https://schema.org/ProfilePage">
+      <body itemscope itemtype="https://schema.org/ProfilePage" id="jsonresume">
         
     <article id="resume" itemprop="mainEntity" itemscope itemtype="https://schema.org/Person">
       
   
     <header class="masthead" part="basics">
-      <img src="image.jpg" alt="Richard Hendriks's picture" itemprop="image" />
       <div>
         <h1 itemprop="name">Richard Hendriks</h1>
         <h2 itemprop="jobTitle">Programmer</h2>
       </div>
+      <img src="image.jpg" alt="Richard Hendriks's picture" itemprop="image" />
       <div itemprop="description"><p>Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!</p></div>
-      <address part="contact">
-        <dl class="icon-list">
-          
-            <div class="location">
-              <dt><span class="sr-only">location</span></dt>
-              <dd>
+      <div>
+        <address part="contact">
+          <dl class="icon-list">
+            
+              <div class="location">
+                <dt><span class="sr-only">location</span></dt>
+                <dd>
       <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
         <span itemprop="addressRegion">California</span>
         <span itemprop="addressLocality">San Francisco</span>
         <span itemprop="addressCountry">US</span>
       </div>
     </dd>
-            </div>
-          
-          
-          
-            <div class="email">
-              <dt><span class="sr-only">email</span></dt>
-              <dd itemprop="email"><a href="mailto:richard.hendriks@mail.com">richard.hendriks@mail.com</a></dd>
-            </div>
-          
-          
-            <div class="phone">
-              <dt><span class="sr-only">phone</span></dt>
-              <dd itemprop="telephone"><a href="tel:(912)555-4321">(912) 555-4321</a></dd>
-            </div>
-          
-          
-            <div class="url">
-              <dt><span class="sr-only">url</span></dt>
-              <dd><a href="http://richardhendricks.example.com" itemprop="url">richardhendricks.example.com</a></dd>
-            </div>
-          
-        </dl>
-      </address>
-      
+              </div>
+            
+            
+              <div class="email">
+                <dt><span class="sr-only">email</span></dt>
+                <dd itemprop="email"><a href="mailto:richard.hendriks@mail.com">richard.hendriks@mail.com</a></dd>
+              </div>
+            
+            
+              <div class="phone">
+                <dt><span class="sr-only">phone</span></dt>
+                <dd itemprop="telephone"><a href="tel:(912)555-4321">(912) 555-4321</a></dd>
+              </div>
+            
+            
+              <div class="url">
+                <dt><span class="sr-only">url</span></dt>
+                <dd><a href="http://richardhendricks.example.com" itemprop="url">richardhendricks.example.com</a></dd>
+              </div>
+            
+            
+          </dl>
+        </address>
+        
       <address part="profiles">
         <dl class="icon-list">
            <div itemprop="ContactPoint" itemscope itemtype="https://schema.org/ContactPoint">
@@ -75,6 +76,7 @@ exports[`renders a resume 1`] = `
         </dl>
       </address>
     
+      </div>
     </header>
    
       <section part="work">
@@ -131,8 +133,12 @@ exports[`renders a resume 1`] = `
         <ul>
           <li itemprop="hasCourse" itemscope itemtype="https://schema.org/Course">
                 <p itemprop="teaches">DB1101 - Basic SQL</p>
+                <meta itemprop="name" content="DB1101 - Basic SQL" />
+                <meta itemprop="description" content="DB1101 - Basic SQL" />
               </li><li itemprop="hasCourse" itemscope itemtype="https://schema.org/Course">
                 <p itemprop="teaches">CS2011 - Java Introduction</p>
+                <meta itemprop="name" content="CS2011 - Java Introduction" />
+                <meta itemprop="description" content="CS2011 - Java Introduction" />
               </li>
         </ul>
       
@@ -175,7 +181,7 @@ exports[`renders a resume 1`] = `
   
       <section part="skills">
         <h3>Skills</h3>
-        <dl class="grid-list">
+        <dl class="title-list">
            <div class="tag-list" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Thing">
               <dt><span itemprop="description">Web Development</span></dt>
               <dd itemprop="name">HTML</dd><dd itemprop="name">CSS</dd><dd itemprop="name">Javascript</dd>
@@ -188,7 +194,7 @@ exports[`renders a resume 1`] = `
      
       <section part="languages">
         <h3>Languages</h3>
-        <dl class="grid-list">
+        <dl class="title-list">
           
               <div itemprop="knowsLanguage" itemscope itemtype="https://schema.org/Language">
                 <dt itemprop="name">English</dt>
@@ -200,7 +206,7 @@ exports[`renders a resume 1`] = `
      
       <section part="interests">
         <h3>Interests</h3>
-        <dl class="grid-list">
+        <dl class="title-list">
           
               <div class="tag-list" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Thing">
                 <dt><span itemprop="name">Wildlife</span></dt>
@@ -230,29 +236,29 @@ exports[`renders a resume 1`] = `
       <section part="projects">
         <h3>Projects</h3>
         <div class="stack"><article itemprop="alumniOf" itemscope itemtype="https://schema.org/Project">
-    <h4><a href="missdirection.example.com" itemprop="url"><span itemprop="name">Miss Direction</span></a></h4>
-    <span itemprop="parentOrganization" itemscope itemtype="https://schema.org/Organization"
-      ><meta itemprop="name" content="Smoogle"
-    /></span>
+    <header>
+      <h4><a href="missdirection.example.com" itemprop="url"><span itemprop="name">Miss Direction</span></a></h4>
+      <p itemprop="parentOrganization" itemscope itemtype="https://schema.org/Organization">
+        <span itemprop="name">Smoogle</span>
+      </p>
+      <p itemprop="additionalType">application</p>
+      <div class="meta" itemprop="description">A mapping engine that misguides you</div>
+      <div class="meta">
+        <ul itemprop="keywords" class="tag-list">
+          <li>GoogleMaps</li><li>Chrome Extension</li><li>Javascript</li>
+        </ul>
+      </div> 
+    </header>
     
       <section itemprop="alumni" itemscope itemtype="https://schema.org/Role">
-        <p>
-          <span itemprop="roleName">Team lead and Designer</span>  at <strong>Smoogle</strong>
-        </p>
+        <h5 itemprop="roleName">Team lead and Designer</h5>
         <p><time datetime="2016-08-24" itemprop="startDate">Aug 2016</time> – <time datetime="2016-08-24" itemprop="endDate">Aug 2016</time></p>
-        <p itemprop="additionalType">application</p>
+        
+          <ul>
+            <li itemprop="description"><p>Won award at AIHacks 2016</p></li><li itemprop="description"><p>Built by all women team of newbie programmers</p></li><li itemprop="description"><p>Using modern technologies such as GoogleMaps, Chrome Extension and Javascript</p></li>
+          </ul>
+        
       </section>
-    
-    <div itemprop="description"><p>A mapping engine that misguides you</p></div>
-    
-      <ul>
-        <li itemprop="description"><p>Won award at AIHacks 2016</p></li><li itemprop="description"><p>Built by all women team of newbie programmers</p></li><li itemprop="description"><p>Using modern technologies such as GoogleMaps, Chrome Extension and Javascript</p></li>
-      </ul>
-    
-    
-      <ul itemprop="keywords" class="tag-list">
-        <li>GoogleMaps</li><li>Chrome Extension</li><li>Javascript</li>
-      </ul>
     
   </article></div>
       </section>
