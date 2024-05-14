@@ -1,6 +1,6 @@
 # jsonresume-theme-microdata
 
-A [JSON Resume](https://jsonresume.org/) theme with styles and DevX forked from [rbardini/jsonresume-theme-even](https://github.com/rbardini/jsonresume-theme-even). This theme includes microdata and HTML changes, as well as an expanded schema structure for microdata `itemtype` on some content types, `basics.pronouns`, and `meta.sectionTitles` which allows changing the content of the resume section titles.
+A [JSON Resume](https://jsonresume.org/) theme with styles and DevX forked from [rbardini/jsonresume-theme-even][even-theme]. This theme includes microdata and HTML changes, as well as an expanded schema structure for microdata `itemtype` on some content types, `basics.pronouns`, and `meta.sectionTitles` which allows changing the content of the resume section titles.
 
 - 🔬 Resume content included as inline microdata
 - 💄 Markdown support
@@ -17,11 +17,29 @@ A [JSON Resume](https://jsonresume.org/) theme with styles and DevX forked from 
 npm install jsonresume-theme-microdata
 ```
 
-## Why is this theme different than `jsonresume-theme-even`?
+## How is this theme different than `jsonresume-theme-even`?
 
-This resume adds structured data in the form of microdata added as attributes throughout the HTML. There are also slight changes to the HTML structure for semantic reasons.
+**note: this resume should replicate [rbardini's `even` theme][even-theme].**
+
+### microdata
+
+This resume includes structured data in the form of microdata added as attributes throughout the HTML.
 
 To learn more, see the article [Make your resume SEO friendly using JSON Resume with microdata][explainer]
+
+### schema.json extension
+
+Extra properties were added to support control of the final structured data output on some content types. For instance, in the `Work` HTML, the default designation for an employer is the Type `Organization`, but [schema.org/Organization](https://schema.org/Organization) has a lot of specific subTypes like `Corporation` or `WorkersUnion` - each with their own sub-data.
+
+See the Options below for how to add them to your resume.json.
+
+### HTML changes
+
+There are also slight changes to the HTML structures. Some changes, including the addition of `part` attributes, are there for styling and to allow usage in web components
+
+### expanded distribution library
+
+The HTML structures from this repo are exported in the NPM distribution.
 
 ## Usage
 
@@ -206,3 +224,4 @@ Here's an example using the default theme colors:
 ```
 
 [explainer]: https://dev.to/scottnath/make-your-resume-seo-friendly-using-json-resume-with-microdata-1kln
+[even-theme]: https://github.com/rbardini/jsonresume-theme-even
