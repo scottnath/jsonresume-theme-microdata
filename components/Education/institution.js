@@ -34,6 +34,8 @@ export default function Institution(item, itemprop) {
             course =>
               html`<li itemprop="hasCourse" itemscope itemtype="https://schema.org/Course">
                 <p itemprop="teaches">${course}</p>
+                <meta itemprop="name" content="${course}" />
+                <meta itemprop="description" content="${course}" />
               </li>`,
           )}
         </ul>

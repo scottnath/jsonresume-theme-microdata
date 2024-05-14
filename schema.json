@@ -298,7 +298,7 @@
           },
           "itemtype": {
             "type": "string",
-            "description": "Organization Schema.org vocabulary Type, e.g. `EducationalOrganization`"
+            "description": "Organization Schema.org vocabulary Type for `issuer`, e.g. `EducationalOrganization`"
           }
         }
       }

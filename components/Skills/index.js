@@ -13,12 +13,12 @@ export default function Skills(skills = [], title = 'Skills') {
     html`
       <section part="skills">
         <h3>${title}</h3>
-        <dl class="grid-list">
+        <dl class="title-list">
           ${skills.map(({ keywords = [], name, itemtype = 'Thing' }) => {
             const itype = `itemtype="https://schema.org/${itemtype}"`
             return html` <div class="tag-list" itemprop="knowsAbout" itemscope ${itype}>
-              ${name && html`<dt><span itemprop="description">${name}</span></dt>`}
-              ${keywords.length > 0 && keywords.map(keyword => html`<dd itemprop="name">${keyword}</dd>`)}
+              ${name && html`<dt><span itemprop="description">${name.trim()}</span></dt>`}
+              ${keywords.length > 0 && keywords.map(keyword => html`<dd itemprop="name">${keyword.trim()}</dd>`)}
             </div>`
           })}
         </dl>

@@ -13,7 +13,7 @@ export default function Languages(languages = [], title = 'Languages') {
     html`
       <section part="languages">
         <h3>${title}</h3>
-        <dl class="grid-list">
+        <dl class="title-list">
           ${languages.map(
             ({ fluency, language }) => html`
               <div itemprop="knowsLanguage" itemscope itemtype="https://schema.org/Language">

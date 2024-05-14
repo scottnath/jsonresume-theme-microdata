@@ -33,34 +33,33 @@ export default function Project(item, itemprop) {
   } = item
 
   return html`<article ${itemprop && `itemprop="${itemprop}"`} itemscope itemtype="https://schema.org/${itemtype}">
-    <h4>${Link(url, name)}</h4>
-    ${entity &&
-    html`<span itemprop="parentOrganization" itemscope itemtype="https://schema.org/${entityItemtype}"
-      ><meta itemprop="name" content="${entity}"
-    /></span>`}
+    <header>
+      <h4>${Link(url, name)}</h4>
+      ${entity &&
+      html`<p itemprop="parentOrganization" itemscope itemtype="https://schema.org/${entityItemtype}">
+        <span itemprop="name">${entity}</span>
+      </p>`}
+      ${type && html`<p itemprop="additionalType">${type}</p>`}
+      ${description && html`<div class="meta" itemprop="description">${description}</div>`}
+      ${keywords.length > 0 &&
+      html`<div class="meta">
+        <ul itemprop="keywords" class="tag-list">
+          ${keywords.map(keyword => html`<li>${keyword}</li>`)}
+        </ul>
+      </div> `}
+    </header>
     ${(roles.length || startDate) &&
     html`
       <section itemprop="alumni" itemscope itemtype="https://schema.org/Role">
-        ${roles.length > 0 &&
-        html`<p>
-          <span itemprop="roleName">${formatRoles(roles)}</span> ${entity && html` at <strong>${entity}</strong>`}
-        </p>`}
+        ${roles.length > 0 && html`<h5 itemprop="roleName">${formatRoles(roles)}</h5>`}
         ${startDate && html`<p>${Duration(startDate, endDate)}</p>`}
-        ${type && html`<p itemprop="additionalType">${type}</p>`}
+        ${highlights.length > 0 &&
+        html`
+          <ul>
+            ${highlights.map(highlight => html`<li itemprop="description">${markdown(highlight)}</li>`)}
+          </ul>
+        `}
       </section>
-    `}
-    ${description && html`<div itemprop="description">${markdown(description)}</div>`}
-    ${highlights.length > 0 &&
-    html`
-      <ul>
-        ${highlights.map(highlight => html`<li itemprop="description">${markdown(highlight)}</li>`)}
-      </ul>
-    `}
-    ${keywords.length > 0 &&
-    html`
-      <ul itemprop="keywords" class="tag-list">
-        ${keywords.map(keyword => html`<li>${keyword}</li>`)}
-      </ul>
     `}
   </article>`
 }

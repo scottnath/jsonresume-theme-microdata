@@ -13,7 +13,7 @@ export default function Interests(interests = [], title = 'Interests') {
     html`
       <section part="interests">
         <h3>${title}</h3>
-        <dl class="grid-list">
+        <dl class="title-list">
           ${interests.map(
             ({ keywords = [], name, itemtype = 'Thing' }) => html`
               <div class="tag-list" itemprop="knowsAbout" itemscope itemtype="https://schema.org/${itemtype}">

@@ -27,6 +27,7 @@
   "type": "module",
   "exports": {
     ".": "./dist/index.js",
+    "./*": "./dist/*",
     "./components": "./components/index.js",
     "./components/**/*": "./components/**/*.js"
   },
