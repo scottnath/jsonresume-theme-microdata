@@ -25,7 +25,7 @@ exports[`renders a resume 1`] = `
         <h2 itemprop="jobTitle">Programmer</h2>
       </div>
       <img src="image.jpg" alt="Richard Hendriks's picture" itemprop="image" />
-      <div itemprop="description"><p>Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!</p></div>
+      <div itemprop="description">Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!</div>
       <div>
         <address part="contact">
           <dl class="icon-list">
@@ -91,10 +91,10 @@ exports[`renders a resume 1`] = `
       <div class="meta">
         <p><time datetime="2013-12-01" itemprop="startDate">Dec 2013</time> – <time datetime="2014-12-01" itemprop="endDate">Dec 2014</time></p> <p>Palo Alto, CA</p>
       </div>
-      <div itemprop="description"><p>Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.</p></div>
+      <div itemprop="description">Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.</div>
       
         <ul>
-          <li itemprop="disambiguatingDescription"><p>Build an algorithm for artist to detect if their music was violating copy right infringement laws</p></li><li itemprop="disambiguatingDescription"><p>Successfully won Techcrunch Disrupt</p></li><li itemprop="disambiguatingDescription"><p>Optimized an algorithm that holds the current world record for Weisman Scores</p></li>
+          <li itemprop="disambiguatingDescription">Build an algorithm for artist to detect if their music was violating copy right infringement laws</li><li itemprop="disambiguatingDescription">Successfully won Techcrunch Disrupt</li><li itemprop="disambiguatingDescription">Optimized an algorithm that holds the current world record for Weisman Scores</li>
         </ul>
       
     </section>
@@ -110,10 +110,10 @@ exports[`renders a resume 1`] = `
     <section itemprop="employee" itemscope itemtype="https://schema.org/OrganizationRole">
       <h5 itemprop="roleName">Teacher</h5>
       <p><time datetime="2012-01-01" itemprop="startDate">Jan 2012</time> – <time datetime="2013-01-01" itemprop="endDate">Jan 2013</time></p>
-      <div itemprop="description"><p>Global movement of free coding clubs for young people.</p></div>
+      <div itemprop="description">Global movement of free coding clubs for young people.</div>
       
         <ul>
-          <li itemprop="description"><p>Awarded 'Teacher of the Month'</p></li>
+          <li itemprop="description">Awarded 'Teacher of the Month'</li>
         </ul>
       
     </section>
@@ -126,7 +126,7 @@ exports[`renders a resume 1`] = `
     <h4><a href="https://www.ou.edu/" itemprop="url"><span itemprop="name">University of Oklahoma</span></a></h4>
     <section itemprop="owns" itemscope itemtype="https://schema.org/EducationalOccupationalProgram">
       <h5 itemprop="occupationalCategory">Information Technology</h5>
-      <div itemprop="educationalProgramMode"><p>Bachelor</p></div>
+      <div itemprop="educationalProgramMode">Bachelor</div>
       <p><time datetime="2011-06-01" itemprop="startDate">Jun 2011</time> – <time datetime="2014-01-01" itemprop="endDate">Jan 2014</time></p>
       
         <ul>
@@ -154,7 +154,7 @@ exports[`renders a resume 1`] = `
                 <dd class="meta">
                   <div>Awarded by <strong>Techcrunch</strong></div> <time datetime="2014-11-01" >Nov 2014</time>
                 </dd>
-                <dd><p>There is no spoon.</p></dd>
+                <dd>There is no spoon.</dd>
               </div>
             
         </dl>
@@ -170,7 +170,7 @@ exports[`renders a resume 1`] = `
                   Published by <strong itemprop="name">Hooli</strong>
                 </dd>
                 <dd class="meta" itemprop="dateCreated"><time datetime="2014-10-01" >Oct 2014</time></dd>
-                <dd itemprop="abstract"><p>Innovative middle-out compression algorithm that changes the way we store data.</p></dd>
+                <dd itemprop="abstract">Innovative middle-out compression algorithm that changes the way we store data.</dd>
               </div>
             
         </dl>
@@ -218,7 +218,7 @@ exports[`renders a resume 1`] = `
         <div class="stack">
           
               <blockquote itemprop="subjectOf" itemscope itemtype="https://schema.org/Statement">
-                <div itemprop="text"><p>It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.</p></div>
+                <div itemprop="text">It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.</div>
                 
                   <p itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <cite itemprop="name">Erlich Bachman</cite>
@@ -251,7 +251,7 @@ exports[`renders a resume 1`] = `
         <p><time datetime="2016-08-24" itemprop="startDate">Aug 2016</time> – <time datetime="2016-08-24" itemprop="endDate">Aug 2016</time></p>
         
           <ul>
-            <li itemprop="description"><p>Won award at AIHacks 2016</p></li><li itemprop="description"><p>Built by all women team of newbie programmers</p></li><li itemprop="description"><p>Using modern technologies such as GoogleMaps, Chrome Extension and Javascript</p></li>
+            <li itemprop="description">Won award at AIHacks 2016</li><li itemprop="description">Built by all women team of newbie programmers</li><li itemprop="description">Using modern technologies such as GoogleMaps, Chrome Extension and Javascript</li>
           </ul>
         
       </section>

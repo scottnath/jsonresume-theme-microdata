@@ -1,5 +1,5 @@
+import striptags from 'striptags'
 import html from './html.js'
-import markdown from './markdown.js'
 
 /**
  * @param {import('../../schema.d.ts').ResumeSchema['basics']} basics
@@ -10,6 +10,6 @@ export default function HeadMeta(basics = {}) {
 
   return html`
     ${name && html`<title>${name}</title>`}
-    ${summary && html`<meta name="description" content="${markdown(summary, true)}" />`}
+    ${summary && html`<meta name="description" content="${striptags(summary)}" />`}
   `
 }

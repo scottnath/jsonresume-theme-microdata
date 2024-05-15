@@ -3,7 +3,6 @@
 A [JSON Resume](https://jsonresume.org/) theme with styles and DevX forked from [rbardini/jsonresume-theme-even][even-theme]. This theme includes microdata and HTML changes, as well as an expanded schema structure for microdata `itemtype` on some content types, `basics.pronouns`, and `meta.sectionTitles` which allows changing the content of the resume section titles.
 
 - 🔬 Resume content included as inline microdata
-- 💄 Markdown support
 - 📐 CSS grid layout
 - 🌗 Light and dark modes
 - 🎨 Customizable colors
@@ -20,6 +19,10 @@ npm install jsonresume-theme-microdata
 ## How is this theme different than `jsonresume-theme-even`?
 
 **note: this resume should replicate [rbardini's `even` theme][even-theme].**
+
+### markdown support has been removed
+
+To ease external use of the HTML templates, markdown conversions that were happening in `even` have been removed. Please pre-convert your markdown content to HTML when making your resume.json.
 
 ### microdata
 

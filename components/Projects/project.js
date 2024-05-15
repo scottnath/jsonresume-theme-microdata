@@ -1,7 +1,6 @@
 import Duration from '../utils/duration.js'
 import html from '../utils/html.js'
 import Link from '../utils/link.js'
-import markdown from '../utils/markdown.js'
 
 /** @typedef {NonNullable<import('../../schema.d.ts').ResumeSchema['projects']>[number]} Project */
 
@@ -56,7 +55,7 @@ export default function Project(item, itemprop) {
         ${highlights.length > 0 &&
         html`
           <ul>
-            ${highlights.map(highlight => html`<li itemprop="description">${markdown(highlight)}</li>`)}
+            ${highlights.map(highlight => html`<li itemprop="description">${highlight}</li>`)}
           </ul>
         `}
       </section>
