@@ -9,7 +9,7 @@ const resume = JSON.parse(resumeString)
 export default {
   title: 'Publications',
   render: args => {
-    const output = Publications(args.publications, 'alumniOf')
+    const output = Publications(args.publications)
     return psw(output)
   },
 }
