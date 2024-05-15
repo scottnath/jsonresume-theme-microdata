@@ -39,7 +39,9 @@ There are also slight changes to the HTML structures. Some changes, including th
 
 ### expanded distribution library
 
-The HTML structures from this repo are exported in the NPM distribution.
+The HTML structures from this repo are exported in the NPM distribution. All components are bundled together in `dist/components.js`.
+
+The un-bundled files, along with the storybook and test files are in the distribution as well.
 
 ## Usage
 
@@ -201,6 +203,20 @@ Changes across the schema
 
 ```
 
+### Preordered
+
+You can change the order of the sections via the `.meta.themeOptions.preordered` boolean. When `true`, the resume sections (basics, work, etc) will be presented in the resume HTML according to how the sections are ordered in your resume.json file.
+
+```json
+{
+  "meta": {
+    "themeOptions": {
+      "preordered": true
+    }
+  }
+}
+```
+
 ### Colors
 
 You can override theme colors via the `.meta.themeOptions.colors` resume field. Each entry defines a tuple of light and (optional) dark color values. If only one array value is defined, it will be used in both light and dark modes.
@@ -217,6 +233,25 @@ Here's an example using the default theme colors:
         "primary": ["#191e23", "#fbfbfc"],
         "secondary": ["#6c7781", "#ccd0d4"],
         "accent": ["#0073aa", "#00a0d2"]
+      }
+    }
+  }
+}
+```
+
+### Section Titles
+
+You can change the text of the section titles via the `.meta.themeOptions.sectionTitles` object field. You can change one or all titles by adding them to this object, which will change the sections `H3` tag's contents. Note: `basics` and `meta` do not have titles.
+
+```json
+{
+  "meta": {
+    "themeOptions": {
+      "sectionTitles": {
+        "work": "Work of a Cat",
+        "certificates": "Certificates of Meowing",
+        "publications": "Publications for Meows",
+        "skills": "Feline Skillset"
       }
     }
   }

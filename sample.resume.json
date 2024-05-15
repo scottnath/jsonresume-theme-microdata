@@ -139,6 +139,15 @@
   "meta": {
     "canonical": "",
     "version": "",
-    "lastModified": ""
+    "lastModified": "",
+    "themeOptions": {
+      "preordered": true,
+      "sectionTitles": {
+        "work": "Work of a Cat",
+        "certificates": "Certificates of Meowing",
+        "publications": "Publications for Meows",
+        "skills": "Feline Skillset"
+      }
+    }
   }
 }

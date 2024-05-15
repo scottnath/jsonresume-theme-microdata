@@ -529,23 +529,55 @@
           "type": "string",
           "description": "Using ISO 8601 with YYYY-MM-DDThh:mm:ss"
         },
-        "sectionTitles": {
+        "themeOptions": {
           "type": "object",
-          "description": "The title text used in each section's heading",
-          "default": {
-            "basics": "Basics",
-            "work": "Work",
-            "volunteer": "Volunteer",
-            "education": "Education",
-            "awards": "Awards",
-            "certificates": "Certificates",
-            "publications": "Publications",
-            "skills": "Skills",
-            "languages": "Languages",
-            "interests": "Interests",
-            "references": "References",
-            "projects": "Projects",
-            "meta": "meta"
+          "description": "Various theme-specific configurations",
+          "additionalProperties": true,
+          "properties": {
+            "preordered": {
+              "type": "boolean",
+              "description": "Orders resume sections according to how they are ordered in resume.json"
+            },
+            "colors": {
+              "type": "object",
+              "description": "The title text used in each section's heading",
+              "additionalProperties": false,
+              "properties": {
+                "background": {
+                  "$ref": "#/$defs/lightDarkColors"
+                },
+                "dimmed": {
+                  "$ref": "#/$defs/lightDarkColors"
+                },
+                "primary": {
+                  "$ref": "#/$defs/lightDarkColors"
+                },
+                "secondary": {
+                  "$ref": "#/$defs/lightDarkColors"
+                },
+                "accent": {
+                  "$ref": "#/$defs/lightDarkColors"
+                }
+              }
+            },
+            "sectionTitles": {
+              "type": "object",
+              "description": "The title text used in each section's heading.",
+              "additionalProperties": false,
+              "properties": {
+                "work": { "type": "string" },
+                "volunteer": { "type": "string" },
+                "education": { "type": "string" },
+                "awards": { "type": "string" },
+                "certificates": { "type": "string" },
+                "publications": { "type": "string" },
+                "skills": { "type": "string" },
+                "languages": { "type": "string" },
+                "interests": { "type": "string" },
+                "references": { "type": "string" },
+                "projects": { "type": "string" }
+              }
+            }
           }
         }
       }
@@ -558,6 +590,19 @@
       "type": "string",
       "description": "e.g. 2014-06-29",
       "pattern": "^([1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]|[1-2][0-9]{3}-[0-1][0-9]|[1-2][0-9]{3})$"
+    },
+    "lightDarkColors": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "string",
+          "description": "light color"
+        },
+        {
+          "type": "string",
+          "description": "dark color"
+        }
+      ]
     }
   }
 }

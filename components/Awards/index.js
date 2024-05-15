@@ -6,12 +6,12 @@ import markdown from '../utils/markdown.js'
  * @param {import('../../schema.js').ResumeSchema['awards']} awards
  * @returns {string | false}
  */
-export default function Awards(awards = []) {
+export default function Awards(awards = [], title = 'Awards') {
   return (
     awards.length > 0 &&
     html`
       <section part="awards">
-        <h3>Awards</h3>
+        <h3>${title}</h3>
         <dl class="stack">
           ${awards.map(
             ({ awarder, date, summary, title }) => html`
