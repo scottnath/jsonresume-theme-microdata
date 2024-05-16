@@ -205,6 +205,13 @@
         "certificates": "Certificates of Meowing",
         "publications": "Publications for Meows",
         "skills": "Feline Skillset"
+      },
+      "colors": {
+        "background": ["gold", "blueviolet"],
+        "dimmed": ["lightsalmon", "fuscia"],
+        "primary": ["mediumpurple", "yellow"],
+        "secondary": ["violet", "chartreuse"],
+        "link": ["palegreen", "aqua"]
       }
     }
   }

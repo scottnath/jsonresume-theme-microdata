@@ -18,7 +18,8 @@ const config: StorybookConfig = {
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     '@chromatic-com/storybook',
-    '@storybook/addon-coverage'
+    '@storybook/addon-coverage',
+    'storybook-addon-render-modes'
   ],
   framework: {
     name: '@storybook/web-components-vite',

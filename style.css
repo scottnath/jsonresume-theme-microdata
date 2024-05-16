@@ -6,19 +6,19 @@
   --color-dimmed-light: #f3f4f5; /* Light Gray 200 */
   --color-primary-light: #191e23; /* Dark Gray 900 */
   --color-secondary-light: #6c7781; /* Dark Gray 300 */
-  --color-accent-light: #0073aa; /* WordPress Blue */
+  --color-link-light: #0073aa; /* WordPress Blue */
 
   --color-background-dark: #191e23; /* Dark Gray 900 */
   --color-dimmed-dark: #23282d; /* Dark Gray 800 */
   --color-primary-dark: #fbfbfc; /* Light Gray 100 */
   --color-secondary-dark: #ccd0d4; /* Light Gray 700 */
-  --color-accent-dark: #00a0d2; /* Medium Blue */
+  --color-link-dark: #00a0d2; /* Medium Blue */
 
   --color-background: var(--color-background-light);
   --color-dimmed: var(--color-dimmed-light);
   --color-primary: var(--color-primary-light);
   --color-secondary: var(--color-secondary-light);
-  --color-accent: var(--color-accent-light);
+  --color-link: var(--color-link-light);
 
   --scale-ratio: 1.25;
   --scale0: 1rem;
@@ -49,7 +49,7 @@
     --color-dimmed: var(--color-dimmed-dark);
     --color-primary: var(--color-primary-dark);
     --color-secondary: var(--color-secondary-dark);
-    --color-accent: var(--color-accent-dark);
+    --color-link: var(--color-link-dark);
   }
 }
 
@@ -117,7 +117,7 @@ li::marker,
 }
 
 a {
-  color: var(--color-accent);
+  color: var(--color-link);
   text-decoration: none;
 }
 

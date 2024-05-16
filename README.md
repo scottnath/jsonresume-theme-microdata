@@ -235,7 +235,7 @@ Here's an example using the default theme colors:
         "dimmed": ["#f3f4f5", "#23282d"],
         "primary": ["#191e23", "#fbfbfc"],
         "secondary": ["#6c7781", "#ccd0d4"],
-        "accent": ["#0073aa", "#00a0d2"]
+        "link": ["#0073aa", "#00a0d2"]
       }
     }
   }
