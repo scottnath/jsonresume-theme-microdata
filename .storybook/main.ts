@@ -1,7 +1,7 @@
 import type { StorybookConfig } from '@storybook/web-components-vite'
 import path from 'path'
-import { mergeConfig } from 'vite';
-import istanbul from 'vite-plugin-istanbul';
+import { mergeConfig } from 'vite'
+import istanbul from 'vite-plugin-istanbul'
 
 const coverageConfig = {
   include: ['../src/**/*.jsx'],
@@ -9,7 +9,7 @@ const coverageConfig = {
   extension: ['.jsx'],
   excludeNodeModules: true,
   all: true,
-};
+}
 
 const config: StorybookConfig = {
   stories: ['../**/*.mdx', '../**/*.stories.@(js|jsx|mjs|ts|tsx)'],
@@ -19,7 +19,7 @@ const config: StorybookConfig = {
     '@storybook/addon-interactions',
     '@chromatic-com/storybook',
     '@storybook/addon-coverage',
-    'storybook-addon-render-modes'
+    'storybook-addon-render-modes',
   ],
   framework: {
     name: '@storybook/web-components-vite',
@@ -34,7 +34,7 @@ const config: StorybookConfig = {
       cacheDir: path.join(__dirname, '../node_modules/.vite-storybook'),
       plugins: [
         istanbul({
-          ...coverageConfig
+          ...coverageConfig,
         }),
       ],
       resolve: {
@@ -44,8 +44,8 @@ const config: StorybookConfig = {
       },
       define: {
         'process.env': process.env,
-      }
-    });
+      },
+    })
   },
 }
 export default config
