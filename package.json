@@ -55,7 +55,7 @@
     "release": "semantic-release --debug=true",
     "storybook": "storybook dev -p 6006",
     "test": "vitest",
-    "test-storybook": "test-storybook",
+    "test-storybook": "test-storybook --coverage --verbose",
     "type-check": "tsc"
   },
   "eslintConfig": {
