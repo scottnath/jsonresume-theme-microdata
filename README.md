@@ -19,7 +19,7 @@ npm install jsonresume-theme-microdata
 
 ## How is this theme different than `jsonresume-theme-even`?
 
-**note: this resume should replicate [rbardini's `even` theme][even-theme].**
+**note: this resume should replicate the styling from [rbardini's `even` theme][even-theme].**
 
 ### microdata
 
@@ -31,7 +31,7 @@ To learn more, see the article [Make your resume SEO friendly using JSON Resume 
 
 Extra properties were added to support control of the final structured data output on some content types. For instance, in the `Work` HTML, the default designation for an employer is the Type `Organization`, but [schema.org/Organization](https://schema.org/Organization) has a lot of specific subTypes like `Corporation` or `WorkersUnion` - each with their own sub-data.
 
-See the Options below for how to add them to your resume.json.
+See the Options below for how to add `themeOptions` and use the `microdata` properties to your resume.json.
 
 ### HTML changes
 
@@ -53,6 +53,10 @@ The un-bundled files, along with the storybook and test files are in the distrib
 npm install resumed jsonresume-theme-microdata
 npx resumed render --theme jsonresume-theme-microdata
 ```
+
+**validator note** `resumed` includes the [resume-schema validator](https://github.com/jsonresume/resume-schema). This validator will validate against [the canonical JSON Resume schema.json](https://github.com/jsonresume/resume-schema/blob/master/schema.json), but the validation will not be validating the `microdata` additions across the types.
+
+**validation tip:** to validate your `resume.json` content against the [jsonresume-theme-microdata's schema.json](./schema.json), you can use an online tool like [Hyperjump's JSON Schema validator](https://json-schema.hyperjump.io/).
 
 ### Standalone usage
 

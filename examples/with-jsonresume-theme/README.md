@@ -2,7 +2,7 @@
 
 This example shows how to use Resumed with a JSON Resume theme, [microdata](https://github.com/scottnath/jsonresume-theme-microdata).
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/scottnath/jsonresume-theme-microdata/tree/article/examples/with-jsonresume-theme?file=README.md)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/scottnath/jsonresume-theme-microdata/tree/main/examples/with-jsonresume-theme?file=README.md)
 
 ## How to use
 
