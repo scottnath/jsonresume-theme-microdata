@@ -1,6 +1,7 @@
 import Duration from '../utils/duration.js'
 import html from '../utils/html.js'
 import Link from '../utils/link.js'
+import markdown from '../utils/markdown.js'
 
 /** @typedef {NonNullable<import('../../schema.d.ts').ResumeSchema['volunteer']>[number]} Volunteer */
 /**
@@ -17,11 +18,11 @@ export default function VolunteerRole(item, itemprop) {
     <section itemprop="employee" itemscope itemtype="https://schema.org/OrganizationRole">
       <h5 itemprop="roleName">${position}</h5>
       ${startDate && html`<p>${Duration(startDate, endDate)}</p>`}
-      ${summary && html`<div itemprop="description">${summary}</div>`}
+      ${summary && html`<div itemprop="description">${markdown(summary)}</div>`}
       ${highlights.length > 0 &&
       html`
         <ul>
-          ${highlights.map(highlight => html`<li itemprop="description">${highlight}</li>`)}
+          ${highlights.map(highlight => html`<li itemprop="description">${markdown(highlight)}</li>`)}
         </ul>
       `}
     </section>

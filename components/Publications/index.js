@@ -1,6 +1,7 @@
 import { ShortDate } from '../utils/date.js'
 import html from '../utils/html.js'
 import Link from '../utils/link.js'
+import markdown from '../utils/markdown.js'
 
 /** @typedef {NonNullable<import('../../schema.d.ts').ResumeSchema['publications']>} Publications */
 
@@ -33,7 +34,7 @@ export default function Publications(publications = [], title = 'Publications') 
                   Published by <strong itemprop="name">${publisher}</strong>
                 </dd>`}
                 ${releaseDate && html`<dd class="meta" itemprop="dateCreated">${ShortDate(releaseDate)}</dd>`}
-                ${summary && html`<dd itemprop="abstract">${summary}</dd>`}
+                ${summary && html`<dd itemprop="abstract">${markdown(summary)}</dd>`}
               </div>
             `,
           )}

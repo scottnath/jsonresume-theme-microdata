@@ -1,4 +1,5 @@
 import html from '../utils/html.js'
+import markdown from '../utils/markdown.js'
 
 /** @typedef {NonNullable<import('../../schema.d.ts').ResumeSchema['references']>} References */
 
@@ -17,7 +18,7 @@ export default function References(references = [], title = 'References') {
           ${references.map(
             ({ name, reference }) => html`
               <blockquote itemprop="subjectOf" itemscope itemtype="https://schema.org/Statement">
-                ${reference && html`<div itemprop="text">${reference}</div>`}
+                ${reference && html`<div itemprop="text">${markdown(reference)}</div>`}
                 ${name &&
                 html`
                   <p itemprop="author" itemscope itemtype="https://schema.org/Person">

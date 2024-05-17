@@ -1,5 +1,6 @@
 import html from '../utils/html.js'
 import Link from '../utils/link.js'
+import markdown from '../utils/markdown.js'
 import Location from './location.js'
 import Profiles from './profiles.js'
 
@@ -17,7 +18,7 @@ export default function Header(basics = {}) {
         ${label && html`<h2 itemprop="jobTitle">${label}</h2>`}
       </div>
       ${image && html`<img src="${image}" alt="${name}'s picture" itemprop="image" />`}
-      ${summary && html`<div itemprop="description">${summary}</div>`}
+      ${summary && html`<div itemprop="description">${markdown(summary)}</div>`}
       <div>
         <address part="contact">
           <dl class="icon-list">
