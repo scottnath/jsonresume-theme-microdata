@@ -1,9 +1,11 @@
-import html from '../../utils/html.js'
-import { DateTime } from '../date.js'
-import Link from '../link.js'
+import { DateTime } from '../utils/date.js'
+import html from '../utils/html.js'
+import Link from '../utils/link.js'
+
+/** @typedef {import('../../schema.d.ts').ResumeSchema['meta']} Meta */
 
 /**
- * @param {import('../../schema.d.ts').ResumeSchema['meta']} meta
+ * @param {Meta} meta
  * @returns {string | false}
  */
 export default function Meta(meta = {}) {
@@ -11,7 +13,7 @@ export default function Meta(meta = {}) {
   return (
     Object.values(meta).length > 0 &&
     html`
-      <footer id="meta" itemprop="owns" itemscope itemtype="https://schema.org/TextDigitalDocument">
+      <footer part="meta" itemprop="owns" itemscope itemtype="https://schema.org/TextDigitalDocument">
         ${canonical && html` <p>${Link(canonical, 'canonical resume.json file', 'sameAs', '')}</p> `}
         ${version && html` <p>version <span itemprop="version">${version}</span></p> `}
         ${lastModified && html` <p>last modified ${DateTime(lastModified, 'dateModified')}</p> `}

@@ -1,16 +1,19 @@
-import html from '../../utils/html.js'
+import html from '../utils/html.js'
 import Project from './project.js'
 
+/** @typedef {NonNullable<import('../../schema.d.ts').ResumeSchema['projects']>} Projects */
+
 /**
- * @param {import('../../schema.d.ts').ResumeSchema['projects']} projects
+ * @param {Projects} projects
+ * @param {string} [title] - section title text
  * @returns {string | false}
  */
-export default function Projects(projects = []) {
+export default function Projects(projects = [], title = 'Projects') {
   return (
     projects.length > 0 &&
     html`
-      <section id="projects">
-        <h3>Projects</h3>
+      <section part="projects">
+        <h3>${title}</h3>
         <div class="stack">${projects.map(role => Project(role, 'alumniOf'))}</div>
       </section>
     `

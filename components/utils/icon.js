@@ -1,4 +1,4 @@
-import feather from 'feather-icons'
+import { icons } from 'feather-icons'
 
 /** @typedef {import('feather-icons').FeatherIconNames} FeatherIconNames */
 
@@ -9,7 +9,7 @@ import feather from 'feather-icons'
  */
 export default function Icon(name, fallback) {
   const icon =
-    feather.icons[/** @type {FeatherIconNames} */ (name.toLowerCase())] ||
-    (fallback && feather.icons[/** @type {FeatherIconNames} */ (fallback.toLowerCase())])
+    icons[/** @type {FeatherIconNames} */ (name.toLowerCase())] ||
+    (fallback && icons[/** @type {FeatherIconNames} */ (fallback.toLowerCase())])
   return icon?.toSvg({ width: 16, height: 16 })
 }

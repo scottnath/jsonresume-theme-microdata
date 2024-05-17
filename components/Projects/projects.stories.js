@@ -30,7 +30,12 @@ export const AllContent = {
 
 export const OneProject = {
   args: {
-    projects: [resume.projects[0]],
+    projects: [
+      {
+        ...resume.projects[0],
+        itemtype: 'WorkersUnion',
+      },
+    ],
   },
   play: async ({ args, canvasElement, step }) => {
     const projectsData = microdata('https://schema.org/Person', canvasElement)
@@ -38,6 +43,6 @@ export const OneProject = {
       '@type': 'Person',
       alumniOf: expect.any(Object),
     })
-    expect(projectsData.alumniOf['@type']).toBe('Project')
+    expect(projectsData.alumniOf['@type']).toBe(args.projects[0].itemtype || 'Project')
   },
 }

@@ -25,8 +25,8 @@ export const AllContent = {
       subjectOf: expect.any(Array),
     })
     expect(referencesData.subjectOf).toHaveLength(args.references.length)
-    expect(referencesData.subjectOf[0].text).toBe(args.references[0].reference)
-    expect(referencesData.subjectOf[1].text).toBe(args.references[1].reference)
+    expect(referencesData.subjectOf[0].text).toBe(args.references[0].reference.trim())
+    expect(referencesData.subjectOf[1].text).toBe(args.references[1].reference.trim())
   },
 }
 
@@ -40,6 +40,6 @@ export const OneReference = {
       '@type': 'Person',
       subjectOf: expect.any(Object),
     })
-    expect(referencesData.subjectOf.text).toBe(args.references[0].reference)
+    expect(referencesData.subjectOf.text).toBe(args.references[0].reference.trim())
   },
 }

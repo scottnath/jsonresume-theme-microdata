@@ -1,5 +1,4 @@
 import { micromark } from 'micromark'
-import { gfm, gfmHtml } from 'micromark-extension-gfm'
 import striptags from 'striptags'
 
 /**
@@ -8,10 +7,7 @@ import striptags from 'striptags'
  * @returns
  */
 export default function markdown(doc, stripTags = false) {
-  const result = micromark(doc, {
-    extensions: [gfm()],
-    htmlExtensions: [gfmHtml()],
-  })
+  const result = micromark(doc)
   const html = /** @type {string} */ (micromark(doc))
   return stripTags ? striptags(html) : html
 }

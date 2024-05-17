@@ -1,16 +1,19 @@
-import html from '../../utils/html.js'
+import html from '../utils/html.js'
 import VolunteerRole from './volunteer-role.js'
 
+/** @typedef {NonNullable<import('../../schema.d.ts').ResumeSchema['volunteer']>} Volunteer */
+
 /**
- * @param {import('../../schema.d.ts').ResumeSchema['volunteer']} volunteer
+ * @param {Volunteer} volunteer
+ * @param {string} [title] - section title text
  * @returns {string | false}
  */
-export default function Volunteer(volunteer = []) {
+export default function Volunteer(volunteer = [], title = 'Volunteer') {
   return (
     volunteer.length > 0 &&
     html`
-      <section id="volunteer">
-        <h3>Volunteer</h3>
+      <section part="volunteer">
+        <h3>${title}</h3>
         <div class="stack">${volunteer.map(role => VolunteerRole(role, 'alumniOf'))}</div>
       </section>
     `

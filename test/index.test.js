@@ -38,6 +38,6 @@ it('renders valid HTML', async () => {
   const {
     results: [{ messages } = {}],
   } = await htmlvalidate.validateString(render(resume))
-
+  console.log(messages)
   expect(messages).toBeUndefined()
 })
