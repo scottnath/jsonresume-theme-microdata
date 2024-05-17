@@ -33,7 +33,7 @@ export default function Institution(item, itemprop) {
           ${courses.map(
             course =>
               html`<li itemprop="hasCourse" itemscope itemtype="https://schema.org/Course">
-                <p itemprop="teaches">${markdown(course)}</p>
+                <p itemprop="teaches">${course}</p>
                 <meta itemprop="name" content="${markdown(course, true)}" />
                 <meta itemprop="description" content="${markdown(course, true)}" />
               </li>`,
