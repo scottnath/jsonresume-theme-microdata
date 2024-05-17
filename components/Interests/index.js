@@ -1,19 +1,22 @@
-import html from '../../utils/html.js'
+import html from '../utils/html.js'
+
+/** @typedef {NonNullable<import('../../schema.d.ts').ResumeSchema['interests']>} Interests */
 
 /**
- * @param {import('../../schema.d.ts').ResumeSchema['interests']} interests
+ * @param {Interests} interests
+ * @param {string} [title] - section title text
  * @returns {string | false}
  */
-export default function Interests(interests = []) {
+export default function Interests(interests = [], title = 'Interests') {
   return (
     interests.length > 0 &&
     html`
-      <section id="interests">
-        <h3>Interests</h3>
-        <dl class="grid-list">
+      <section part="interests">
+        <h3>${title}</h3>
+        <dl class="title-list">
           ${interests.map(
-            ({ keywords = [], name }) => html`
-              <div class="tag-list" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Thing">
+            ({ keywords = [], name, itemtype = 'Thing' }) => html`
+              <div class="tag-list" itemprop="knowsAbout" itemscope itemtype="https://schema.org/${itemtype}">
                 ${name && html`<dt><span itemprop="name">${name}</span></dt>`}
                 ${keywords.length > 0 && keywords.map(keyword => html`<dd itemprop="alternateName">${keyword}</dd>`)}
               </div>

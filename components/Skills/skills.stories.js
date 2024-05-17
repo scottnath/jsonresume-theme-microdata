@@ -30,7 +30,12 @@ export const AllContent = {
 
 export const OneSkill = {
   args: {
-    skills: [resume.skills[0]],
+    skills: [
+      {
+        ...resume.skills[0],
+        itemtype: undefined,
+      },
+    ],
   },
   play: async ({ args, canvasElement, step }) => {
     const skillsData = microdata('https://schema.org/Person', canvasElement)
@@ -38,6 +43,6 @@ export const OneSkill = {
       '@type': 'Person',
       knowsAbout: expect.any(Object),
     })
-    expect(skillsData.knowsAbout['@type']).toBe(resume.skills[0].itemtype)
+    expect(skillsData.knowsAbout['@type']).toBe('Thing')
   },
 }

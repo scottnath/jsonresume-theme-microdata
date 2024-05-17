@@ -38,6 +38,6 @@ export const OneWork = {
       '@type': 'Person',
       alumniOf: expect.any(Object),
     })
-    expect(workData.alumniOf['@type']).toBe('Organization')
+    expect(workData.alumniOf['@type']).toBe(args.work.itemtype || 'Organization')
   },
 }

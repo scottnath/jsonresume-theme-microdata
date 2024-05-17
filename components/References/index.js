@@ -1,16 +1,19 @@
-import html from '../../utils/html.js'
-import markdown from '../../utils/markdown.js'
+import html from '../utils/html.js'
+import markdown from '../utils/markdown.js'
+
+/** @typedef {NonNullable<import('../../schema.d.ts').ResumeSchema['references']>} References */
 
 /**
- * @param {import('../../schema.d.ts').ResumeSchema['references']} references
+ * @param {References} references
+ * @param {string} [title] - section title text
  * @returns {string | false}
  */
-export default function References(references = []) {
+export default function References(references = [], title = 'References') {
   return (
     references.length > 0 &&
     html`
-      <section id="references">
-        <h3>References</h3>
+      <section part="references">
+        <h3>${title}</h3>
         <div class="stack">
           ${references.map(
             ({ name, reference }) => html`

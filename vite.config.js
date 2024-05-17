@@ -31,7 +31,13 @@ export default defineConfig(({ mode }) => {
     plugins: [
       dts(),
       viteStaticCopy({
-        targets: [{ src: './schema.d.ts', dest: '.' }],
+        targets: [
+          { src: './schema.d.ts', dest: '.' },
+          { src: './README.md', dest: '.' },
+          { src: './schema.json', dest: '.' },
+          { src: './style.css', dest: '.' },
+          { src: './sample.resume.json', dest: '.' },
+        ],
       }),
     ],
     test: {

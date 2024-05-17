@@ -1,25 +1,36 @@
-import html from '../../utils/html.js'
-import markdown from '../../utils/markdown.js'
-import { ShortDate } from '../date.js'
-import Link from '../link.js'
+import { ShortDate } from '../utils/date.js'
+import html from '../utils/html.js'
+import Link from '../utils/link.js'
+import markdown from '../utils/markdown.js'
+
+/** @typedef {NonNullable<import('../../schema.d.ts').ResumeSchema['publications']>} Publications */
 
 /**
- * @param {import('../../schema.js').ResumeSchema['publications']} publications
+ * @param {Publications} publications
+ * @param {string} [title] - section title text
  * @returns {string | false}
  */
-export default function Publications(publications = []) {
+export default function Publications(publications = [], title = 'Publications') {
   return (
     publications.length > 0 &&
     html`
-      <section id="publications">
-        <h3>Publications</h3>
+      <section part="publications">
+        <h3>${title}</h3>
         <dl class="stack">
           ${publications.map(
-            ({ name, publisher, releaseDate, summary, url }) => html`
-              <div itemprop="owns" itemscope itemtype="https://schema.org/CreativeWork">
+            ({
+              name,
+              itemtype = 'CreativeWork',
+              publisher,
+              publisherItemtype = 'Organization',
+              releaseDate,
+              summary,
+              url,
+            }) => html`
+              <div itemprop="owns" itemscope itemtype="https://schema.org/${itemtype}">
                 <dt>${Link(url, name)}</dt>
                 ${publisher &&
-                html`<dd class="meta" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                html`<dd class="meta" itemprop="publisher" itemscope itemtype="https://schema.org/${publisherItemtype}">
                   Published by <strong itemprop="name">${publisher}</strong>
                 </dd>`}
                 ${releaseDate && html`<dd class="meta" itemprop="dateCreated">${ShortDate(releaseDate)}</dd>`}

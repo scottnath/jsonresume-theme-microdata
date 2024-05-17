@@ -1,5 +1,5 @@
-import html from '../utils/html.js'
 import { ShortDate } from './date.js'
+import html from './html.js'
 
 /**
  * @param {string} startDate

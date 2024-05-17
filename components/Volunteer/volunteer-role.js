@@ -1,7 +1,7 @@
-import html from '../../utils/html.js'
-import markdown from '../../utils/markdown.js'
-import Duration from '../duration.js'
-import Link from '../link.js'
+import Duration from '../utils/duration.js'
+import html from '../utils/html.js'
+import Link from '../utils/link.js'
+import markdown from '../utils/markdown.js'
 
 /** @typedef {NonNullable<import('../../schema.d.ts').ResumeSchema['volunteer']>[number]} Volunteer */
 /**
@@ -10,8 +10,8 @@ import Link from '../link.js'
  * @returns {string | false}
  */
 export default function VolunteerRole(item, itemprop) {
-  const { highlights = [], organization, position, startDate, endDate, summary, url } = item
-  return html` <article ${itemprop && `itemprop="${itemprop}"`} itemscope itemtype="https://schema.org/Organization">
+  const { highlights = [], organization, position, startDate, endDate, summary, url, itemtype = 'Organization' } = item
+  return html`<article ${itemprop && `itemprop="${itemprop}"`} itemscope itemtype="https://schema.org/${itemtype}">
     <header>
       <h4>${Link(url, organization)}</h4>
     </header>

@@ -41,3 +41,22 @@ export const OneAward = {
     expect(awardData.award).toContain(args.awards[0].title)
   },
 }
+
+export const HTMLSummary = {
+  args: {
+    awards: [
+      {
+        ...resume.awards[0],
+        summary: `<p>${resume.awards[0].summary}</p>`,
+      },
+    ],
+  },
+  play: async ({ args, canvasElement, step }) => {
+    const awardData = microdata('https://schema.org/Person', canvasElement)
+    expect.objectContaining({
+      '@type': 'Person',
+      award: expect.any(String),
+    })
+    expect(awardData.award).toContain(args.awards[0].title)
+  },
+}

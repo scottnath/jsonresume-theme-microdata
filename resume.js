@@ -1,8 +1,8 @@
 import ResumeArticle from './components/ResumeArticle/index.js'
-import HeadMeta from './components/html-meta.js'
+import HeadMeta from './components/utils/html-meta.js'
 
-import colors from './utils/colors.js'
-import html from './utils/html.js'
+import colors from './components/utils/colors.js'
+import html from './components/utils/html.js'
 
 /**
  * @param {import('./schema.d.ts').ResumeSchema} resume
@@ -21,7 +21,7 @@ export default function Resume(resume, css) {
           ${css}
         </style>
       </head>
-      <body itemscope itemtype="https://schema.org/ProfilePage">
+      <body itemscope itemtype="https://schema.org/ProfilePage" id="jsonresume">
         ${ResumeArticle(resume)}
       </body>
     </html>`

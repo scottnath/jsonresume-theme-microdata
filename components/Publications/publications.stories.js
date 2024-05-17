@@ -9,7 +9,7 @@ const resume = JSON.parse(resumeString)
 export default {
   title: 'Publications',
   render: args => {
-    const output = Publications(args.publications, 'alumniOf')
+    const output = Publications(args.publications)
     return psw(output)
   },
 }
@@ -38,5 +38,7 @@ export const OnePublication = {
       owns: expect.any(String),
     })
     expect(publicationsData.owns.name).toBe(args.publications[0].name)
+    expect(publicationsData.owns['@type']).toBe(args.publications[0].itemtype || 'CreativeWork')
+    expect(publicationsData.owns.publisher['@type']).toBe(args.publications[0].publisherItemtype || 'Organization')
   },
 }

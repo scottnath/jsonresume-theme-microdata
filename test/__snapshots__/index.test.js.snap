@@ -15,68 +15,72 @@ exports[`renders a resume 1`] = `
           
         </style>
       </head>
-      <body itemscope itemtype="https://schema.org/ProfilePage">
+      <body itemscope itemtype="https://schema.org/ProfilePage" id="jsonresume">
         
     <article id="resume" itemprop="mainEntity" itemscope itemtype="https://schema.org/Person">
       
-  
-    <header class="masthead">
-      <img src="image.jpg" alt="Richard Hendriks's picture" itemprop="image" />
+    <header class="masthead" part="basics">
       <div>
         <h1 itemprop="name">Richard Hendriks</h1>
         <h2 itemprop="jobTitle">Programmer</h2>
       </div>
+      <img src="image.jpg" alt="Richard Hendriks's picture" itemprop="image" />
       <div itemprop="description"><p>Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!</p></div>
-      <address>
-        <dl class="icon-list">
-          
-            <div class="location">
-              <dt><span class="sr-only">location</span></dt>
-              <dd>
+      <div>
+        <address part="contact">
+          <dl class="icon-list">
+            
+              <div class="location">
+                <dt><span class="sr-only">location</span></dt>
+                <dd>
       <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
         <span itemprop="addressRegion">California</span>
         <span itemprop="addressLocality">San Francisco</span>
         <span itemprop="addressCountry">US</span>
       </div>
     </dd>
-            </div>
-          
-          
-            <div class="email">
-              <dt><span class="sr-only">email</span></dt>
-              <dd itemprop="email"><a href="mailto:richard.hendriks@mail.com">richard.hendriks@mail.com</a></dd>
-            </div>
-          
-          
-            <div class="phone">
-              <dt><span class="sr-only">phone</span></dt>
-              <dd itemprop="telephone"><a href="tel:(912)555-4321">(912) 555-4321</a></dd>
-            </div>
-          
-          
-            <div class="url">
-              <dt><span class="sr-only">url</span></dt>
-              <dd><a href="http://richardhendricks.example.com" itemprop="url">richardhendricks.example.com</a></dd>
-            </div>
-          
-        </dl>
+              </div>
+            
+            
+              <div class="email">
+                <dt><span class="sr-only">email</span></dt>
+                <dd itemprop="email"><a href="mailto:richard.hendriks@mail.com">richard.hendriks@mail.com</a></dd>
+              </div>
+            
+            
+              <div class="phone">
+                <dt><span class="sr-only">phone</span></dt>
+                <dd itemprop="telephone"><a href="tel:(912)555-4321">(912) 555-4321</a></dd>
+              </div>
+            
+            
+              <div class="url">
+                <dt><span class="sr-only">url</span></dt>
+                <dd><a href="http://richardhendricks.example.com" itemprop="url">richardhendricks.example.com</a></dd>
+              </div>
+            
+            
+          </dl>
+        </address>
         
-      <dl class="icon-list">
-         <div itemprop="ContactPoint" itemscope itemtype="https://schema.org/ContactPoint">
-            <dt style="--svg-network:url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22feather%20feather-twitter%22%3E%3Cpath%20d%3D%22M23%203a10.9%2010.9%200%200%201-3.14%201.53%204.48%204.48%200%200%200-7.86%203v1A10.66%2010.66%200%200%201%203%204s-4%209%205%2013a11.64%2011.64%200%200%201-7%202c9%205%2020%200%2020-11.5a4.5%204.5%200%200%200-.08-.83A7.72%207.72%200%200%200%2023%203z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E')" itemprop="contactType"><span class="sr-only">Twitter</span></dt>
-            <dd data-network="Twitter"><a href="" itemprop="url"><span itemprop="identifier">neutralthoughts</span></a></dd>
-          </div> <div itemprop="ContactPoint" itemscope itemtype="https://schema.org/ContactPoint">
-            <dt style="--svg-network:url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22feather%20feather-user%22%3E%3Cpath%20d%3D%22M20%2021v-2a4%204%200%200%200-4-4H8a4%204%200%200%200-4%204v2%22%3E%3C%2Fpath%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%227%22%20r%3D%224%22%3E%3C%2Fcircle%3E%3C%2Fsvg%3E')" itemprop="contactType"><span class="sr-only">SoundCloud</span></dt>
-            <dd data-network="SoundCloud"><a href="https://soundcloud.example.com/dandymusicnl" itemprop="url"><span itemprop="identifier">dandymusicnl</span></a></dd>
-          </div>
-      </dl>
-    
+      <address part="profiles">
+        <dl class="icon-list">
+           <div itemprop="ContactPoint" itemscope itemtype="https://schema.org/ContactPoint">
+              <dt style="--svg-network:url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22feather%20feather-twitter%22%3E%3Cpath%20d%3D%22M23%203a10.9%2010.9%200%200%201-3.14%201.53%204.48%204.48%200%200%200-7.86%203v1A10.66%2010.66%200%200%201%203%204s-4%209%205%2013a11.64%2011.64%200%200%201-7%202c9%205%2020%200%2020-11.5a4.5%204.5%200%200%200-.08-.83A7.72%207.72%200%200%200%2023%203z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E')" itemprop="contactType"><span class="sr-only">Twitter</span></dt>
+              <dd data-network="Twitter"><a href="" itemprop="url"><span itemprop="identifier">neutralthoughts</span></a></dd>
+            </div> <div itemprop="ContactPoint" itemscope itemtype="https://schema.org/ContactPoint">
+              <dt  itemprop="contactType"><span class="sr-only">SoundCloud</span></dt>
+              <dd data-network="SoundCloud"><a href="https://soundcloud.example.com/dandymusicnl" itemprop="url"><span itemprop="identifier">dandymusicnl</span></a></dd>
+            </div>
+        </dl>
       </address>
+    
+      </div>
     </header>
-   
-      <section id="work">
+  
+      <section part="work">
         <h3>Work</h3>
-        <div class="stack"> <article itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
+        <div class="stack"><article itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
     <header>
       <h4><a href="http://piedpiper.example.com" itemprop="url"><span itemprop="name">Pied Piper</span></a></h4>
       <meta itemprop="location" content="Palo Alto, CA" />
@@ -96,10 +100,10 @@ exports[`renders a resume 1`] = `
     </section>
   </article></div>
       </section>
-     
-      <section id="volunteer">
+    
+      <section part="volunteer">
         <h3>Volunteer</h3>
-        <div class="stack"> <article itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
+        <div class="stack"><article itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
     <header>
       <h4><a href="http://coderdojo.example.com/" itemprop="url"><span itemprop="name">CoderDojo</span></a></h4>
     </header>
@@ -115,32 +119,33 @@ exports[`renders a resume 1`] = `
     </section>
   </article></div>
       </section>
-     
-      <section id="education">
-        <h3>Education</h3>
-        <div class="stack"> <article
-    itemprop="alumniOf"
-    itemscope
-    itemtype="https://schema.org/EducationalOrganization"
-  >
-    <header>
-      <h4><a href="https://www.ou.edu/" itemprop="url"><span itemprop="name">University of Oklahoma</span></a></h4>
-      <div class="meta"><strong itemprop="department">Information Technology</strong></div>
-    </header>
-    <section itemprop="alumni" itemscope itemtype="https://schema.org/OrganizationRole">
-      <div class="meta"><p><time datetime="2011-06-01" itemprop="startDate">Jun 2011</time> – <time datetime="2014-01-01" itemprop="endDate">Jan 2014</time></p></div>
-      <div itemprop="description"><p>Bachelor</p></div>
+    
+        <section part="education">
+          <h3>Education</h3>
+          <div class="stack"><article itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+    <h4><a href="https://www.ou.edu/" itemprop="url"><span itemprop="name">University of Oklahoma</span></a></h4>
+    <section itemprop="owns" itemscope itemtype="https://schema.org/EducationalOccupationalProgram">
+      <h5 itemprop="occupationalCategory">Information Technology</h5>
+      <div itemprop="educationalProgramMode"><p>Bachelor</p></div>
+      <p><time datetime="2011-06-01" itemprop="startDate">Jun 2011</time> – <time datetime="2014-01-01" itemprop="endDate">Jan 2014</time></p>
       
         <ul>
-          <li itemscope itemtype="https://schema.org/Course"><p>DB1101 - Basic SQL</p></li><li itemscope itemtype="https://schema.org/Course"><p>CS2011 - Java Introduction</p></li>
+          <li itemprop="hasCourse" itemscope itemtype="https://schema.org/Course">
+                <p itemprop="teaches">DB1101 - Basic SQL</p>
+                <meta itemprop="name" content="DB1101 - Basic SQL" />
+                <meta itemprop="description" content="DB1101 - Basic SQL" />
+              </li><li itemprop="hasCourse" itemscope itemtype="https://schema.org/Course">
+                <p itemprop="teaches">CS2011 - Java Introduction</p>
+                <meta itemprop="name" content="CS2011 - Java Introduction" />
+                <meta itemprop="description" content="CS2011 - Java Introduction" />
+              </li>
         </ul>
       
     </section>
   </article></div>
-      </section>
-    
-  
-      <section id="awards">
+        </section>
+      
+      <section part="awards">
         <h3>Awards</h3>
         <dl class="stack">
           
@@ -154,8 +159,8 @@ exports[`renders a resume 1`] = `
             
         </dl>
       </section>
-      
-      <section id="publications">
+    
+      <section part="publications">
         <h3>Publications</h3>
         <dl class="stack">
           
@@ -171,10 +176,9 @@ exports[`renders a resume 1`] = `
         </dl>
       </section>
     
-  
-      <section id="skills">
+      <section part="skills">
         <h3>Skills</h3>
-        <dl class="grid-list">
+        <dl class="title-list">
            <div class="tag-list" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Thing">
               <dt><span itemprop="description">Web Development</span></dt>
               <dd itemprop="name">HTML</dd><dd itemprop="name">CSS</dd><dd itemprop="name">Javascript</dd>
@@ -184,10 +188,10 @@ exports[`renders a resume 1`] = `
             </div>
         </dl>
       </section>
-     
-      <section id="languages">
+    
+      <section part="languages">
         <h3>Languages</h3>
-        <dl class="grid-list">
+        <dl class="title-list">
           
               <div itemprop="knowsLanguage" itemscope itemtype="https://schema.org/Language">
                 <dt itemprop="name">English</dt>
@@ -196,10 +200,10 @@ exports[`renders a resume 1`] = `
             
         </dl>
       </section>
-     
-      <section id="interests">
+    
+      <section part="interests">
         <h3>Interests</h3>
-        <dl class="grid-list">
+        <dl class="title-list">
           
               <div class="tag-list" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Thing">
                 <dt><span itemprop="name">Wildlife</span></dt>
@@ -209,8 +213,7 @@ exports[`renders a resume 1`] = `
         </dl>
       </section>
     
-  
-      <section id="references">
+      <section part="references">
         <h3>References</h3>
         <div class="stack">
           
@@ -225,44 +228,43 @@ exports[`renders a resume 1`] = `
             
         </div>
       </section>
-     
-      <section id="projects">
+    
+      <section part="projects">
         <h3>Projects</h3>
-        <div class="stack"> <article itemprop="alumniOf" itemscope itemtype="https://schema.org/Project">
-    <h4><a href="missdirection.example.com" itemprop="url"><span itemprop="name">Miss Direction</span></a></h4>
-    <span itemprop="parentOrganization" itemscope itemtype="https://schema.org/Organization"
-      ><meta itemprop="name" content="Smoogle"
-    /></span>
+        <div class="stack"><article itemprop="alumniOf" itemscope itemtype="https://schema.org/Project">
+    <header>
+      <h4><a href="missdirection.example.com" itemprop="url"><span itemprop="name">Miss Direction</span></a></h4>
+      <p itemprop="parentOrganization" itemscope itemtype="https://schema.org/Organization">
+        <span itemprop="name">Smoogle</span>
+      </p>
+      <p itemprop="additionalType">application</p>
+      <div class="meta" itemprop="description"><p>A mapping engine that misguides you</p></div>
+      <div class="meta">
+        <ul itemprop="keywords" class="tag-list">
+          <li>GoogleMaps</li><li>Chrome Extension</li><li>Javascript</li>
+        </ul>
+      </div> 
+    </header>
     
       <section itemprop="alumni" itemscope itemtype="https://schema.org/Role">
-        <p>
-          <span itemprop="roleName">Team lead and Designer</span>  at <strong>Smoogle</strong>
-        </p>
+        <h5 itemprop="roleName">Team lead and Designer</h5>
         <p><time datetime="2016-08-24" itemprop="startDate">Aug 2016</time> – <time datetime="2016-08-24" itemprop="endDate">Aug 2016</time></p>
-        <p itemprop="additionalType">application</p>
+        
+          <ul>
+            <li itemprop="description"><p>Won award at AIHacks 2016</p></li><li itemprop="description"><p>Built by all women team of newbie programmers</p></li><li itemprop="description"><p>Using modern technologies such as GoogleMaps, Chrome Extension and Javascript</p></li>
+          </ul>
+        
       </section>
-    
-    <div itemprop="description"><p>A mapping engine that misguides you</p></div>
-    
-      <ul>
-        <li itemprop="description"><p>Won award at AIHacks 2016</p></li><li itemprop="description"><p>Built by all women team of newbie programmers</p></li><li itemprop="description"><p>Using modern technologies such as GoogleMaps, Chrome Extension and Javascript</p></li>
-      </ul>
-    
-    
-      <ul itemprop="keywords" class="tag-list">
-        <li>GoogleMaps</li><li>Chrome Extension</li><li>Javascript</li>
-      </ul>
     
   </article></div>
       </section>
-     
-      <footer id="meta" itemprop="owns" itemscope itemtype="https://schema.org/TextDigitalDocument">
+    
+      <footer part="meta" itemprop="owns" itemscope itemtype="https://schema.org/TextDigitalDocument">
          <p><a href="https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json" itemprop="sameAs"><span >canonical resume.json file</span></a></p> 
          <p>version <span itemprop="version">v1.0.0</span></p> 
          <p>last modified <time datetime="2017-12-24T15:53:00" itemprop="dateModified">12/24/2017, 3:53:00 PM</time></p> 
       </footer>
     
-
     </article>
   
       </body>

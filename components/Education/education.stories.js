@@ -1,7 +1,5 @@
-import { microdata } from '@cucumber/microdata'
-import { expect } from '@storybook/test'
-
 import resumeString from '@/sample.resume.json?raw'
+import { expectedDataEduction } from './education.shared-spec.js'
 import Education from './index.js'
 
 const resume = JSON.parse(resumeString)
@@ -19,12 +17,7 @@ export const AllContent = {
     education: resume.education,
   },
   play: async ({ args, canvasElement, step }) => {
-    const edData = microdata('https://schema.org/Person', canvasElement)
-    expect.objectContaining({
-      '@type': 'Person',
-      alumniOf: expect.any(Array),
-    })
-    expect(edData.alumniOf).toHaveLength(args.education.length)
+    expectedDataEduction(canvasElement, args.education)
   },
 }
 
@@ -33,11 +26,12 @@ export const OneEducation = {
     education: [resume.education[0]],
   },
   play: async ({ args, canvasElement, step }) => {
-    const edData = microdata('https://schema.org/Person', canvasElement)
-    expect.objectContaining({
-      '@type': 'Person',
-      alumniOf: expect.any(Object),
-    })
-    expect(edData.alumniOf['@type']).toBe('EducationalOrganization')
+    expectedDataEduction(canvasElement, args.education)
+  },
+}
+
+export const Empty = {
+  play: async ({ args, canvasElement, step }) => {
+    expectedDataEduction(canvasElement, args.education)
   },
 }

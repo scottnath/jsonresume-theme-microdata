@@ -1,13 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "additionalProperties": false,
-  "definitions": {
-    "iso8601": {
-      "type": "string",
-      "description": "Similar to the standard date type, but each section after the year is optional. e.g. 2014-06-29 or 2023-04",
-      "pattern": "^([1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]|[1-2][0-9]{3}-[0-1][0-9]|[1-2][0-9]{3})$"
-    }
-  },
   "properties": {
     "$schema": {
       "type": "string",
@@ -37,6 +30,10 @@
         "phone": {
           "type": "string",
           "description": "Phone numbers are stored as strings so use any format you like, e.g. 712-117-2923"
+        },
+        "pronouns": {
+          "type": "string",
+          "description": "e.g. they/them/theirs"
         },
         "url": {
           "type": "string",
@@ -108,6 +105,10 @@
             "type": "string",
             "description": "e.g. Facebook"
           },
+          "itemtype": {
+            "type": "string",
+            "description": "Organization Schema.org vocabulary Type, e.g. `Corporation`"
+          },
           "location": {
             "type": "string",
             "description": "e.g. Menlo Park, CA"
@@ -126,10 +127,10 @@
             "format": "uri"
           },
           "startDate": {
-            "$ref": "#/definitions/iso8601"
+            "$ref": "#/$defs/iso8601"
           },
           "endDate": {
-            "$ref": "#/definitions/iso8601"
+            "$ref": "#/$defs/iso8601"
           },
           "summary": {
             "type": "string",
@@ -158,6 +159,10 @@
             "type": "string",
             "description": "e.g. Facebook"
           },
+          "itemtype": {
+            "type": "string",
+            "description": "Organization Schema.org vocabulary Type, e.g. `NGO`"
+          },
           "position": {
             "type": "string",
             "description": "e.g. Software Engineer"
@@ -168,10 +173,10 @@
             "format": "uri"
           },
           "startDate": {
-            "$ref": "#/definitions/iso8601"
+            "$ref": "#/$defs/iso8601"
           },
           "endDate": {
-            "$ref": "#/definitions/iso8601"
+            "$ref": "#/$defs/iso8601"
           },
           "summary": {
             "type": "string",
@@ -200,6 +205,10 @@
             "type": "string",
             "description": "e.g. Massachusetts Institute of Technology"
           },
+          "itemtype": {
+            "type": "string",
+            "description": "Organization Schema.org vocabulary Type, e.g. `EducationalOrganization`"
+          },
           "url": {
             "type": "string",
             "description": "e.g. http://facebook.example.com",
@@ -214,10 +223,10 @@
             "description": "e.g. Bachelor"
           },
           "startDate": {
-            "$ref": "#/definitions/iso8601"
+            "$ref": "#/$defs/iso8601"
           },
           "endDate": {
-            "$ref": "#/definitions/iso8601"
+            "$ref": "#/$defs/iso8601"
           },
           "score": {
             "type": "string",
@@ -248,7 +257,7 @@
             "description": "e.g. One of the 100 greatest minds of the century"
           },
           "date": {
-            "$ref": "#/definitions/iso8601"
+            "$ref": "#/$defs/iso8601"
           },
           "awarder": {
             "type": "string",
@@ -274,7 +283,9 @@
             "description": "e.g. Certified Kubernetes Administrator"
           },
           "date": {
-            "$ref": "#/definitions/iso8601"
+            "type": "string",
+            "description": "e.g. 1989-06-12",
+            "format": "date"
           },
           "url": {
             "type": "string",
@@ -284,6 +295,10 @@
           "issuer": {
             "type": "string",
             "description": "e.g. CNCF"
+          },
+          "itemtype": {
+            "type": "string",
+            "description": "Organization Schema.org vocabulary Type for `issuer`, e.g. `EducationalOrganization`"
           }
         }
       }
@@ -300,12 +315,20 @@
             "type": "string",
             "description": "e.g. The World Wide Web"
           },
+          "itemtype": {
+            "type": "string",
+            "description": "CreativeWork Schema.org vocabulary Type, e.g. `HowTo`"
+          },
           "publisher": {
             "type": "string",
             "description": "e.g. IEEE, Computer Magazine"
           },
+          "publisherItemtype": {
+            "type": "string",
+            "description": "Organization Schema.org vocabulary Type, e.g. `OnlineBusiness`"
+          },
           "releaseDate": {
-            "$ref": "#/definitions/iso8601"
+            "$ref": "#/$defs/iso8601"
           },
           "url": {
             "type": "string",
@@ -334,6 +357,10 @@
           "level": {
             "type": "string",
             "description": "e.g. Master"
+          },
+          "itemtype": {
+            "type": "string",
+            "description": "Schema.org vocabulary Type, e.g. `ComputerLanguage`"
           },
           "keywords": {
             "type": "array",
@@ -377,6 +404,10 @@
             "type": "string",
             "description": "e.g. Philosophy"
           },
+          "itemtype": {
+            "type": "string",
+            "description": "Thing Schema.org vocabulary Type, e.g. `Brand`"
+          },
           "keywords": {
             "type": "array",
             "additionalItems": false,
@@ -419,6 +450,10 @@
             "type": "string",
             "description": "e.g. The World Wide Web"
           },
+          "itemtype": {
+            "type": "string",
+            "description": "Project Schema.org vocabulary Type, e.g. any `Organization`"
+          },
           "description": {
             "type": "string",
             "description": "Short summary of project. e.g. Collated works of 2017."
@@ -442,10 +477,10 @@
             }
           },
           "startDate": {
-            "$ref": "#/definitions/iso8601"
+            "$ref": "#/$defs/iso8601"
           },
           "endDate": {
-            "$ref": "#/definitions/iso8601"
+            "$ref": "#/$defs/iso8601"
           },
           "url": {
             "type": "string",
@@ -464,6 +499,10 @@
           "entity": {
             "type": "string",
             "description": "Specify the relevant company/entity affiliations e.g. 'greenpeace', 'corporationXYZ'"
+          },
+          "entityItemtype": {
+            "type": "string",
+            "description": "Organization Schema.org vocabulary Type, e.g. `NGO`"
           },
           "type": {
             "type": "string",
@@ -489,10 +528,81 @@
         "lastModified": {
           "type": "string",
           "description": "Using ISO 8601 with YYYY-MM-DDThh:mm:ss"
+        },
+        "themeOptions": {
+          "type": "object",
+          "description": "Various theme-specific configurations",
+          "additionalProperties": true,
+          "properties": {
+            "preordered": {
+              "type": "boolean",
+              "description": "Orders resume sections according to how they are ordered in resume.json"
+            },
+            "colors": {
+              "type": "object",
+              "description": "The title text used in each section's heading",
+              "additionalProperties": false,
+              "properties": {
+                "background": {
+                  "$ref": "#/$defs/lightDarkColors"
+                },
+                "dimmed": {
+                  "$ref": "#/$defs/lightDarkColors"
+                },
+                "primary": {
+                  "$ref": "#/$defs/lightDarkColors"
+                },
+                "secondary": {
+                  "$ref": "#/$defs/lightDarkColors"
+                },
+                "link": {
+                  "$ref": "#/$defs/lightDarkColors"
+                }
+              }
+            },
+            "sectionTitles": {
+              "type": "object",
+              "description": "The title text used in each section's heading.",
+              "additionalProperties": false,
+              "properties": {
+                "work": { "type": "string" },
+                "volunteer": { "type": "string" },
+                "education": { "type": "string" },
+                "awards": { "type": "string" },
+                "certificates": { "type": "string" },
+                "publications": { "type": "string" },
+                "skills": { "type": "string" },
+                "languages": { "type": "string" },
+                "interests": { "type": "string" },
+                "references": { "type": "string" },
+                "projects": { "type": "string" }
+              }
+            }
+          }
         }
       }
     }
   },
   "title": "Resume Schema",
-  "type": "object"
+  "type": "object",
+  "$defs": {
+    "iso8601": {
+      "type": "string",
+      "description": "e.g. 2014-06-29",
+      "pattern": "^([1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]|[1-2][0-9]{3}-[0-1][0-9]|[1-2][0-9]{3})$"
+    },
+    "lightDarkColors": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "string",
+          "description": "light color"
+        },
+        {
+          "type": "string",
+          "description": "dark color"
+        }
+      ]
+    }
+  }
 }
