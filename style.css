@@ -65,7 +65,7 @@
   padding: 0;
 }
 
-[itemscope]#jsonresume > article {
+[part='resume'] {
   background: var(--color-background);
   color: var(--color-primary);
   display: grid;

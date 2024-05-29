@@ -15,9 +15,9 @@ exports[`renders a resume 1`] = `
           
         </style>
       </head>
-      <body itemscope itemtype="https://schema.org/ProfilePage" id="jsonresume">
+      <body itemscope itemtype="https://schema.org/ProfilePage" part="jsonresume">
         
-    <article id="resume" itemprop="mainEntity" itemscope itemtype="https://schema.org/Person">
+    <article part="resume" itemprop="mainEntity" itemscope itemtype="https://schema.org/Person">
       
     <header class="masthead" part="basics">
       <div>

@@ -21,7 +21,7 @@ export default function Resume(resume, css) {
           ${css}
         </style>
       </head>
-      <body itemscope itemtype="https://schema.org/ProfilePage" id="jsonresume">
+      <body itemscope itemtype="https://schema.org/ProfilePage" part="jsonresume">
         ${ResumeArticle(resume)}
       </body>
     </html>`
