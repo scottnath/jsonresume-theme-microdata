@@ -14,7 +14,7 @@ export default function Certificates(certificates = [], title = 'Certificates') 
     certificates.length > 0 &&
     html`
       <section part="certificates">
-        <h3>${title}</h3>
+        <h3 part="section-title">${title}</h3>
         <dl class="stack">
           ${certificates.map(
             ({ date, issuer, name, url, itemtype = 'Organization' }) => html`

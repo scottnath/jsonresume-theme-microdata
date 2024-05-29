@@ -13,7 +13,7 @@ export default function Projects(projects = [], title = 'Projects') {
     projects.length > 0 &&
     html`
       <section part="projects">
-        <h3>${title}</h3>
+        <h3 part="section-title">${title}</h3>
         <div class="stack">${projects.map(role => Project(role, 'alumniOf'))}</div>
       </section>
     `

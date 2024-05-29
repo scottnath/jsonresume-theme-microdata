@@ -13,7 +13,7 @@ export default function Work(work = [], title = 'Work') {
     work.length > 0 &&
     html`
       <section part="work">
-        <h3>${title}</h3>
+        <h3 part="section-title">${title}</h3>
         <div class="stack">${work.map(role => WorkRole(role, 'alumniOf'))}</div>
       </section>
     `

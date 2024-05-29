@@ -13,7 +13,7 @@ export default function References(references = [], title = 'References') {
     references.length > 0 &&
     html`
       <section part="references">
-        <h3>${title}</h3>
+        <h3 part="section-title">${title}</h3>
         <div class="stack">
           ${references.map(
             ({ name, reference }) => html`

@@ -1,4 +1,4 @@
-import { micromark } from 'micromark'
+import { marked } from 'marked'
 import striptags from 'striptags'
 
 /**
@@ -7,7 +7,7 @@ import striptags from 'striptags'
  * @returns
  */
 export default function markdown(doc, stripTags = false) {
-  const result = micromark(doc)
-  const html = /** @type {string} */ (micromark(doc))
+  const result = marked.parse(doc)
+  const html = /** @type {string} */ (marked.parse(doc))
   return stripTags ? striptags(html) : html
 }

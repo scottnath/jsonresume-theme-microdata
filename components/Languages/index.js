@@ -12,7 +12,7 @@ export default function Languages(languages = [], title = 'Languages') {
     languages.length > 0 &&
     html`
       <section part="languages">
-        <h3>${title}</h3>
+        <h3 part="section-title">${title}</h3>
         <dl class="title-list">
           ${languages.map(
             ({ fluency, language }) => html`

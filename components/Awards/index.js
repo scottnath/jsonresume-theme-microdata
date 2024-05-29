@@ -11,7 +11,7 @@ export default function Awards(awards = [], title = 'Awards') {
     awards.length > 0 &&
     html`
       <section part="awards">
-        <h3>${title}</h3>
+        <h3 part="section-title">${title}</h3>
         <dl class="stack">
           ${awards.map(
             ({ awarder, date, summary, title }) => html`
