@@ -410,7 +410,7 @@ exports[`renders a resume 1`] = `
       <footer part="meta" itemprop="owns" itemscope itemtype="https://schema.org/TextDigitalDocument">
          <p><a href="https://gist.githubusercontent.com/scottnath/9e7a7ceb9425336c6aa08d58afb63b8d/raw" itemprop="sameAs"><span >canonical resume.json file</span></a></p> 
          <p>version <span itemprop="version">0.1.0</span></p> 
-         <p>last modified <time datetime="2024-05-30T18:30:16.736Z" itemprop="dateModified">5/30/2024, 2:30:16 PM</time></p> 
+        
       </footer>
     
     </article>
