@@ -12,7 +12,7 @@ export default function Skills(skills = [], title = 'Skills') {
     skills.length > 0 &&
     html`
       <section part="skills">
-        <h3>${title}</h3>
+        <h3 part="section-title">${title}</h3>
         <dl class="title-list">
           ${skills.map(({ keywords = [], name, itemtype = 'Thing' }) => {
             const itype = `itemtype="https://schema.org/${itemtype}"`

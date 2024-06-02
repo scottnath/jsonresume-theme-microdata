@@ -13,7 +13,7 @@ export default function Volunteer(volunteer = [], title = 'Volunteer') {
     volunteer.length > 0 &&
     html`
       <section part="volunteer">
-        <h3>${title}</h3>
+        <h3 part="section-title">${title}</h3>
         <div class="stack">${volunteer.map(role => VolunteerRole(role, 'alumniOf'))}</div>
       </section>
     `

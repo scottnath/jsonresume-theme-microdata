@@ -12,7 +12,7 @@ export default function Education(education = [], title = 'Education') {
   return education.length > 0
     ? html`
         <section part="education">
-          <h3>${title}</h3>
+          <h3 part="section-title">${title}</h3>
           <div class="stack">${education.map(role => Institution(role, 'alumniOf'))}</div>
         </section>
       `

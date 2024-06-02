@@ -7,7 +7,7 @@ import { internals } from '../utils/sections.js'
  */
 const ResumeArticle = resume => {
   return html`
-    <article id="resume" itemprop="mainEntity" itemscope itemtype="https://schema.org/Person">
+    <article part="resume" itemprop="mainEntity" itemscope itemtype="https://schema.org/Person">
       ${internals(resume)}
     </article>
   `

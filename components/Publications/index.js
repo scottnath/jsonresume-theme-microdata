@@ -15,7 +15,7 @@ export default function Publications(publications = [], title = 'Publications') 
     publications.length > 0 &&
     html`
       <section part="publications">
-        <h3>${title}</h3>
+        <h3 part="section-title">${title}</h3>
         <dl class="stack">
           ${publications.map(
             ({
