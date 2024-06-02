@@ -25,7 +25,7 @@ export default function WorkRole(item, itemprop) {
   } = item
   return html`<article ${itemprop && `itemprop="${itemprop}"`} itemscope itemtype="https://schema.org/${itemtype}">
     <header>
-      <h4>${Link(url, name)}</h4>
+      ${(name || url) && html`<h4>${Link(url, name)}</h4>`}
       <meta itemprop="location" content="${location}" />
       ${description && html`<div class="meta" itemprop="description">${description}</div>`}
     </header>

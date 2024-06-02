@@ -14,11 +14,11 @@ export default function Header(basics = {}) {
   return html`
     <header class="masthead" part="basics">
       <div>
-        <h1 itemprop="name">${name}</h1>
-        ${label && html`<h2 itemprop="jobTitle">${label}</h2>`}
+        <h1 itemprop="name" part="name">${name}</h1>
+        ${label && html`<h2 itemprop="jobTitle" part="label">${label}</h2>`}
       </div>
-      ${image && html`<img src="${image}" alt="${name}'s picture" itemprop="image" />`}
-      ${summary && html`<div itemprop="description">${markdown(summary)}</div>`}
+      ${image && html`<img src="${image}" alt="${name}'s picture" itemprop="image" part="image" />`}
+      ${summary && html`<div itemprop="description" part="summary">${markdown(summary)}</div>`}
       <div>
         <address part="contact">
           <dl class="icon-list">

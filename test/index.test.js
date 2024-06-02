@@ -1,8 +1,8 @@
 import { HtmlValidate } from 'html-validate'
 import { expect, it } from 'vitest'
 
-import sampleResume from 'resume-schema/sample.resume.json'
 import { render } from '../index.js'
+import sampleResume from '../sample.resume.json'
 
 const resume = {
   ...sampleResume,

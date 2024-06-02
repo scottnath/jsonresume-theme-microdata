@@ -6,8 +6,8 @@ exports[`renders a resume 1`] = `
       <head>
         <meta charset="utf-8" />
         
-    <title>Richard Hendriks</title>
-    <meta name="description" content="Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!" />
+    <title>MC Fluff NStuff</title>
+    <meta name="description" content="Cat ipsum dolor sit amet, be the most annoying cat that you can, and, knock everything off the table but commence midnight zoomies. Scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food you call this cat food chirp at birds, decide to want nothing to do with my owner today yet gnaw the corn cob so chase the pig around the house." />
   
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" />
@@ -21,11 +21,11 @@ exports[`renders a resume 1`] = `
       
     <header class="masthead" part="basics">
       <div>
-        <h1 itemprop="name">Richard Hendriks</h1>
-        <h2 itemprop="jobTitle">Programmer</h2>
+        <h1 itemprop="name" part="name">MC Fluff NStuff</h1>
+        <h2 itemprop="jobTitle" part="label">Very Professional Title</h2>
       </div>
-      <img src="image.jpg" alt="Richard Hendriks's picture" itemprop="image" />
-      <div itemprop="description"><p>Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!</p>
+      <img src="image.jpg" alt="MC Fluff NStuff's picture" itemprop="image" part="image" />
+      <div itemprop="description" part="summary"><p>Cat ipsum dolor sit amet, be the most annoying cat that you can, and, knock everything off the table but commence midnight zoomies. Scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food you call this cat food chirp at birds, decide to want nothing to do with my owner today yet gnaw the corn cob so chase the pig around the house.</p>
 </div>
       <div>
         <address part="contact">
@@ -35,8 +35,8 @@ exports[`renders a resume 1`] = `
                 <dt><span class="sr-only">location</span></dt>
                 <dd>
       <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-        <span itemprop="addressRegion">California</span>
-        <span itemprop="addressLocality">San Francisco</span>
+        <span itemprop="addressRegion">NorthEast</span>
+        <span itemprop="addressLocality">NYC</span>
         <span itemprop="addressCountry">US</span>
       </div>
     </dd>
@@ -45,21 +45,26 @@ exports[`renders a resume 1`] = `
             
               <div class="email">
                 <dt><span class="sr-only">email</span></dt>
-                <dd itemprop="email"><a href="mailto:richard.hendriks@mail.com">richard.hendriks@mail.com</a></dd>
+                <dd itemprop="email"><a href="mailto:jsonresume@example.com">jsonresume@example.com</a></dd>
               </div>
             
             
               <div class="phone">
                 <dt><span class="sr-only">phone</span></dt>
-                <dd itemprop="telephone"><a href="tel:(912)555-4321">(912) 555-4321</a></dd>
+                <dd itemprop="telephone"><a href="tel:212-555-1212">212-555-1212</a></dd>
               </div>
             
             
               <div class="url">
                 <dt><span class="sr-only">url</span></dt>
-                <dd><a href="http://richardhendricks.example.com" itemprop="url">richardhendricks.example.com</a></dd>
+                <dd><a href="https://example.com" itemprop="url">example.com</a></dd>
               </div>
             
+            
+              <div class="pronouns" part="pronouns">
+                <dt><span class="sr-only">pronouns</span></dt>
+                <dd itemprop="gender">they/them</dd>
+              </div>
             
           </dl>
         </address>
@@ -67,11 +72,11 @@ exports[`renders a resume 1`] = `
       <address part="profiles">
         <dl class="icon-list">
            <div itemprop="ContactPoint" itemscope itemtype="https://schema.org/ContactPoint">
-              <dt style="--svg-network:url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22feather%20feather-twitter%22%3E%3Cpath%20d%3D%22M23%203a10.9%2010.9%200%200%201-3.14%201.53%204.48%204.48%200%200%200-7.86%203v1A10.66%2010.66%200%200%201%203%204s-4%209%205%2013a11.64%2011.64%200%200%201-7%202c9%205%2020%200%2020-11.5a4.5%204.5%200%200%200-.08-.83A7.72%207.72%200%200%200%2023%203z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E')" itemprop="contactType"><span class="sr-only">Twitter</span></dt>
-              <dd data-network="Twitter"><a href="" itemprop="url"><span itemprop="identifier">neutralthoughts</span></a></dd>
+              <dt  itemprop="contactType"><span class="sr-only">MySpace</span></dt>
+              <dd data-network="MySpace"><a href="https://myspace.com/user12345678" itemprop="url"><span itemprop="identifier">user12345678</span></a></dd>
             </div> <div itemprop="ContactPoint" itemscope itemtype="https://schema.org/ContactPoint">
-              <dt  itemprop="contactType"><span class="sr-only">SoundCloud</span></dt>
-              <dd data-network="SoundCloud"><a href="https://soundcloud.example.com/dandymusicnl" itemprop="url"><span itemprop="identifier">dandymusicnl</span></a></dd>
+              <dt  itemprop="contactType"><span class="sr-only">friendster</span></dt>
+              <dd data-network="friendster"><a href="https://friendster.com/meow_user_Af1544erxr" itemprop="url"><span itemprop="identifier">meow_user_Af1544erxr</span></a></dd>
             </div>
         </dl>
       </address>
@@ -83,22 +88,42 @@ exports[`renders a resume 1`] = `
         <h3 part="section-title">Work</h3>
         <div class="stack"><article itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
     <header>
-      <h4><a href="http://piedpiper.example.com" itemprop="url"><span itemprop="name">Pied Piper</span></a></h4>
-      <meta itemprop="location" content="Palo Alto, CA" />
-      <div class="meta" itemprop="description">Awesome compression company</div>
+      
+      <meta itemprop="location" content="" />
+      
     </header>
     <section class="timeline" itemprop="employee" itemscope itemtype="https://schema.org/EmployeeRole">
-      <h5 itemprop="roleName">CEO/President</h5>
+      <h5 itemprop="roleName">Position or role</h5>
       <div class="meta">
-        <p><time datetime="2013-12-01" itemprop="startDate">Dec 2013</time> – <time datetime="2014-12-01" itemprop="endDate">Dec 2014</time></p> <p>Palo Alto, CA</p>
+        <p><time datetime="2020-03" itemprop="startDate">Mar 2020</time> – <time datetime="2024-03" itemprop="endDate">Mar 2024</time></p> 
       </div>
-      <div itemprop="description"><p>Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.</p>
+      <div itemprop="description"><p>Cat ipsum dolor sit amet, eat fish on floor. Inspect anything brought into the house scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food so hiding behind the couch until lured out by a feathery toy. Pooping rainbow while flying in a toasted bread costume in space. Fall over dead (not really but gets sypathy) go crazy with excitement when plates are clanked together signalling the arrival of cat food and do doodoo in the litter-box, clickityclack on the piano, be frumpygrumpy, for stinky cat hiiiiiiiiii feed me now. Slap owner&#39;s face at 5am until human fills food dish paw at your fat belly yet missing until dinner time, or cat fur is the new black and hunt anything. </p>
 </div>
       
         <ul>
-          <li itemprop="disambiguatingDescription"><p>Build an algorithm for artist to detect if their music was violating copy right infringement laws</p>
-</li><li itemprop="disambiguatingDescription"><p>Successfully won Techcrunch Disrupt</p>
-</li><li itemprop="disambiguatingDescription"><p>Optimized an algorithm that holds the current world record for Weisman Scores</p>
+          <li itemprop="disambiguatingDescription"><p>Highlight one</p>
+</li><li itemprop="disambiguatingDescription"><p>Highlight two</p>
+</li>
+        </ul>
+      
+    </section>
+  </article><article itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
+    <header>
+      
+      <meta itemprop="location" content="Georgia, USA" />
+      <div class="meta" itemprop="description">An important business that does important busy stuff</div>
+    </header>
+    <section class="timeline" itemprop="employee" itemscope itemtype="https://schema.org/EmployeeRole">
+      <h5 itemprop="roleName">The Role of Meow</h5>
+      <div class="meta">
+        <p><time datetime="2020-03" itemprop="startDate">Mar 2020</time> – <time datetime="2024-03" itemprop="endDate">Mar 2024</time></p> <p>Georgia, USA</p>
+      </div>
+      <div itemprop="description"><p>Inspect anything brought into the house scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food so hiding behind the couch until lured out by a feathery toy. Pooping rainbow while flying in a toasted bread costume in space. Fall over dead (not really but gets sypathy) go crazy with excitement when plates are clanked together signalling the arrival of cat food and do doodoo in the litter-box, clickityclack on the piano, be frumpygrumpy, for stinky cat hiiiiiiiiii feed me now. Slap owner&#39;s face at 5am until human fills food dish paw at your fat belly yet missing until dinner time, or cat fur is the new black and hunt anything. </p>
+</div>
+      
+        <ul>
+          <li itemprop="disambiguatingDescription"><p>Highlight Meow</p>
+</li><li itemprop="disambiguatingDescription"><p>Highlight Purr</p>
 </li>
         </ul>
       
@@ -110,16 +135,34 @@ exports[`renders a resume 1`] = `
         <h3 part="section-title">Volunteer</h3>
         <div class="stack"><article itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
     <header>
-      <h4><a href="http://coderdojo.example.com/" itemprop="url"><span itemprop="name">CoderDojo</span></a></h4>
+      <h4><span itemprop="name">Volunteer Organization</span></h4>
     </header>
     <section itemprop="employee" itemscope itemtype="https://schema.org/OrganizationRole">
-      <h5 itemprop="roleName">Teacher</h5>
-      <p><time datetime="2012-01-01" itemprop="startDate">Jan 2012</time> – <time datetime="2013-01-01" itemprop="endDate">Jan 2013</time></p>
-      <div itemprop="description"><p>Global movement of free coding clubs for young people.</p>
+      <h5 itemprop="roleName">Unpaid Position</h5>
+      <p><time datetime="2024-01" itemprop="startDate">Jan 2024</time> – <time datetime="2024-04" itemprop="endDate">Apr 2024</time></p>
+      <div itemprop="description"><p>Cat ipsum dolor sit amet, eat fish on floor. Cat not kitten around . Car rides are evil swat turds around the house poop on the floor, break a planter, sprint, eat own hair, vomit hair, hiss, chirp at birds, eat a squirrel, hide from fireworks, lick toe beans, attack christmas tree. Chase dog then run away allways wanting food. Fat baby cat best buddy little guy stare at the wall, play with food and get confused by dust for stare at imaginary bug. </p>
 </div>
       
         <ul>
-          <li itemprop="description"><p>Awarded &#39;Teacher of the Month&#39;</p>
+          <li itemprop="description"><p>Highlight abc</p>
+</li><li itemprop="description"><p>Highlight xyz</p>
+</li>
+        </ul>
+      
+    </section>
+  </article><article itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
+    <header>
+      <h4><span itemprop="name">Meows for Wows</span></h4>
+    </header>
+    <section itemprop="employee" itemscope itemtype="https://schema.org/OrganizationRole">
+      <h5 itemprop="roleName">The Fluff</h5>
+      <p><time datetime="2024-01" itemprop="startDate">Jan 2024</time> – Present</p>
+      <div itemprop="description"><p>Cat ipsum dolor sit amet, eat fish on floor. Cat not kitten around . Car rides are evil swat turds around the house poop on the floor, break a planter, sprint, eat own hair, vomit hair, hiss, chirp at birds, eat a squirrel, hide from fireworks, lick toe beans, attack christmas tree. Chase dog then run away allways wanting food. Fat baby cat best buddy little guy stare at the wall, play with food and get confused by dust for stare at imaginary bug. </p>
+</div>
+      
+        <ul>
+          <li itemprop="description"><p>Highlight 123</p>
+</li><li itemprop="description"><p>Highlight 987</p>
 </li>
         </ul>
       
@@ -130,25 +173,25 @@ exports[`renders a resume 1`] = `
         <section part="education">
           <h3 part="section-title">Education</h3>
           <div class="stack"><article itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
-    <h4><a href="https://www.ou.edu/" itemprop="url"><span itemprop="name">University of Oklahoma</span></a></h4>
+    <h4><span itemprop="name">School of Things and Stuff</span></h4>
     <section itemprop="owns" itemscope itemtype="https://schema.org/EducationalOccupationalProgram">
-      <h5 itemprop="occupationalCategory">Information Technology</h5>
-      <div itemprop="educationalProgramMode"><p>Bachelor</p>
+      <h5 itemprop="occupationalCategory">Things</h5>
+      <div itemprop="educationalProgramMode"><p>Masters</p>
 </div>
-      <p><time datetime="2011-06-01" itemprop="startDate">Jun 2011</time> – <time datetime="2014-01-01" itemprop="endDate">Jan 2014</time></p>
+      <p><time datetime="2016-08" itemprop="startDate">Aug 2016</time> – Present</p>
       
         <ul>
           <li itemprop="hasCourse" itemscope itemtype="https://schema.org/Course">
-                <p itemprop="teaches">DB1101 - Basic SQL</p>
-                <meta itemprop="name" content="DB1101 - Basic SQL
+                <p itemprop="teaches">Course one</p>
+                <meta itemprop="name" content="Course one
 " />
-                <meta itemprop="description" content="DB1101 - Basic SQL
+                <meta itemprop="description" content="Course one
 " />
               </li><li itemprop="hasCourse" itemscope itemtype="https://schema.org/Course">
-                <p itemprop="teaches">CS2011 - Java Introduction</p>
-                <meta itemprop="name" content="CS2011 - Java Introduction
+                <p itemprop="teaches">Course two</p>
+                <meta itemprop="name" content="Course two
 " />
-                <meta itemprop="description" content="CS2011 - Java Introduction
+                <meta itemprop="description" content="Course two
 " />
               </li>
         </ul>
@@ -162,12 +205,44 @@ exports[`renders a resume 1`] = `
         <dl class="stack">
           
               <div itemprop="award">
-                <dt>Digital Compression Pioneer Award</dt>
+                <dt>The Best at the Thing</dt>
                 <dd class="meta">
-                  <div>Awarded by <strong>Techcrunch</strong></div> <time datetime="2014-11-01" >Nov 2014</time>
+                  <div>Awarded by <strong>The Award Warehouse</strong></div> <time datetime="2024-02" >Feb 2024</time>
                 </dd>
-                <dd><p>There is no spoon.</p>
+                <dd><p>Cat ipsum dolor sit amet, be the most annoying cat that you can, and, knock everything off the table but commence midnight zoomies. Scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food you call this cat food chirp at birds, decide to want nothing to do with my owner today yet gnaw the corn cob so chase the pig around the house.</p>
 </dd>
+              </div>
+            
+              <div itemprop="award">
+                <dt>The Fluffiest Little Guy</dt>
+                <dd class="meta">
+                  <div>Awarded by <strong>The Consensus of the Whole Planet</strong></div> <time datetime="2024-05" >May 2024</time>
+                </dd>
+                <dd><p>Cat ipsum dolor sit amet, be the most annoying cat that you can, and, knock everything off the table but commence midnight zoomies. Scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food you call this cat food chirp at birds, decide to want nothing to do with my owner today yet gnaw the corn cob so chase the pig around the house.</p>
+</dd>
+              </div>
+            
+        </dl>
+      </section>
+    
+      <section part="certificates">
+        <h3 part="section-title">Certificates</h3>
+        <dl class="stack">
+          
+              <div itemprop="hasCertification" itemscope itemtype="https://schema.org/Certification">
+                <dt><a href="https://example.com" itemprop="url"><span itemprop="name">Certified Kubernetes Administrator</span></a></dt>
+                <dd class="meta" itemprop="issuedBy" itemscope itemtype="https://schema.org/Organization">
+                  Issued by <strong itemprop="name">CNCF</strong>
+                </dd>
+                <dd class="meta"><time datetime="2020-06-06" itemprop="datePublished">Jun 2020</time></dd>
+              </div>
+            
+              <div itemprop="hasCertification" itemscope itemtype="https://schema.org/Certification">
+                <dt><a href="https://example.com" itemprop="url"><span itemprop="name">Certified Acrobatics Instructor with an emphasis on a long title</span></a></dt>
+                <dd class="meta" itemprop="issuedBy" itemscope itemtype="https://schema.org/Organization">
+                  Issued by <strong itemprop="name">International Acrobatics Association of Really Long-Named Organizations</strong>
+                </dd>
+                <dd class="meta"><time datetime="1998-12-31" itemprop="datePublished">Dec 1998</time></dd>
               </div>
             
         </dl>
@@ -178,12 +253,22 @@ exports[`renders a resume 1`] = `
         <dl class="stack">
           
               <div itemprop="owns" itemscope itemtype="https://schema.org/CreativeWork">
-                <dt><a href="http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)" itemprop="url"><span itemprop="name">Video compression for 3d media</span></a></dt>
+                <dt><span itemprop="name">How I wrote fake content and used it in JSON Resume</span></dt>
                 <dd class="meta" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-                  Published by <strong itemprop="name">Hooli</strong>
+                  Published by <strong itemprop="name">The Fake Meow Times</strong>
                 </dd>
-                <dd class="meta" itemprop="dateCreated"><time datetime="2014-10-01" >Oct 2014</time></dd>
-                <dd itemprop="abstract"><p>Innovative middle-out compression algorithm that changes the way we store data.</p>
+                <dd class="meta" itemprop="dateCreated"><time datetime="2024-05" >May 2024</time></dd>
+                <dd itemprop="abstract"><p>Cat ipsum dolor sit amet, eat fish on floor. Inspect anything brought into the house scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food so hiding behind the couch until lured out by a feathery toy.</p>
+</dd>
+              </div>
+            
+              <div itemprop="owns" itemscope itemtype="https://schema.org/CreativeWork">
+                <dt><span itemprop="name">Open sourcin for fun and no profit</span></dt>
+                <dd class="meta" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                  Published by <strong itemprop="name">The Daily Furtonian</strong>
+                </dd>
+                <dd class="meta" itemprop="dateCreated"><time datetime="2020-05" >May 2020</time></dd>
+                <dd itemprop="abstract"><p>Cat ipsum dolor sit amet, be the most annoying cat that you can, and, knock everything off the table but commence midnight zoomies. Scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food you call this cat food chirp at birds, decide to want nothing to do with my owner today yet gnaw the corn cob so chase the pig around the house.</p>
 </dd>
               </div>
             
@@ -194,11 +279,11 @@ exports[`renders a resume 1`] = `
         <h3 part="section-title">Skills</h3>
         <dl class="title-list">
            <div class="tag-list" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Thing">
-              <dt><span itemprop="description">Web Development</span></dt>
-              <dd itemprop="name">HTML</dd><dd itemprop="name">CSS</dd><dd itemprop="name">Javascript</dd>
+              <dt><span itemprop="description">Skill One</span></dt>
+              <dd itemprop="name">Things</dd><dd itemprop="name">Stuff</dd><dd itemprop="name">Activities</dd>
             </div> <div class="tag-list" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Thing">
-              <dt><span itemprop="description">Compression</span></dt>
-              <dd itemprop="name">Mpeg</dd><dd itemprop="name">MP4</dd><dd itemprop="name">GIF</dd>
+              <dt><span itemprop="description">Skill Two</span></dt>
+              <dd itemprop="name">Meow</dd><dd itemprop="name">Plow</dd><dd itemprop="name">Pazow</dd><dd itemprop="name">Cacao</dd>
             </div>
         </dl>
       </section>
@@ -209,7 +294,17 @@ exports[`renders a resume 1`] = `
           
               <div itemprop="knowsLanguage" itemscope itemtype="https://schema.org/Language">
                 <dt itemprop="name">English</dt>
-                <dd itemprop="description">Native speaker</dd>
+                <dd itemprop="description">Native</dd>
+              </div>
+            
+              <div itemprop="knowsLanguage" itemscope itemtype="https://schema.org/Language">
+                <dt itemprop="name">Gibberish</dt>
+                <dd itemprop="description">[inaudible mumbling]</dd>
+              </div>
+            
+              <div itemprop="knowsLanguage" itemscope itemtype="https://schema.org/Language">
+                <dt itemprop="name">Cat</dt>
+                <dd itemprop="description">tolerated</dd>
               </div>
             
         </dl>
@@ -220,8 +315,13 @@ exports[`renders a resume 1`] = `
         <dl class="title-list">
           
               <div class="tag-list" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Thing">
-                <dt><span itemprop="name">Wildlife</span></dt>
-                <dd itemprop="alternateName">Ferrets</dd><dd itemprop="alternateName">Unicorns</dd>
+                <dt><span itemprop="name">I like things</span></dt>
+                <dd itemprop="alternateName">Like stuff</dd><dd itemprop="alternateName">Like things</dd>
+              </div>
+            
+              <div class="tag-list" itemprop="knowsAbout" itemscope itemtype="https://schema.org/Thing">
+                <dt><span itemprop="name">Sun Pool</span></dt>
+                <dd itemprop="alternateName">Hot Sleepin</dd><dd itemprop="alternateName">Sauna times</dd>
               </div>
             
         </dl>
@@ -232,11 +332,21 @@ exports[`renders a resume 1`] = `
         <div class="stack">
           
               <blockquote itemprop="subjectOf" itemscope itemtype="https://schema.org/Statement">
-                <div itemprop="text"><p>It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.</p>
+                <div itemprop="text"><p>Fall over dead (not really but gets sypathy) go crazy with excitement when plates are clanked together signalling the arrival of cat food and do doodoo in the litter-box, clickityclack on the piano, be frumpygrumpy, for stinky cat hiiiiiiiiii feed me now. </p>
 </div>
                 
                   <p itemprop="author" itemscope itemtype="https://schema.org/Person">
-                    <cite itemprop="name">Erlich Bachman</cite>
+                    <cite itemprop="name">John Doe</cite>
+                  </p>
+                
+              </blockquote>
+            
+              <blockquote itemprop="subjectOf" itemscope itemtype="https://schema.org/Statement">
+                <div itemprop="text"><p>I show my fluffy belly but it&#39;s a trap! if you pet it i will tear up your hand throwup on your pillow. Stare at ceiling yowling nonstop the whole night i shredded your linens for you i cry and cry and cry unless you pet me, and then maybe i cry just for fun. Cat not kitten around .</p>
+</div>
+                
+                  <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <cite itemprop="name">Jane Doe</cite>
                   </p>
                 
               </blockquote>
@@ -248,30 +358,49 @@ exports[`renders a resume 1`] = `
         <h3 part="section-title">Projects</h3>
         <div class="stack"><article itemprop="alumniOf" itemscope itemtype="https://schema.org/Project">
     <header>
-      <h4><a href="missdirection.example.com" itemprop="url"><span itemprop="name">Miss Direction</span></a></h4>
+      <h4><span itemprop="name">Project ABC</span></h4>
       <p itemprop="parentOrganization" itemscope itemtype="https://schema.org/Organization">
-        <span itemprop="name">Smoogle</span>
+        <span itemprop="name">Entity ABC</span>
       </p>
-      <p itemprop="additionalType">application</p>
-      <div class="meta" itemprop="description"><p>A mapping engine that misguides you</p>
+      <p itemprop="additionalType">Open Source</p>
+      <div class="meta" itemprop="description"><p>The project is Car rides are evil swat turds around the house poop on the floor, break a planter, sprint, eat own hair, vomit hair, hiss, chirp at birds, eat a squirrel, hide from fireworks, lick toe beans, attack christmas tree. Chase dog then run away allways wanting food. Fat baby cat best buddy little guy stare at the wall, play with food and get confused by dust for stare at imaginary bug. </p>
 </div>
       <div class="meta">
         <ul itemprop="keywords" class="tag-list">
-          <li>GoogleMaps</li><li>Chrome Extension</li><li>Javascript</li>
+          <li>Keyword-a</li><li>Keyword-b</li>
         </ul>
       </div> 
     </header>
     
       <section itemprop="alumni" itemscope itemtype="https://schema.org/Role">
-        <h5 itemprop="roleName">Team lead and Designer</h5>
-        <p><time datetime="2016-08-24" itemprop="startDate">Aug 2016</time> – <time datetime="2016-08-24" itemprop="endDate">Aug 2016</time></p>
+        <h5 itemprop="roleName">Breathing and Being</h5>
+        <p><time datetime="2024-01" itemprop="startDate">Jan 2024</time> – <time datetime="2024-05" itemprop="endDate">May 2024</time></p>
         
           <ul>
-            <li itemprop="description"><p>Won award at AIHacks 2016</p>
-</li><li itemprop="description"><p>Built by all women team of newbie programmers</p>
-</li><li itemprop="description"><p>Using modern technologies such as GoogleMaps, Chrome Extension and Javascript</p>
+            <li itemprop="description"><p>Thing that happened one</p>
+</li><li itemprop="description"><p>Highlighted thing two</p>
 </li>
           </ul>
+        
+      </section>
+    
+  </article><article itemprop="alumniOf" itemscope itemtype="https://schema.org/Project">
+    <header>
+      <h4><a href="https://github.com/scottnath/jsonresume-theme-microdata" itemprop="url"><span itemprop="name">jsonresume-theme-microdata</span></a></h4>
+      
+      <p itemprop="additionalType">open source</p>
+      <div class="meta" itemprop="description"><p>A flat JSON Resume theme with schema.org microdata, compatible with the latest resume schema</p>
+</div>
+      <div class="meta">
+        <ul itemprop="keywords" class="tag-list">
+          <li>jsonresume</li><li>microdata</li>
+        </ul>
+      </div> 
+    </header>
+    
+      <section itemprop="alumni" itemscope itemtype="https://schema.org/Role">
+        <h5 itemprop="roleName">Architect and Developer</h5>
+        <p><time datetime="2024-04-01" itemprop="startDate">Apr 2024</time> – Present</p>
         
       </section>
     
@@ -279,9 +408,9 @@ exports[`renders a resume 1`] = `
       </section>
     
       <footer part="meta" itemprop="owns" itemscope itemtype="https://schema.org/TextDigitalDocument">
-         <p><a href="https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json" itemprop="sameAs"><span >canonical resume.json file</span></a></p> 
-         <p>version <span itemprop="version">v1.0.0</span></p> 
-         <p>last modified <time datetime="2017-12-24T15:53:00" itemprop="dateModified">12/24/2017, 3:53:00 PM</time></p> 
+         <p><a href="https://gist.githubusercontent.com/scottnath/9e7a7ceb9425336c6aa08d58afb63b8d/raw" itemprop="sameAs"><span >canonical resume.json file</span></a></p> 
+         <p>version <span itemprop="version">0.1.0</span></p> 
+         <p>last modified <time datetime="2024-05-30T18:30:16.736Z" itemprop="dateModified">5/30/2024, 2:30:16 PM</time></p> 
       </footer>
     
     </article>
