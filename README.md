@@ -11,6 +11,8 @@ A [JSON Resume](https://jsonresume.org/) theme with styles and DevX forked from 
 - 📦 ESM and CommonJS builds
 - 🤖 TypeScript typings
 
+[See components in Storybook](https://main--6632f42ef9bacea464588c02.chromatic.com)
+
 ## Installation
 
 ```console
